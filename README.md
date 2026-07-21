@@ -6,6 +6,10 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 
 1. Node.js - you can just install this via the nodejs website, nodejs.org
 2. npm & npv - comes with the Node.js package
+3. vite
+```sh
+npm install -D vite
+```
 
 To test if node, npm, npx is installed correctly
 
