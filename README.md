@@ -2,6 +2,31 @@
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
+## Installing Dependencies 
+
+1. Node.js - you can just install this via the nodejs website, nodejs.org
+2. npm & npv - comes with the Node.js package
+
+To test if node, npm, npx is installed correctly
+
+```sh
+# check node
+node -v
+
+#or check npm
+npm -v
+
+#or check npx
+npx -v
+```
+
+Note: in order to run local scripts like npm & npv on Windows, you need to enable RemoteSigned
+
+```sh
+# enable local scripts
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
