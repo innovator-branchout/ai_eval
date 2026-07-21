@@ -1,4 +1,5 @@
 <script>
+	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
@@ -10,7 +11,10 @@
 
 <nav>
 	<a href="/">Home</a>
-	<a href="/test">test</a>
+	<a href="/guide">How it works</a>
+	<a href="/model">Model</a>
+	<a href="/about">About</a>
+	<a href="/contact">Contact</a>
 </nav>
 
 {@render children()}
@@ -18,17 +22,18 @@
 <style>
 	nav {
 		display: flex;
-		gap: 1rem;
-		padding: 1rem;
-		border-bottom: 1px solid #ccc;
+		gap: 2rem;
+		padding: 1.25rem 2rem;
+		background: var(--charcoal);
 	}
 
 	nav a {
-		color: inherit;
+		color: white;
+		font-weight: 600;
 		text-decoration: none;
 	}
 
 	nav a:hover {
-		text-decoration: underline;
+		color: var(--seagrass);
 	}
 </style>
