@@ -1,0 +1,58 @@
+:root {
+	--charcoal: #394f56;
+	--seagrass: #4c9482;
+	--platinum: #ebeaeb;
+	--wine: #6f1d1b;
+	--fern: #50723c;
+
+	--background: #f2f1f1;
+	--surface: #ffffff;
+	--text: #182326;
+	--muted: #667579;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--background);
+	color: var(--text);
+	font-family: Inter, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--charcoal);
+}
+
+a,
+button {
+	font: inherit;
+}
+
+.primary-button {
+	display: inline-block;
+	padding: 0.8rem 1.3rem;
+	border-radius: 0.5rem;
+	background: var(--wine);
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.primary-button:hover {
+	background: #591716;
+}
+
+.page {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 5rem 2rem;
+}
