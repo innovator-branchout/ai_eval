@@ -13,12 +13,15 @@
 		Understanding how to use the AI Reliability Audit.
 	</p>
 
+    <br>
+
 	<section id="overview">
 		<h2>Overview</h2>
 
 		<p>
 			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM, measuring its accuracy, reliability, and credibility.
 		</p>
+
 	</section>
 
 	<section id="index_system">
@@ -59,6 +62,7 @@
 			Response: ... <br>
 			Score: ....
 		</p>
+		<a class="primary-button" href="/model">Try it yourself</a>
 	</section>
 </main>
 
@@ -100,6 +104,19 @@
 		border-left: 5px solid var(--seagrass);
 		border-radius: 0.5rem;
 		background: var(--surface);
+	}
+	.primary-button {
+		display: inline-block;
+		padding: 0.8rem 1.3rem;
+		border-radius: 0.5rem;
+		background: var(--wine);
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.primary-button:hover {
+		background: #591716;
 	}
 
 </style>
