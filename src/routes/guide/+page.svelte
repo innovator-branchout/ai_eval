@@ -7,13 +7,17 @@
 </svelte:head>
 
 <main>
-	<h1>How It Works</h1>
+	<h1>Use Guide</h1>
+
+    <p>
+		Understanding how to use the AI Reliability Audit.
+	</p>
 
 	<section id="overview">
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, input the prompt and responses .......
+			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM, measuring its accuracy, reliability, and credibility.
 		</p>
 	</section>
 
@@ -31,6 +35,30 @@
 		<p>
 			Here are some examples of inputs and outputs to our model
 		</p>
+
+		<h3>Example 1</h3>
+
+		<p>
+			Prompt: .... <br>
+			Response: ... <br>
+			Score: ....
+		</p>
+
+		<h3>Example 2</h3>
+
+		<p>
+			Prompt: .... <br>
+			Response: ... <br>
+			Score: ....
+		</p>
+
+		<h3>Example 3</h3>
+
+		<p>
+			Prompt: .... <br>
+			Response: ... <br>
+			Score: ....
+		</p>
 	</section>
 </main>
 
@@ -44,7 +72,7 @@
 	h1 {
 		margin: 0 0 1.25rem;
 		color: var(--charcoal);
-		font-size: clamp(3rem, 8vw, 5.5rem);
+		font-size: clamp(2.5rem, 8vw, 4rem);
 		line-height: 1;
 		letter-spacing: -0.05em;
 	}
@@ -54,7 +82,11 @@
 		color: var(--charcoal);
 		font-size: 2rem;
 	}
-
+    h3 {
+        margin-bottom: 1rem;
+        color: var(--charcoal);
+        font_size: 1.4rem;
+    }
 	p {
 		max-width: 650px;
 		margin-bottom: 2rem;
@@ -63,7 +95,7 @@
 		line-height: 1.7;
 	}
     section {
-		margin-top: 6rem;
+		margin-top: 2rem;
 		padding: 2rem;
 		border-left: 5px solid var(--seagrass);
 		border-radius: 0.5rem;
