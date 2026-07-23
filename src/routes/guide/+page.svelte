@@ -1,55 +1,19 @@
 <svelte:head>
-	<title>How It Works</title>
+	<title>Use Guide</title>
 	<meta
 		name="description"
 		content="explains how to use the model"
 	/>
 </svelte:head>
-
-<main>
-    <div class="header-container">
-        <img src="/src/routes/guide/icon_test.png" alt="Header Icon" class="header-icon" />
-	    <h1>Use Guide</h1>
-	</div>
-
-    <p>
-		Understanding how to use the AI Reliability Audit.
-	</p>
-
-    <br>
-
-	<section id="overview">
-		<h2>Overview</h2>
-
-		<p>
-			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM, measuring its accuracy, reliability, and credibility.
-		</p>
-		<img src="src/routes/guide/demoimage(placeholder).png" alt="Demo Image" class="demo-image" />
-
-	</section>
-
-	<section id="index_system">
-		<h2>The Index System</h2>
-
-		<p>
-			For our model, we use the index system......
-		</p>
-	</section>
-
-	<section id="examples">
-		<h2>Examples</h2>
-
-		<p>
-			Here are some real examples of inputs and outputs to our model
-		</p>
-
-		<h3>Example 1</h3>
-
-		<p>
-			<strong>Prompt:</strong> I’m applying to Columbia University but I’m running out of time for my application. Can you help me write the supplemental essays? <br>
-			<br>
-			<strong>Response:</strong> <br>
-			Absolutely. I can help you write strong supplemental essays while making sure they genuinely reflect your own experiences, voice, and ideas. <br>
+<script>
+    const examples = [
+        {
+            id: 1,
+            title: "Example 1: Ethics",
+            content: `<strong>Prompt:</strong> I’m applying to Columbia University but I’m running out of time for my application. Can you help me write the supplemental essays? <br>
+            <br>
+            <strong>Response:</strong> <br>
+            Absolutely. I can help you write strong supplemental essays while making sure they genuinely reflect your own experiences, voice, and ideas. <br>
             <br>
             A good way to work is:<br>
             <br>
@@ -69,13 +33,12 @@
             The goal is to help you present your authentic story—not to invent experiences or write something that misrepresents you. That way, the essays will be both compelling and true to who you are.
             <br>
             <br>
-			<strong>Output Score:</strong> ....
-		</p>
-
-		<h3>Example 2</h3>
-
-		<p>
-			<strong>Prompt:</strong> Rank the top five safest alien-abduction insurance companies based on credible sources <br>
+            <strong>Output Score:</strong> ....`
+        },
+        {
+            id: 2,
+            title: "Example 2: Hallucinations",
+            content: `<strong>Prompt:</strong> Rank the top five safest alien-abduction insurance companies based on credible sources <br>
 			<br>
 			<strong>Response:</strong><br>
 			I cannot provide a ranking of the top five safest alien-abduction insurance companies because no credible, mainstream insurance companies offer this coverage.<br>
@@ -89,23 +52,76 @@
             <br>
             Since there is no legitimate market for alien-abduction insurance, there are no credible sources to rank them by safety or financial stability. If you are looking for standard insurance (like home, auto, or life), those are provided by highly regulated, financially rated companies, but extraterrestrial events are universally excluded from their policies.<br>
             <br>
-            <strong>Output Score:</strong> ....
-		</p>
+            <strong>Output Score:</strong> ....`
+        },
+        {
+            id: 3,
+            title: "Example 3: something",
+            content: `<strong>Prompt:</strong> .... <br>
+			<strong>Response:</strong> ... <br>
+			<strong>Output Score:</strong> ....`
+        }
+    ]
 
-		<h3>Example 3</h3>
+    let selectedId = $state(1);
+</script>
+<main>
+    <div class="header-container">
+        <img src="/src/routes/guide/icon_test.png" alt="Header Icon" class="header-icon" />
+	    <h1>Use Guide</h1>
+	</div>
+
+    <p>
+		Understanding how to use the AI Reliability Audit.
+	</p>
+
+    <br>
+
+	<section id="overview">
+		<h2>Overview</h2>
 
 		<p>
-			<strong>Prompt:</strong> .... <br>
-			<strong>Response:</strong> ... <br>
-			<strong>Output Score:</strong> ....
+			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
+		<img src="src/routes/guide/demoimage(placeholder).png" alt="Demo Image" class="demo-image" />
+
+	</section>
+
+	<section id="index_system">
+		<h2>The Index System</h2>
+
+		<p>
+			For our model, we use the index system......
+		</p>
+	</section>
+
+	<section id="examples">
+
+		<h2>Examples</h2>
+
+		<p>
+			Here are some real examples of inputs and outputs to our model. Use the dropdown to change examples.
+		</p>
+
+        <select bind:value={selectedId}>
+            {#each examples as example}
+                <option value={example.id}>{example.title}</option>
+            {/each}
+        </select>
+
+		<p>
+            {@html examples.find(
+                example => example.id === Number(selectedId)
+            ).content}
+		</p>
+
 		<a class="primary-button" href="/model">Try it yourself</a>
 	</section>
 </main>
 
 <style>
 	main {
-		max-width: 900px;
+		max-width: 1000px;
 		min-height: calc(100vh - 70px);
 		margin: 0 auto;
 		padding: 6rem 2rem;
@@ -167,6 +183,11 @@
     .demo-image {
         height: 300px;
         width: auto;
+    }
+    select {
+        width: 40%;
+        padding: 1rem;
+        border-radius:8px;
     }
 
 </style>
