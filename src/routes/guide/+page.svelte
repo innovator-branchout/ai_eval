@@ -142,7 +142,7 @@
     h3 {
         margin-bottom: 1rem;
         color: var(--charcoal);
-        font_size: 1.6rem;
+        font-size: 1.1rem;
     }
 	p {
 		max-width: 650px;
@@ -186,8 +186,19 @@
     }
     select {
         width: 40%;
-        padding: 1rem;
-        border-radius:8px;
+        padding: 1.2rem;
+        border-radius:6px;
+
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        color: var(--charcoal);
+        font-size: 1.1rem;
+    }
+    option {
+        font-family: Arial, sans-serif;
+        color: var(--charcoal);
+        font-size: 1rem;
+        font-weight: 600;
     }
 
 </style>
