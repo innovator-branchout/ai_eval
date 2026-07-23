@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import torch
 from torch.utils.data import Dataset, DataLoader
 
-from database import connect
+from backend.scripts.database import connect
 
 
 class EmbeddingDataset(Dataset):

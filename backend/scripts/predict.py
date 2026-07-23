@@ -1,5 +1,5 @@
 import torch
-from embeddings import Embedder
+from backend.scripts.embeddings import Embedder
 _EMBEDDER = Embedder()
 
 def predict(model, raw_prompt:str):
