@@ -12,6 +12,7 @@ from pydantic import BaseModel
 import torch
 from typing import List, Optional
 from pathlib import Path
+from dataclasses import asdict
 
 # Import backend modules
 from backend.scripts.predict_utils import predict_prompt, predict_prompt_with_response, get_label_mapping
@@ -175,7 +176,7 @@ async def get_prompts_endpoint():
     """
     try:
         prompts = get_prompts()
-        return [PromptData(**prompt.__dict__) for prompt in prompts]
+        return [PromptData(**asdict(prompt)) for prompt in prompts]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
@@ -186,7 +187,7 @@ async def get_prompts_by_category_endpoint(category_name: str):
     """
     try:
         prompts = prompts_by_category(category_name)
-        return [PromptData(**prompt.__dict__) for prompt in prompts]
+        return [PromptData(**asdict(prompt)) for prompt in prompts]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
@@ -197,7 +198,7 @@ async def get_prompts_by_model_endpoint(model_name: str):
     """
     try:
         prompts = prompts_by_model(model_name)
-        return [PromptData(**prompt.__dict__) for prompt in prompts]
+        return [PromptData(**asdict(prompt)) for prompt in prompts]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
@@ -208,7 +209,7 @@ async def search_prompts_endpoint(keyword: str):
     """
     try:
         prompts = search_prompts(keyword)
-        return [PromptData(**prompt.__dict__) for prompt in prompts]
+        return [PromptData(**asdict(prompt)) for prompt in prompts]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error searching prompts: {str(e)}")
 
@@ -219,7 +220,7 @@ async def get_categories():
     """
     try:
         categories = list_categories()
-        return [Category(**cat.__dict__) for cat in categories]
+        return [Category(**asdict(cat)) for cat in categories]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving categories: {str(e)}")
 
@@ -230,7 +231,7 @@ async def get_models():
     """
     try:
         models = list_models()
-        return [Model(**model.__dict__) for model in models]
+        return [Model(**asdict(model)) for model in models]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving models: {str(e)}")
 
@@ -241,7 +242,7 @@ async def get_labels():
     """
     try:
         labels = list_labels()
-        return [Label(**label.__dict__) for label in labels]
+        return [Label(**asdict(label)) for label in labels]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving labels: {str(e)}")
 
