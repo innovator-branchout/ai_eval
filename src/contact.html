@@ -6,6 +6,25 @@
   <title>Contact Info</title>
 
   <style>
+    .menu-bar {
+      background-color: #394f56;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    .menu-bar a {
+      color: white;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 18px;
+    }
+
+    .menu-bar a:hover {
+      color: #4d8c3f;
+    }
+    
     body {
       margin: 0;
       min-height: 100vh;
@@ -15,9 +34,15 @@
 
     .contact {
       text-align: center;
-      padding-top: 130px;
+      padding-top: 70px;
     }
 
+    .contact h1 {
+      color: #4d8c3f;
+      font-size: 34px;
+      margin-bottom: 28px;
+    }
+    
     .contact h2 {
       margin: 0;
       color: #233a7b;
@@ -27,7 +52,7 @@
     }
 
     .contact p {
-      margin: 4px 0 18px;
+      margin: 6px 0 24px;
       color: #7f8b8d;
       font-size: 15px;
       font-weight: 600;
@@ -37,10 +62,44 @@
       color: inherit;
       text-decoration: none;
     }
-  </style>
+
+    .contact a:hover {
+      color: #4d8c3f;
+  }
+
+    .instagram-link { 
+      display: inline-block; 
+      margin-top: 4px; 
+    } 
+
+    .instagram-logo {
+      width: 72px; 
+      height: auto; 
+      display: block; 
+    } 
+
+    .top-logo {
+      width: 360px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px;
+    }
+</style>
 </head>
 <body>
+  <nav class="menu-bar">
+    <!a href="index.html">Home</a>
+    <a href="app.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.instagram.com/branchoutveritas/">Instagram</a>
+  </nav>
+
+  <h1>Get in Touch</h1>
+  
   <section class="contact">
+    <img class="top-logo" src="/var/folders/zj/9t0jy_c11wj8q8ph9pc_24zm0000gn/T/codex-clipboard-6e9927b6-a63e-4fa8-8b89-77e1bcf0d7b4.png" alt="BranchOut logo" />   
+    
     <h2>You can find us at</h2>
     <p>
       <a href="https://www.velbranchout.org">www.velbranchout.org</a>
@@ -50,6 +109,11 @@
     <p>
       <a href="mailto:team@velbranchout.org">team@velbranchout.org</a>
     </p>
+    
+    <p>Follow us on Instagram</p>
+    <a class="instagram-link" href="https://www.instagram.com/branchoutveritas/" target="_blank" rel="noopener noreferrer">
+      <img class="instagram-logo" src="https://www.clipartmax.com/png/middle/176-1766224_instagram-logos-in-vector-format-free-download-instagram-logo-small-size.png" alt="Instagram logo" />
+    </a>
   </section>
 </body>
 </html>
