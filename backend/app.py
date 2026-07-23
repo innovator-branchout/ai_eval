@@ -10,16 +10,22 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import torch
-from typing import List, Optional
-from pathlib import Path
+from typing import Optional
 from dataclasses import asdict
 
 # Import backend modules
-from backend.scripts.predict_utils import predict_prompt, predict_prompt_with_response, get_label_mapping
+from backend.scripts.predict_utils import predict_prompt, predict_prompt_with_response
 from backend.scripts.nn.layers import EmbeddingClassifier
-from backend.scripts.database import connect, list_categories, list_models, list_labels, get_prompts, prompts_by_category, prompts_by_model, search_prompts
-from backend.scripts.predict import predict, predict_with_response
-
+from backend.scripts.database import (
+    connect,
+    list_categories,
+    list_models,
+    list_labels,
+    get_prompts,
+    prompts_by_category,
+    prompts_by_model,
+    search_prompts,
+)
 app = FastAPI(
     title="AI Evaluation System API",
     description="API for the AI evaluation system with prediction capabilities",
@@ -30,7 +36,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, restrict this to specific origins
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

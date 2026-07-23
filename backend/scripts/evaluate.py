@@ -55,7 +55,7 @@ if __name__=="__main__":
             dropout=0.2
     )
 
-    checkpoint = torch.load('models/prompt_predictor/best.pt', weights_only=True) if args.model=="prompt" else torch.load('models/response_grader/best.pt')
+    checkpoint = torch.load('models/prompt_predictor/best.pt', weights_only=True) if args.model=="prompt" else torch.load('models/response_grader/best.pt', weights_only=True)
 
     weights = checkpoint['model_state']
 

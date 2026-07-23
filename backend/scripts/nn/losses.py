@@ -12,4 +12,4 @@ def get_loss(name="cross_entropy", **kwargs):
     if name == "mse":
         return nn.MSELoss(**kwargs)
 
-    raise ValueError(f"Unkown loss function: {name}")
+    raise ValueError(f"Unknown loss function: {name}")
