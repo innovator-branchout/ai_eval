@@ -85,9 +85,7 @@ Response:
 
 def get_all_labels():
     """Return list of all labels ordered by severity"""
-    from database import connect
-
-    with connect() as conn:
+    from backend.scripts.database import connect
         rows = conn.execute(
             """
             SELECT *
