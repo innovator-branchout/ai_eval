@@ -69,3 +69,26 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+Pages:
+- Home Page
+- More Information/How It Works/Guide Page
+    - How the index system Works
+    - Examples of passes and fails
+    - Grading Rubric
+- About (BranchOut! And Innovator)
+- Contact
+- Grade Prompts/Outputs Page
+    - One entry to put in Prompt
+    - Another (optional) entry to put in response
+    - Third entry to put in model
+    - Grading uses either prompt grader, if just prompt put in, or response grader, if both put in
+    - Stylized reliability index
+
+Color Scheme:
+- #394F56: Buttons and Text, not related to correct/incorrect status/Rubric
+- #4C9482: Buttons and Text, not related to correct/incorrect status/Rubric
+- #EBEAEB: icons
+- #6F1D1B: incorrect responses/index
+- #50723C: Correct responses/index
+
