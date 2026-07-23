@@ -9,6 +9,13 @@
 <main>
 	<h1>AI Reliability Audit</h1>
 
+  <nav class="menu-bar">
+    <!a href="index.html">Home</a>
+    <a href="app.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.instagram.com/branchoutveritas/">Instagram</a>
+  </nav>
+
 	<p>
 		We're building a system to evaluate AI responses.
 	</p>
@@ -25,6 +32,25 @@
 </main>
 
 <style>
+    .menu-bar {
+      background-color: #394f56;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    .menu-bar a {
+      color: white;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 18px;
+    }
+
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+    
 	main {
 		max-width: 900px;
 		margin: 0 auto;
