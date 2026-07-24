@@ -313,7 +313,7 @@
             <tbody>
                 {#each rubricData as row}
                     <tr>
-                        <td>{row.category}</td>
+                        <td><strong>{row.category}</strong></td>
                         <td>{row.label}</td>
                         <td>{row.status}</td>
                         <td>{row.severity}</td>
