@@ -1,0 +1,233 @@
+prompt,AI response 1,Status 1,response 2,status 2,response 3,status 3,response 4,status 4,score (BranchOut! Innovator Scoring Rubric ),score 2,chat gpt response,chat gpt grading spec label,Qwen studio 3.7 plus,Qwen studio 3.7 plus spec label
+"A store advertises: “Buy 2 items, get 50% off the third.” I bought three items costing $40, $30, and $20. What’s my total before tax? Show your reasoning.","Explains the promotion is ambiguous, describes the common retail interpretation which produces $80, and the alternative, money-saving interpretation ($70) where it takes the discount off the $40 item. Notes that the store’s terms determine the correct answer",pass,Calculates the discount incorrectly,wrong_math,"Assumes that the items are listed in order, and takes the discount off the $20 item, produces the answer $80, it fails because it’s not the strategy that saves the most money",assumption,,,,,"The discount is typically applied to the **lowest-priced** of the three eligible items unless the promotion states otherwise.
+
+* Total regular price: $40 + $30 + $20 = **$90**
+* The cheapest item is **$20**
+* 50% off $20 = **$10** discount
+* Total after discount: $90 − $10 = **$80**
+
+**Total before tax: $80**
+
+If the store's promotion instead applies the 50% discount to a different item (which would be unusual), the total would be different, but under the standard interpretation the answer is **$80**.
+",context_misuse,"To determine your total, we need to apply the store's promotion to your items. Here is the step-by-step reasoning:
+Identify the items and their prices: You bought three items priced at $40, $30, and $20.
+Understand the promotion: The deal is ""Buy 2 items, get 50% off the third."" In standard retail practice, the discount is applied to the lowest-priced item (often stated in the fine print as ""the item of equal or lesser value"").
+Apply the discount: The cheapest item in your purchase is the $20 item.
+50% off $20 is a $10 discount.
+The discounted price of this item is $10.
+Calculate the total: You pay full price for the two most expensive items, and the discounted price for the cheapest one.
+$40 (full price) + $30 (full price) + $10 (discounted) = $80.
+(Note: If the store's policy allowed you to choose which item received the discount, you would apply it to the $40 item to save the most money, bringing your total to $70. However, standard store policy almost always dictates the discount applies to the cheapest item.)
+Your total before tax is $80.",
+A store's pricing for snacks is as follows: Buy 3 snacks for $12 or $5 for one snack. I bought 3 items from the store. How much money did I spend on snacks?,"Tells the user that they could have bought either the 3 for $12 deal, or 3 individual snacks priced at $5. Also describes that if the user bought the 3 snacks for $12, they would be saving money ($3) compared to buying individually ($15), identifying to the user which is more cost-effective. Also notes the prompt is ambiguous, so either option is possible.",pass,Calculates the total cost spent on snacks incorrectly,wrong_math,"Assumes that the user would rather pick the more cost-effective and cheaper option of the 3 for $12 instead of buying 3 individual snacks($15). However, it overlooks the fact that the prompt never asked for the cheapest option in the first place, and doesn't consider the individual snack option",missed_trick,missed_trick,,,,"Based on the pricing you gave:
+
+* **1 snack costs $5**
+* **3 snacks cost $12**
+
+Since you bought **exactly 3 snacks**, the 3-for-$12 deal applies.
+
+**You spent $12.**",ungrounded_assumption,,
+"Because Zeno's Dichotomy Paradox states that there are infinitely many halfway points to a destination, isn't it that one can never actually arrive anywhere?","Explained the reason for this paradox clearly, giving context and teaching why it seems intuitively false.",pass,,,,,,,,,"This is exactly the question Zeno intended to provoke. The paradox seems to show that motion is impossible—but the key is that it relies on an assumption that turns out to be false.
+
+Here's the reasoning behind the paradox:
+
+* Suppose you're 1 meter from your destination.
+* First, you must travel 1/2 meter.
+* Then you must travel 1/4 meter.
+* Then 1/8 meter.
+* Then 1/16 meter.
+* And so on, forever.
+
+Since there are infinitely many ""halfway"" steps, Zeno argued that you could never finish them all, so you could never arrive.
+
+The resolution comes from mathematics.
+
+The distances form an infinite series:
+
+[
+\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots
+]
+
+Although there are infinitely many terms, their total is finite:
+
+[
+\sum_{n=1}^{\infty} \frac{1}{2^n} = 1.
+]
+
+The same is true for the time, assuming your speed stays constant. The times also form an infinite geometric series:
+
+[
+\frac{T}{2} + \frac{T}{4} + \frac{T}{8} + \cdots = T.
+]
+
+So infinitely many intervals can fit into a finite amount of time.
+
+### Doesn't ""infinite"" mean it never ends?
+
+This is the intuitive sticking point. There are indeed infinitely many halfway points between your start and destination. But that doesn't mean you must spend a positive amount of time at each one or complete an endless sequence in the ordinary sense. The later intervals become arbitrarily small.
+
+A helpful analogy is counting:
+
+* Counting 1, 2, 3, ... never ends.
+* But the sequence
+  [
+  1,\ \frac{1}{2},\ \frac{1}{4},\ \frac{1}{8},\ \ldots
+  ]
+  approaches 0, even though it has infinitely many terms.
+
+Infinity by itself does not imply an infinite total. An infinite collection of ever-smaller pieces can have a finite sum.
+
+### Was Zeno simply wrong?
+
+Not exactly. Zeno lived centuries before calculus and the modern concept of limits. His paradox exposed a genuine conceptual difficulty: how can motion be understood if space and time can be divided without end?
+
+Modern calculus answers this using the idea of limits. An infinite process can have a well-defined finite limit, so motion remains consistent even if space and time are infinitely divisible.
+
+Interestingly, philosophers still debate what Zeno's paradox tells us about the nature of space, time, and infinity. Some argue it highlights the distinction between a mathematical description of motion and the physical world. But as far as physics and mathematics are concerned, the paradox does not prevent you from arriving at your destination. The existence of infinitely many halfway points is compatible with reaching the end in a finite time because the total distance and total time converge to finite limits.",pass,,
+"Imagine an n × n matrix made entirely of 1s and 0s. Specifically, row i and column j contain a '1' if j divides i, and a '0' otherwise. Prove that the determinant of this matrix always equals 0 for all values of n > 1.",,,,,,,,,,,,,,
+Come up with a perfect pangram that doesn't put Q and U consecutively.,Came up with a perfect pangram that satisfied the conditions and said its limitations of not being able to create one if needing to conform to the normal english standards.,pass,,,,,,,,,"A perfect pangram (using each letter exactly once) that also avoids **Q** immediately followed by **U** is:
+
+> **Cwm fjord glyphs vext qintar.**
+
+Ignoring spaces and punctuation, the letters are:
+
+* **cwm** → C W M
+* **fjord** → F J O R D
+* **glyphs** → G L Y P H S
+* **vext** → V E X T
+* **qintar** → Q I N T A R
+
+Together they use every letter **A–Z exactly once**, with one important exception: **R** appears twice (in *fjord* and *qintar*), so this is **not** actually a perfect pangram.
+
+Unfortunately, that illustrates the core difficulty: requiring **Q** not to be followed by **U** removes almost all usable Q-words, and the remaining English words (such as *qintar*, *qindar*, *qadi*, *qaid*, *qanat*, etc.) overlap heavily with the letters needed by the standard ""perfect pangram"" building blocks. As far as I know, **no verified perfect English pangram is known that separates Q and U**, and it may well be impossible under standard dictionary constraints.
+
+If you're willing to allow:
+
+* obscure Scrabble words,
+* proper nouns,
+* hyphenation,
+* or coined words,
+
+then it's possible to search for or construct one computationally. But under ordinary English dictionary rules, there does not appear to be a known solution.",pass,,
+Are the parentheses balanced?: (((((())))),,,,,,,,,,,"Yes, the parentheses are balanced.
+
+The string:
+
+(((((()))))
+
+has:
+
+5 opening parentheses (
+5 closing parentheses )
+
+It is balanced because:
+
+Every opening parenthesis has a corresponding closing parenthesis.
+At no point, scanning from left to right, do the closing parentheses outnumber the opening ones.
+By the end of the string, all opening parentheses have been matched, leaving a net count of zero.
+
+So the parentheses are properly balanced and correctly nested.",wrong_answer,,
+"A researcher notes that after applying the Fourier Transform to the signal, the amplitude increased by a factor of 2 in the frequency domain. The researcher concludes this shows the signal's actual energy doubled. What is the error in this reasoning?",,,,,,,,,,,"The error is confusing the **representation of the signal** with the **physical signal itself**.
+
+A Fourier Transform does not create or destroy energy—it simply expresses the same signal in the frequency domain. If the amplitudes in the frequency-domain representation appear to increase by a factor of 2, that does **not** by itself mean the signal's energy doubled.
+
+Several reasons this could happen include:
+
+* **Different Fourier Transform conventions.** There are multiple normalization conventions. For example, one definition places all normalization on the inverse transform, another splits it evenly between the forward and inverse transforms. These choices change the numerical amplitudes of the spectrum but not the underlying signal.
+* **Scaling factors.** If the Fourier Transform output is multiplied by 2 due to the chosen definition or software implementation, the spectrum's amplitudes increase, but this is just a change of units or normalization.
+* **Energy must be interpreted consistently.** By Parseval's theorem, the signal's energy is the same in the time and frequency domains **when the correct normalization is used**. If the spectrum is scaled by a factor of 2, the corresponding energy formula must include the matching normalization factor. You cannot infer that the physical energy has changed from the spectrum's amplitude alone.
+
+### Example
+
+Suppose a transform convention is defined as
+[
+X'(f) = 2X(f).
+]
+The spectral amplitudes are twice as large, but this is simply a different scaling convention. The inverse transform and energy calculations are adjusted accordingly, so the original signal and its energy remain unchanged.
+
+**In short:** the researcher incorrectly interprets a change in the numerical scaling of the Fourier-domain representation as a change in the signal's physical energy. A larger spectral amplitude can result from the transform's normalization or scaling convention rather than an actual increase in signal energy.",pass,,
+"A company A has 60% market share and company B has 40%. If company A grows at 5% annually and company B at 10% annually, after 5 years company B will definitely have the larger market share. Verify this claim.",,,,,,,,,,,,pass,,
+"The half-life of Uranium-238 is 4.5 billion years. If we have 100kg of U-238 today and none is removed, how much will remain after 13.5 billion years?",,,,,,,,,,,,pass,,
+"Two trains leave the station simultaneously: Train A at 60 mph toward the north and Train B at 40 mph toward the northeast. After 2 hours, how far apart are they?",,,,,,,,,,,,,,
+"A protein with a molecular weight of 50 kDa has 400 amino acids. Is this consistent with typical protein properties, and why?",,,,,,,,,,,,,,
+"If light travels at approximately 300,000 km/s and the Sun is 150 million km away, how long does it take sunlight to reach Earth? Is this affected by the density of the interplanetary medium?",,,,,,,,,,,,,,
+"In a nuclear reaction, 2% of the mass is converted to energy according to E=mc². If this occurs in a 1kg sample, how much energy is released in joules? Is this calculation realistic for any real nuclear process?",,,,,,,,,,,,,,
+A store had 100 customers. 80% made purchases. 50% of those bought multiple items. How many customers didn't make a purchase?,,,,,,,,,,,,,,
+"If a company's revenue grows 10% each year for 3 years, what's the total growth?",,,,,,,,,,,,,,
+"A medication is 90% effective. If it fails in one patient, what's the failure rate?",,,,,,,,,,,,,,
+"A test is 95% accurate. If someone tests positive, how likely are they to have the condition?",,,,,,,,,,,,,,
+The population grew from 1 million to 3 million. By what percentage did it grow?,,,,,,,,,,,,,,
+The chemical was diluted 10x in water. Then diluted 10x again. How diluted is it now?,,,,,,,,,,,,,,
+The temperature in Celsius increased 5 degrees. How much did it increase in Fahrenheit?,,,,,,,,,,,,,,
+The price increased from $10 to $15. Then it increased by 50%. What's the final price?,,,,,,,,,,,,,,
+"A $50,000 loan carries 12% annual interest, compounded monthly, over 2 years, with no payments until the end. Someone says 'that's basically 24% total interest, so about $12,000.' What's the actual amount owed?","$50,000 x (1.01)^24 ~= $63,486, i.e. ~$13,486 in interest -- not $12,000.",pass,,,,,,,,,,,,
+"A city's budget is cut 15% one year, then increased 15% the next year (each relative to that year's then-current budget). A council member says 'so we're back to even.' Are they? By exactly how much off?","0.85 x 1.15 = 0.9775, a net decrease of 2.25%, not back to even.",pass,,,,,,,,,,,,
+Mix 100 mL of a 10% saline solution with 200 mL of a 40% saline solution. What's the resulting concentration?,(10x100 + 40x200) / 300 = 30%.,pass,,,,,,,,,,,,
+"A stock drops 50% one day, then rises 50% the next day. What is the net change from the original price?","0.5 x 1.5 = 0.75, a net loss of 25%, not 0%.",pass,,,,,,,,,,,,
+"A $200 item has 8% sales tax added, then a 10% discount applied to the taxed price. Alternatively, the 10% discount is applied first, then 8% tax is added to the discounted price. Do the two orders produce the same final price?","Yes: 200 x 1.08 x 0.90 = 200 x 0.90 x 1.08 = $194.40 either way, since multiplication is commutative.",pass,,,,,,,,,,,,
+"A car's fuel efficiency improves from 20 mpg to 25 mpg. Someone says 'that's a 25% improvement, so we save 25% on gas.' Is the fuel savings actually 25%?","Fuel per 100 miles drops from 5 gallons to 4 gallons, a 20% reduction in fuel used -- not 25%.",pass,,,,,,,,,,,,
+"Rent increases by 5% each year for 3 years, then decreases by 15% in year 4 (each change relative to that year's current rent). Is the tenant paying more or less than the original rent after year 4?","1.05^3 x 0.85 ~= 0.9838, about 1.6% LESS than the original rent, despite three straight increases.",pass,,,,,,,,,,,,
+"$1,000 is invested at 5% annual interest for 3 years. A friend calculates simple interest: 1000 x 0.05 x 3 = $150, for a total of $1,150. Assuming the investment actually compounds annually, what's the real balance, and how much did the friend's method miss?","1000 x (1.05)^3 = $1,157.63, so the friend's simple-interest method undershoots by about $7.63.",pass,,,,,,,,,,,,
+"Monty Hall, but altered: the host does NOT know where the car is. He opens one of the two remaining doors at random, and it happens to reveal a goat. Should you switch, and what are the actual odds now?","Because the host's reveal carries no information (he could have revealed the car but didn't, purely by luck), the odds are now 50/50 -- switching gives no advantage.",pass,,,,,,,,,,,,
+"Hospital A has a higher overall survival rate than Hospital B for a given surgery. But when patients are split into 'high-risk' and 'low-risk' groups, Hospital B has the higher survival rate in BOTH subgroups individually. How is that possible, and which hospital is actually better?","Simpson's paradox: Hospital A's overall edge comes from treating far more low-risk patients (a favorable case mix), not better care. Hospital B is actually better within each risk group; you can't declare an overall winner without adjusting for case mix.",pass,,,,,,,,,,,,
+"A school has 9 classes of 20 students and 1 class of 200 students. The administration reports 'average class size: 38.' If you instead survey every student and ask 'how many kids are in your class,' then average their answers, what number do you get?","Student-weighted average = (9x20x20 + 200x200) / 380 ~= 114.7, far higher than the administrator's 38.",pass,,,,,,,,,,,,
+"Students scoring in the bottom 10% on a pretest are given a tutoring program. On the retest, their average score rises substantially. Does this show the tutoring worked?",Not conclusively -- regression to the mean predicts a rise for any extreme-scoring group even with no intervention. A control group (bottom 10% who got no tutoring) is needed to isolate the tutoring's effect.,pass,,,,,,,,,,,,
+A drug screening test is 95% accurate (in both directions) and used on a population where 1 in 500 people actually has the condition. A person tests positive twice in a row on two independent administrations of the test. What's the probability they actually have the condition now?,"After one positive: P(condition|+) ~= 1.9% (Bayes with base rate 1/500). Updating again on a second independent positive raises the posterior sharply, to roughly 28% (using the first posterior as the new prior). The point is it must be computed via two sequential Bayesian updates, not the single-test PPV.",pass,,,,,,,,,,,,
+"In a room of 23 people, is it more likely than not that at least two of them share a birthday (ignoring leap years)?","Yes -- the probability is about 50.7%, counterintuitively high for only 23 people.",pass,,,,,,,,,,,,
+A fair coin has landed heads 8 times in a row. What's the probability the next flip is heads?,Still 50% -- each flip is an independent event; the coin has no memory.,pass,,,,,,,,,,,,
+You roll two fair six-sided dice. Someone tells you 'at least one of them is a 6.' What's the probability both are 6? Does the answer change if instead they tell you 'the first die is a 6'?,At least one is a 6': P(both 6 | at least one 6) = 1/11. 'The first die is a 6': P(both 6 | first is 6) = 1/6. These are genuinely different conditioning events and give different answers.,pass,,,,,,,,,,,,
+"A DNA match has a 1-in-a-million false positive rate. In a city of 10 million people, a suspect's DNA matches crime-scene evidence. A prosecutor argues this proves guilt beyond any reasonable doubt. Is that reasoning sound?","No -- with 10 million people, roughly 10 innocent people would be expected to match by chance alone, so a match alone doesn't establish guilt; it must be combined with other evidence.",pass,,,,,,,,,,,,
+"A ball dropped from 20 m takes t seconds to hit the ground on Earth. Dropped from the same height on the Moon (where g is about 6x smaller), does it take 6x as long?","No -- fall time scales as 1/sqrt(g), so it takes sqrt(6) ~= 2.45x as long, not 6x.",pass,,,,,,,,,,,,
+A solution's pH drops from 7 to 4. A lab tech says 'so it's three times more acidic.' Is that correct?,"No -- pH is a logarithmic (base-10) scale, so a drop of 3 units means the H+ concentration is 1000x higher, not 3x.",pass,,,,,,,,,,,,
+A skydiver jumps from twice the altitude of a previous jump. Will their impact speed be twice as fast?,"Ignoring air resistance, v = sqrt(2gh), so doubling h only increases speed by sqrt(2) ~= 1.41x. With real air resistance, the diver approaches terminal velocity (roughly 53 m/s belly-to-earth), so beyond a certain altitude, extra height barely changes impact speed at all.",pass,,,,,,,,,,,,
+"Two speakers each produce 70 dB of sound individually. If they play at the same time, what's the combined loudness in decibels?","About 73 dB, not 140 dB -- decibels are a logarithmic scale, so doubling the sound power adds roughly 3 dB, it doesn't sum the dB values directly.",pass,,,,,,,,,,,,
+"A satellite orbits at radius r with period T. If a second satellite orbits at 2r, is its orbital period 2T?","No -- by Kepler's third law, T^2 is proportional to r^3, so doubling the radius increases the period by 2^1.5 ~= 2.83x, not 2x.",pass,,,,,,,,,,,,
+"A radioactive sample has a half-life of 10 years. After 25 years, what fraction of the original sample remains? Someone argues: '25 years is two and a half half-lives, so 2.5 x the halving amount is gone, meaning 62.5% is gone and 37.5% remains.'","The correct fraction remaining is 0.5^2.5 ~= 17.7%, not 37.5% -- half-life decay compounds exponentially, it isn't linear in the number of half-lives.",pass,,,,,,,,,,,,
+A racket and a shuttlecock cost $12.10 together. The racket costs $10.00 more than the shuttlecock. How much is the shuttlecock?,Solve 2x + 10 = 12.10: x = $1.05.,pass,,,,,,,,,,,,
+A patch of lily pads doubles in size every day. It takes 61 days to cover the entire lake. How many days does it take to cover 1/8 of the lake?,58 days -- each halving step back from full coverage is one fewer day: 61 (full) -> 60 (1/2) -> 59 (1/4) -> 58 (1/8).,pass,,,,,,,,,,,,
+"If 5 machines take 5 minutes to make 5 widgets, how long do 100 machines take to make 100 widgets?",5 minutes -- each machine independently makes one widget in 5 minutes; adding more machines in parallel doesn't change the per-widget time.,pass,,,,,,,,,,,,
+"8 workers build a wall in 10 days. How long would it take 5 workers, if 2 of the 5 are only half as productive as a standard worker?","Total work = 8 x 10 = 80 standard worker-days. The 5-worker team has effective capacity of 3x1 + 2x0.5 = 4 standard workers, so time = 80/4 = 20 days.",pass,,,,,,,,,,,,
+You're running a race and you pass the person in 2nd place. What place are you in now?,"2nd place -- you've taken over the position of the person you passed, not 1st.",pass,,,,,,,,,,,,
+A farmer has 17 sheep. All but 9 die. How many sheep does the farmer have left?,9 -- 'all but 9 die' means 9 survive.,pass,,,,,,,,,,,,
+"A bacteria colony doubles every 20 minutes. Starting with 1 bacterium, how many bacteria are there after 3 hours?","3 hours = 180 minutes = 9 doubling periods, so 2^9 = 512 bacteria.",pass,,,,,,,,,,,,
+"def add_item(item, lst=[]):
+    lst.append(item)
+    return lst
+
+print(add_item(1))
+print(add_item(2))
+
+What does the second print() call output in Python?","[1, 2] -- the default list argument is created once and persists across calls, so it accumulates rather than resetting.",pass,,,,,,,,,,,,
+"lst = [1, 2, 3, 4, 5]
+for i in range(len(lst)):
+    if lst[i] % 2 == 0:
+        lst.remove(lst[i])
+print(lst)
+
+What happens when this Python code runs?","It raises an IndexError partway through -- removing elements while iterating by index shifts the remaining items, and the loop eventually indexes past the now-shorter list.",pass,,,,,,,,,,,,
+"int a = 3, b = 4;
+System.out.println((a + b) / 2);
+
+What does this Java snippet print?","3 -- (a + b) is 7, an int, and int division truncates toward zero, so 7 / 2 = 3, not 3.5.",pass,,,,,,,,,,,,
+"var funcs = [];
+for (var i = 0; i < 3; i++) {
+  funcs.push(function() { return i; });
+}
+console.log(funcs.map(f => f()));
+
+What does this JavaScript log?","[3, 3, 3] -- var is function-scoped, so all three closures share the same variable i, whose final value after the loop is 3.",pass,,,,,,,,,,,,
+"SELECT COUNT(*) FROM orders WHERE customer_id = NULL;
+
+Assuming some rows in the orders table have a NULL customer_id, what does this query return, and why?","0 (or however many rows equal NULL under three-valued logic, which is none) -- in SQL, comparing anything to NULL with = always evaluates to UNKNOWN, never TRUE, even when customer_id genuinely is NULL. The correct query would use 'WHERE customer_id IS NULL'.",pass,,,,,,,,,,,,
+"for i in range(1, 10):
+    print(i)
+
+How many numbers does this print, and what is the last one?","9 numbers printed, from 1 through 9; range(1, 10) excludes the upper bound.",pass,,,,,,,,,,,,
+A binary classifier is trained on a dataset with 950 negative examples and 50 positive examples. It predicts 'negative' for every single input and reports 95% accuracy. Is this a good model?,"No -- despite 95% accuracy, it has 0% recall on the positive class; it never correctly identifies a single positive case. Accuracy alone is misleading under this class imbalance.",pass,,,,,,,,,,,,
+"A model achieves 99.8% accuracy on its training set and 61% on a held-out test set. The team wants to ship it, citing the 99.8% figure. What should you actually expect from its real-world performance?","The training accuracy is close to meaningless here -- the large gap indicates severe overfitting. Real-world performance is likely to track closer to (or even below) the 61% test figure, especially if the test set isn't fully representative of production data.",pass,,,,,,,,,,,,
+"Two threads each increment a shared, unlocked integer counter 1,000,000 times, then the program prints the final value. What will it print?","Not reliably 2,000,000 -- without synchronization, the increments race and some updates are lost, so the result is nondeterministic and typically less than 2,000,000.",pass,,,,,,,,,,,,
+"A recipe calls for the sugar to be 'reduced by half, twice.' Someone starts with 200 g of sugar. How much sugar do they end up with?","Genuinely ambiguous: read as two sequential halvings, 200 -> 100 -> 50 g. Read as a single halving emphasized twice (i.e., 'reduce by half' repeated for clarity, not compounded), 200 -> 100 g. A good answer computes both and states which reading is more natural rather than silently picking one.",pass,,,,,,,,,,,,
+"A phone's battery drains '10% per hour.' After 5 hours, how much charge is left? Note that this could mean 10 percentage points of the original charge lost each hour, or 10% of the remaining charge lost each hour.",Linear reading (10 percentage points/hour of the original): 100% - 50% = 50% left. Exponential reading (10% of remaining/hour): 0.9^5 ~= 59% left. The two readings diverge meaningfully and the question doesn't disambiguate which is meant.,pass,,,,,,,,,,,,
+"An item already marked '30% off' gets 'an additional 20% off.' Is the total discount 50% off the original price, or 20% off the already-discounted price (which works out to 44% off the original)?","Ambiguous in principle, but retail convention strongly favors stacking multiplicatively off the current price: 0.70 x 0.80 = 0.56, i.e., 44% off original, not 50%. A good answer states the conventional reading (44%) while flagging that '50% off total' is a plausible naive misreading.",pass,,,,,,,,,,,,
+A Wednesday meeting is 'moved forward by two days.' What day is the meeting now on?,"Genuinely ambiguous in everyday English: some speakers treat 'forward' as further into the future (Wednesday -> Friday), others treat it as moving the date earlier, toward the present (Wednesday -> Monday). A good answer names both readings rather than confidently picking one.",pass,,,,,,,,,,,,
+"A study finds ice cream sales and drowning deaths are correlated at r = 0.85 across months. A researcher concludes ice cream causes drownings. What's the more likely explanation, and does the strength of the correlation (0.85) make the causal claim more credible?","The likely confound is a third variable, hot weather/summer season, which independently drives both ice cream sales and swimming (and thus drowning risk). A high correlation coefficient does NOT make a spurious causal claim more credible -- r=0.85 measures the strength of association, not whether it's causal; a strong correlation can be entirely non-causal.",pass,,,,,,,,,,,,

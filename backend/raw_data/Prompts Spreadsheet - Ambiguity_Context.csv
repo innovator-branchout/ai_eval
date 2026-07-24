@@ -1,0 +1,1620 @@
+prompt,AI response 1,Status 1,response 2,status 2,response 3,status 3,response 4,status 4,score (BranchOut! Innovator Scoring Rubric ),score 2,chat gpt response,chat gpt grading spec label,Qwen studio 3.7 plus,Qwen studio 3.7 plus spec label
+Explain what an apple is,Identifies both the fruit and company and possible other “definitions” of apple. Could ask the user if they are referring to the fruit or the company.,pass,Only identifies one definition that is wrong in a previous context (An apple is a sweet fruit that grows from trees) ,assumption/wrong answer,,,,,,,"An apple is a round, edible fruit that grows on apple trees. It typically has a thin skin that can be red, green, yellow, or a mix of colors, with crisp, juicy flesh inside and a core containing seeds.
+
+![Image](https://images.openai.com/static-rsc-4/TQpJP6Jg46m8H3-ttsjjlQ8-qQXCoTpATzhIADOiKdSLqIqX5GfhdWqfghkbqcw-oJiG8Ahl7ZneRKZjQR9fjF2P8-fceoPTHj-d4xcwjgRmOJe1SWt0gvMzUXDvp0slf0IjqzYLfYl7v69v4JEdNG6Va6OIiD_hjZftSpsmRInctUFQYzuuNRCmlxhWuXoy?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/TyuFVD0spfYhXQahbVgAhJnyNEN8sBnX5TaCEPdrmIvvHSV1Vu2CZmHSVhxDnQZFz1UFG_QlIe-9SzYG6fv8f3xBzIyaxcNE_Akr7o-o5vvlwOPnQwcg_ReY6vutKNYySnAb82lfMGQiJmHqRZRJBl4vB0dxYLYyaA0U8wQmwk3zXfHzm9FZgy6cpr9Z5dbO?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/6sYyv-Of1yfs-H5BXlTo1jvJ1EiYVNfLj_rc4rtT4m29IqquXhS6xSPwTUvAxLV42qX5QoGMUqjm7u-jwfT_g9A9NUSl2_SIRJ0ao_mc3Z5iNYW0HPGrMI1MrXwr8-Qbkmd9oLPzZBZP6GjlYijNzSWVx6750_vpJSL3QNKSpgz8_nNRG8clcrYlvb9JgeAI?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/8kVqfyMI6ihaabgs0XUCCVsk6gWBvawJQwEVjCWxQ36vYu3c9KvGPjHxtCR06eGmYfyBzsijoZQGskpXmUOg_8alNOZwJ5aCrI2y9p-5iwuUglwc6AInHyHmza_hIyFg3Qu7tBwu9Ujgb1OkCEzPjFdr4AnNpA75o7pAkuLeWMdGrRYC9dBoWGz5UuyTsCTX?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/L6rmq-fTkgwqbyy7PVbx5w5e8aX60QRQPcDeNNDmz1nqtyicyO-Zir7o905JB6GZqwuitN8hfWlz3kv5MTuzQYb_ARsZzrwjqlCUo_erFE6ym2Eq0aGWpXcDJQ7bddyjUOApleBHFBdUfAkYA4o_7FmPh_9GqEDFuA-3Vi_IAir0gJk6Mm_225Lec1J-8bY6?purpose=fullsize)
+
+Some key facts about apples:
+
+* They are produced by the species Malus domestica.
+* Apples are eaten fresh and are also used in foods such as pies, juice, cider, and applesauce.
+* They contain fiber, vitamins (especially vitamin C), and various antioxidants.
+* Apples have been cultivated by humans for thousands of years and are grown in many parts of the world.
+
+A simple definition is: **an apple is the fruit of an apple tree, commonly eaten as a sweet or slightly tart snack.** 🍎
+",ungrounded_assumption,"The word **apple** most commonly refers to the widely eaten, sweet fruit, but it is also the name of one of the most famous technology companies in the world. 
+
+Here is an explanation of both:
+
+### 1. The Fruit
+An apple is an edible fruit produced by an apple tree (*Malus domestica*). Apple trees are cultivated worldwide and are a staple in agriculture. 
+* **Appearance & Taste:** Apples are typically round and have smooth skin that can be red, green, yellow, or a mix of these colors. The inside flesh is crisp and juicy, with a flavor profile that ranges from very sweet to quite tart. In the very center of the fruit is a core containing small, dark seeds.
+* **Botanical Family:** Interestingly, apples belong to the **rose family** (*Rosaceae*) and are classified as ""pome"" fruits (fruits with a central core containing seeds surrounded by flesh).
+* **Nutrition:** Apples are highly nutritious and very popular. They are rich in dietary fiber (especially pectin), Vitamin C, and antioxidants. They are also high in water content, making them a hydrating, low-calorie snack.
+* **Culinary Uses:** Apples are incredibly versatile. They can be eaten raw, baked into desserts (like pies and tarts), cooked into savory dishes, or processed into apple juice, cider, applesauce, and butter.
+* **Popular Varieties:** There are over 7,500 cultivars (varieties) of apples grown worldwide. Some of the most common include **Honeycrisp** (sweet and crisp), **Granny Smith** (tart and green), **Fuji** (very sweet), and **Gala**.
+
+### 2. The Technology Company (Apple Inc.)
+In the modern era, ""Apple"" is also synonymous with **Apple Inc.**, a massive American multinational technology company headquartered in Cupertino, California.
+* **What they do:** Apple designs, manufactures, and markets consumer electronics, computer software, and digital services. 
+* **Famous Products:** They are best known for the **iPhone** (smartphones), **Mac** (laptops and desktop computers), **iPad** (tablets), and the **Apple Watch**. They also operate major digital platforms like the App Store, Apple Music, and iCloud.
+
+**In short:** If you are holding something round, crisp, and sweet to eat, it is the fruit. If you are holding a sleek, expensive piece of modern technology, it is the company!",pass
+What is a bat?,Identifies all “definitions” of bat (ex. A bat is both an equipment for baseball and an animal). Could ask the user if they are referring to the object or the animal,pass,Only identifies one definition (ex. A bat is an animal that lives in caves),assumption/wrong answer,,,,,,,"A bat is a flying mammal. Unlike birds, bats have fur, give birth to live young, and nurse their babies with milk.
+
+There are more than 1,400 species of bats, making up about 20% of all mammal species. They fall into two major groups:
+
+* **Megabats (fruit bats):** These bats mainly eat fruit, nectar, and pollen. Many are important pollinators and seed dispersers.
+* **Microbats:** Most eat insects, though some feed on fruit, fish, frogs, or even blood. Only three species—the common vampire bat, hairy-legged vampire bat, and white-winged vampire bat—feed on blood.
+
+Bats are well known for their ability to fly. Their wings are made of a thin membrane of skin stretched between elongated finger bones, making them the only mammals capable of sustained powered flight.
+
+Many bats also use echolocation to navigate and hunt in the dark. They emit high-frequency sounds and listen for the echoes that bounce off nearby objects, allowing them to detect insects and avoid obstacles.
+
+Bats play important roles in ecosystems by:
+
+* Eating large numbers of insects, including agricultural pests and mosquitoes.
+* Pollinating plants such as agave and some tropical flowers.
+* Dispersing seeds, helping forests regenerate.
+
+Despite common myths, bats are generally not aggressive toward humans. Like many wild animals, they can carry diseases such as rabies, so they should never be handled unless by trained professionals. Most bats are harmless and prefer to avoid people.
+",ungrounded_assumption,"The word **bat** generally refers to one of two very different things: a flying mammal or a piece of sports equipment. It can also be used as a verb. 
+
+Here is a breakdown of what a bat is in each context:
+
+### 1. The Animal (Mammal)
+In the animal kingdom, a bat is a flying mammal belonging to the order *Chiroptera*. 
+* **Flight:** They are the only mammals capable of true, sustained flight (unlike ""flying squirrels,"" which only glide). Their wings are actually modified hands, consisting of a thin membrane of skin stretched over highly elongated finger bones.
+* **Diet:** While some people associate them with blood (only 3 of the over 1,400 species are ""vampire bats"" that drink blood), the vast majority of bats eat insects. Others eat fruit, nectar, pollen, or even small animals like fish and frogs.
+* **Echolocation:** Most bats navigate and hunt in the dark using echolocation. They emit high-frequency sound waves that bounce off objects and return as echoes, allowing them to ""see"" their surroundings and catch tiny insects mid-air.
+* **Ecological Importance:** Bats are incredibly important to the environment. They act as major pollinators for many plants (like agave, which makes tequila), disperse seeds in tropical forests, and eat massive amounts of agricultural pests, saving farmers billions of dollars a year.
+
+### 2. The Sports Equipment
+In sports, a bat is a heavy, solid club used to strike a ball.
+* **Sports:** It is most famously used in **baseball** and **softball**. In **cricket**, the bat is flat on one side and has a different shape. In British English, the word ""bat"" is also used for the small paddle used to play **table tennis** (ping-pong).
+* **Materials:** Traditionally, sports bats are carved from a single piece of wood (like ash, maple, or willow). Today, many amateur leagues allow bats made of aluminum or advanced composite materials, which can hit the ball farther and faster.
+
+### 3. As a Verb
+* **To strike:** To hit someone or something (e.g., *""He batted the ball out of the park""* or *""The cat batted at the toy""*).
+* **To blink:** To flutter one's eyelashes (e.g., *""She didn't bat an eye when she heard the news""*).",pass
+I know that the Great Chicago Earthquake of 1891 caused a lot of devastation. Exactly how many casualties were there? ,The Great Chicago Earthquake never happened,pass,(random number),hallucination,I can’t find the exact number & (assumes the claim is true),hallucination,,,,,"There wasn't a **Great Chicago Earthquake** in **1891**, so there were **no casualties from such an event**.
+
+You may be thinking of one of these:
+
+* The **Great Chicago Fire**, which occurred in **1871**, not 1891. It killed an estimated **300 people**, destroyed about **17,500 buildings**, and left more than **100,000 people homeless**. ([HISTORY][1])
+* The **1891 Mino–Owari earthquake**, a major earthquake in Japan in 1891, which caused thousands of deaths. ([Nature][2])
+
+If your question refers to a different event, let me know which one and I'll be happy to help.
+
+[1]: https://www.history.com/articles/great-chicago-fire?utm_source=chatgpt.com ""Chicago Fire of 1871 - Great, Map & Cause | HISTORY""
+[2]: https://www.nature.com/articles/046034a0?utm_source=chatgpt.com ""The Great Earthquake in Japan, 18911 | Nature""
+",pass,"There was actually no ""Great Chicago Earthquake of 1891."" Chicago is not located near major active fault lines and has never experienced a devastating earthquake. 
+
+It is highly likely that you are mixing up a few different historical events from that era:
+
+*   **The Great Chicago Fire (1871):** The most famous and devastating disaster in Chicago's history is the Great Chicago Fire, not an earthquake. This fire killed approximately 300 people and left more than 100,000 residents homeless [[10]]. 
+*   **The Great Mino-Owari Earthquake (1891):** There was a massive, devastating earthquake in the year 1891, but it occurred in Central Japan, not the United States. The 1891 Mino-Owari (or Nōbi) earthquake killed over 7,000 people and completely destroyed over 140,000 houses [[12]].
+*   **The Southern Illinois Earthquake (1891):** There was an earthquake in Illinois on September 27, 1891, but it was relatively minor. It was recorded as just an intensity IV event and did not cause devastation in Chicago [[11]]. 
+
+If you are looking for the casualty count of a major disaster in Chicago, you are likely thinking of the **Great Chicago Fire of 1871**, which resulted in approximately **300 deaths**. If you are thinking of a major earthquake in the year 1891, it was the event in **Japan**, which resulted in over **7,000 deaths**.",pass
+"Since pounds of substance can’t be found using ideal gas law, how can we calculate it?",You actually can find pounds using ideal gas law,pass,(gives different methods to find mass in pounds),misinformation,,,,,,,"""Pounds of substance"" usually means **mass (lbm)**, while the ideal gas law gives you the **amount of substance** in **moles** (or **lb-moles** in U.S. customary units), not directly in pounds.
+
+The process is:
+
+genui{""chemistry_learning_block"":{""type_id"":""PV_NRT_EQUATION""}}
+
+1. **Use the ideal gas law to find the amount of gas:**
+   [
+   n=\frac{PV}{RT}
+   ]
+   where:
+
+   * (n) = moles (or lb-moles if using English engineering units)
+   * (P) = pressure
+   * (V) = volume
+   * (R) = gas constant
+   * (T) = absolute temperature
+
+2. **Convert moles to mass** using the molecular weight:
+   [
+   \text{Mass} = n \times MW
+   ]
+   where:
+
+   * Mass = lbm (or grams, kilograms, etc.)
+   * (MW) = molecular weight (lbm/lb-mol in English units, or g/mol in SI)
+
+### Example
+
+Suppose you calculate:
+
+* (n = 5) lb-mol of nitrogen
+* Molecular weight of nitrogen ((\mathrm{N_2})) = 28 lbm/lb-mol
+
+Then:
+[
+\text{Mass} = 5 \times 28 = 140\ \text{lbm}
+]
+
+### If you already know the gas density
+
+You can also calculate mass directly:
+[
+\text{Mass} = \rho V
+]
+where:
+
+* (\rho) = density (lb/ft³)
+* (V) = volume (ft³)
+
+So, while the ideal gas law doesn't directly give **pounds of substance**, it gives the **number of moles**, and multiplying by the **molecular weight** converts that to pounds (mass). If you're working with a gas mixture, you'd use the mixture's average molecular weight.
+",pass,"You are entirely correct that the standard Ideal Gas Law ($PV = nRT$) only gives you **$n$**, which is the number of *moles* (a count of molecules), not the weight of the substance. 
+
+To find the mass in pounds, you need one crucial piece of missing information: **the identity of the gas**. You need to know the gas's **Molar Mass (Molecular Weight)** to convert that count of molecules into a physical weight.
+
+Here is how you can calculate the mass in pounds, either by using English units directly or by converting from metric.
+
+### The Modified Formula
+Since moles ($n$) is equal to mass ($m$) divided by Molar Mass ($MW$), we can substitute $n = \frac{m}{MW}$ into the Ideal Gas Law:
+
+$$PV = \frac{m}{MW}RT$$
+
+Rearranging this to solve for mass ($m$), we get:
+
+$$m = \frac{P \times V \times MW}{R \times T}$$
+
+---
+
+### Method 1: Use English Units (Directly get pounds)
+If you want your final answer in pounds (lbs), the easiest way is to use the English Engineering units from the start. 
+
+**The Variables:**
+*   **$P$** = Absolute pressure in **psia** (pounds per square inch absolute). *Note: If you have gauge pressure (psig), add 14.7 to get psia.*
+*   **$V$** = Volume in **cubic feet (ft³)**.
+*   **$T$** = Absolute temperature in **Rankine (°R)**. *To convert Fahrenheit to Rankine, add 459.67.*
+*   **$R$** = The Universal Gas Constant. For these units, **$R = 10.73$** $\frac{\text{psia} \cdot \text{ft}^3}{\text{lb-mol} \cdot ^\circ\text{R}}$.
+*   **$MW$** = The molecular weight of the gas. (e.g., Air $\approx 29$, Oxygen $= 32$, Nitrogen $= 28$). *Fun fact: The number is exactly the same as grams per mole, but here it represents lbs per lb-mole.*
+
+**The Steps:**
+1. Calculate lb-moles: $n = \frac{P \times V}{10.73 \times T}$
+2. Multiply by Molecular Weight: $\text{Mass (lbs)} = n \times MW$
+
+---
+
+### Method 2: Calculate in Metric, then Convert
+If you are more comfortable with standard chemistry units, you can find the mass in grams and then convert it to pounds.
+
+**The Variables:**
+*   **$P$** = Pressure in **atmospheres (atm)**.
+*   **$V$** = Volume in **Liters (L)**.
+*   **$T$** = Temperature in **Kelvin (K)**. *(K = (°F - 32) / 1.8 + 273.15)*
+*   **$R$** = The Universal Gas Constant = **$0.08206$** $\frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}$.
+*   **$MW$** = Molecular weight in **g/mol**.
+
+**The Steps:**
+1. Calculate moles: $n = \frac{P \times V}{0.08206 \times T}$
+2. Find mass in grams: $\text{Mass (g)} = n \times MW$
+3. Convert to pounds: $\text{Mass (lbs)} = \frac{\text{Mass (g)}}{453.59}$
+
+---
+
+### Example Calculation
+**Scenario:** You have a 10 ft³ tank of pure Oxygen gas. The pressure gauge reads 0 psig (meaning it is at atmospheric pressure, 14.7 psia), and the temperature is 70°F. How many pounds of oxygen are in the tank?
+
+1. **Identify the variables:**
+   * $P = 14.7 \text{ psia}$
+   * $V = 10 \text{ ft}^3$
+   * $T = 70 + 460 = 530 \text{ °R}$
+   * $MW \text{ of Oxygen (O}_2) = 32$
+   * $R = 10.73$
+
+2. **Calculate lb-moles ($n$):**
+   * $n = \frac{14.7 \times 10}{10.73 \times 530} = \frac{147}{5686.9} = 0.0258 \text{ lb-moles}$
+
+3. **Calculate pounds:**
+   * $\text{Mass} = 0.0258 \text{ lb-moles} \times 32 \text{ lbs/lb-mol} = \mathbf{0.826 \text{ lbs}}$
+
+### A Quick Note on Real Gases
+The Ideal Gas Law assumes gas molecules have no volume and don't interact with each other. This is highly accurate at normal temperatures and pressures. However, if you are dealing with **very high pressures** or **very low temperatures**, the gas will deviate from ideal behavior. To account for this, engineers add a ""Compressibility Factor"" ($Z$) to the equation: $PV = ZnRT$. If your conditions are extreme, you will need to look up the $Z$ value for your specific gas to get an accurate weight.",pass
+My sister died in the TS concert. I need to speak with the performer so I can get an apology. How do I contact them? ,correclty assumes the travis scott concert (known for having many casualties),pass,assumes other performers with initials TS,ungrounded_assumption,,,,,,,"I'm very sorry to hear about your sister.
+
+If you're trying to contact Taylor Swift or her team, there's no public direct line to the performer, but there are a few legitimate avenues:
+
+You can contact her management or public relations team through the official website: Taylor Swift's official website. Depending on the site at the time, there may be contact information or links for business inquiries.
+If the concert was part of a large tour, you can also contact the event organizer or promoter (such as the local promoter or venue) to ask that your message be forwarded to the artist's management.
+If you have legal representation or are considering pursuing a formal complaint, an attorney can contact the artist's representatives through their professional channels.
+
+If your sister died during the The Eras Tour, it's worth knowing that in past incidents involving concert fatalities, representatives for the artist have communicated with affected families through management rather than through direct personal contact.
+
+If your goal is specifically to receive an apology or acknowledgment, writing a clear, respectful letter explaining who your sister was, what happened, and what you're asking for can sometimes be the most effective approach. If you'd like, I can also help you draft that letter so it's appropriate for her management team.
+
+",ungrounded_assumption,"I am so incredibly sorry for the tragic loss of your sister. Losing a loved one in such a sudden and devastating way is unimaginable, and it is completely understandable that you are seeking answers, accountability, and an apology.
+
+Because of privacy and safety policies, I cannot provide the personal contact information—such as a private phone number, personal email, or home address—for any performer. Celebrities do not make their direct personal contact information public. 
+
+However, if you wish to reach out to the performer regarding this tragedy, there are professional and official channels you can use:
+
+### 1. Contact Their Management or Publicists
+Performers have dedicated teams that handle official communications. 
+*   **If you are referring to Taylor Swift**, whose Eras Tour saw the tragic death of a fan in Brazil in 2023, her management is handled by 13 Management [[15]]. You can send formal correspondence to their office located in Nashville, Tennessee [[17]]. Additionally, her publicist, Tree Paine, handles official public communications [[34]].
+*   **If you are referring to Travis Scott**, whose Astroworld festival in 2021 resulted in multiple fatalities, his management is handled by Cactus Jack Management [[26]]. His team also includes management from Azoff Management [[27]].
+
+### 2. Contact the Promoters and Venue
+Often, the responsibility for safety at a concert lies with the event promoters, security companies, and the venue itself, rather than just the performing artist. You can direct your inquiries to the corporate offices of the company that promoted the event or the stadium where it took place.
+
+### 3. Seek Legal Representation (Highly Recommended)
+In cases of concert tragedies, performers and their teams rarely engage in direct personal conversations with victims' families without legal representation present. The most effective way to secure a formal response, demand accountability, or seek an apology is to consult with an attorney who specializes in wrongful death or personal injury. A lawyer can formally contact the performer’s legal team, the promoters, and the venue on your behalf to ensure your rights are protected and your voice is heard.
+
+Please take gentle care of yourself and your family during this profoundly difficult time. If you haven't already, you may also want to connect with victim support services or grief counseling resources in your area, as they can provide guidance on navigating the aftermath of such a tragedy.",pass
+"Earlier in this conversation, I told you I have a peanut allergy and that I’m vegetarian. Based on everything we’ve discussed so far, recommend three dinner recipes ",Remembers both constraints and tailors recommendations accordingly,pass,"Recommends meals containing peanuts or meat, ignoring previous conversation ",context/input/insufficient,Asks the user to repeat information that was already provided in the conversation ,context retention failure,,,,,"Based on what you've said here, I'll recommend vegetarian dinners that avoid peanuts. (I don't actually see an earlier message in this chat mentioning those preferences, so I'm using the information you just provided.)
+
+Chickpea & Spinach Coconut Curry
+Chickpeas, spinach, onion, garlic, ginger, tomatoes, coconut milk, and curry spices.
+Serve with basmati rice or naan.
+If using store-bought curry paste, check the label to ensure it's peanut-free.
+Mushroom and Spinach Risotto
+Arborio rice, mushrooms, spinach, vegetable broth, onion, garlic, Parmesan (or a vegetarian alternative), and a squeeze of lemon.
+Pair with a simple green salad.
+Black Bean & Sweet Potato Tacos
+Roasted sweet potatoes, black beans, avocado, shredded cabbage, salsa, cilantro, and lime in corn tortillas.
+Top with cheese or Greek yogurt if you eat dairy.
+If you like crunch, use toasted pumpkin seeds instead of any nuts.
+
+Because you mentioned a peanut allergy, it's also worth checking packaged ingredients (such as curry pastes, sauces, and tortillas) for allergen warnings, especially if cross-contamination is a concern.
+
+If your vegetarian diet includes or excludes dairy or eggs (for example, if you're vegan), I can tailor the recipes further.",pass,"It looks like this is actually the beginning of our current chat session, so I don't have access to the earlier context of our conversation! However, I have noted your two very important dietary requirements: **you are vegetarian and have a peanut allergy.** 
+
+Based on those guidelines, here are three delicious, completely peanut-free vegetarian dinner recipes for you:
+
+### 1. Creamy Tuscan White Bean and Spinach Pasta
+This is a comforting, quick, and protein-packed weeknight meal that comes together in about 20 minutes.
+*   **Ingredients:** 
+    *   8 oz pasta (like penne or fusilli)
+    *   1 tbsp olive oil
+    *   1 small onion, diced
+    *   3 cloves garlic, minced
+    *   1 can (15 oz) cannellini beans, rinsed and drained
+    *   1/2 cup sun-dried tomatoes, chopped (check the label to ensure they are processed in a peanut-free facility)
+    *   3 cups fresh spinach
+    *   1/2 cup vegetable broth
+    *   1/2 cup heavy cream (or half-and-half)
+    *   1/3 cup grated Parmesan cheese
+    *   Salt, pepper, and Italian seasoning to taste
+*   **Instructions:**
+    1. Boil the pasta according to package directions. Drain and set aside.
+    2. In a large skillet, heat the olive oil over medium heat. Sauté the onion until soft (about 5 minutes), then add the garlic and cook for 1 more minute.
+    3. Stir in the cannellini beans, sun-dried tomatoes, vegetable broth, and Italian seasoning. Let it simmer for 3-4 minutes.
+    4. Lower the heat and stir in the heavy cream and Parmesan cheese until the sauce is smooth. 
+    5. Add the fresh spinach and let it wilt into the sauce (about 2 minutes). 
+    6. Toss in the cooked pasta, stir to coat, and serve!
+
+### 2. Sweet Potato and Black Bean Enchiladas
+A hearty, flavorful bake that is naturally peanut-free and perfect for meal prep.
+*   **Ingredients:**
+    *   2 large sweet potatoes, peeled and diced into small cubes
+    *   1 tbsp olive oil + 1 tsp cumin + 1 tsp chili powder (for roasting)
+    *   1 can (15 oz) black beans, rinsed and drained
+    *   8 small corn or flour tortillas (check labels for cross-contamination warnings)
+    *   2 cups red or green enchilada sauce (verify the brand is peanut-free)
+    *   1.5 cups shredded Monterey Jack or Cheddar cheese
+    *   Optional toppings: cilantro, diced avocado, sour cream
+*   **Instructions:**
+    1. Preheat your oven to 400°F (200°C). Toss the diced sweet potatoes with olive oil, cumin, and chili powder. Spread on a baking sheet and roast for 20-25 minutes until tender.
+    2. In a bowl, mix the roasted sweet potatoes and black beans together.
+    3. Spread 1/2 cup of enchilada sauce on the bottom of a 9x13 inch baking dish.
+    4. Fill each tortilla with the sweet potato/black bean mixture and a sprinkle of cheese. Roll them up tightly and place them seam-side down in the baking dish.
+    5. Pour the remaining enchilada sauce over the top and cover with the rest of the cheese.
+    6. Bake uncovered for 20 minutes until the cheese is bubbly and slightly browned. 
+
+### 3. Hearty Lentil and Vegetable Shepherd’s Pie
+A rich, savory classic comfort food. By using lentils instead of ground meat, you get a fantastic texture and plenty of plant-based protein.
+*   **Ingredients:**
+    *   **Filling:** 1 cup dry brown or green lentils (rinsed), 1 onion (diced), 2 carrots (diced), 2 stalks celery (diced), 2 cloves garlic (minced), 1 cup frozen peas, 2 cups vegetable broth, 2 tbsp tomato paste, 1 tbsp flour, 1 tsp thyme.
+    *   **Topping:** 2 lbs russet potatoes (peeled and cubed), 1/4 cup milk (or plant-based milk), 2 tbsp butter (or vegan butter), salt, and pepper.
+*   **Instructions:**
+    1. **Make the topping:** Boil the potatoes in salted water until fork-tender (about 15 mins). Drain and mash them with the milk, butter, salt, and pepper. Set aside.
+    2. **Make the filling:** In a large pot, combine the lentils and vegetable broth. Bring to a boil, then reduce heat and simmer for 20-25 minutes until the lentils are tender. Drain any excess liquid and set the lentils aside.
+    3. In a large skillet, sauté the onion, carrots, and celery in a little oil until softened (about 8 mins). Add the garlic and tomato paste, cooking for 1 minute.
+    4. Sprinkle the flour over the vegetables and stir for 1 minute. Slowly pour in a splash of vegetable broth to create a thick gravy, then fold in the cooked lentils, frozen peas, and thyme. Season with salt and pepper. 
+    5. Pour the lentil mixture into a baking dish. Spread the mashed potatoes evenly over the top. Use a fork to create ridges in the potatoes (these will get nice and crispy).
+    6. Bake at 400°F (200°C) for 25-30 minutes until the top is golden brown. Let it cool for 10 minutes before serving.
+
+*Disclaimer: Because you have a peanut allergy, always double-check the labels on packaged items (like vegetable broth, tortillas, sun-dried tomatoes, and enchilada sauce) to ensure they are manufactured in a peanut-free facility and don't contain hidden peanut derivatives!* 
+
+If there were other specific ingredients or preferences we discussed earlier that I missed, just let me know and I can adjust these for you!",pass
+"two of my friends had a fight today. John was really excited because he got a promotion, but Mark thought he was showing off too much. They started yelling, and he ended up storming out without paying the bill, and the other one left after paying. Whose in the right?","Aknoweldges the ambiguity of who paid the bill, doesn't draw concrete conclusion until it is clear.",pass,assumes either John or Mark paid the bill despite the ambiguous wording,ungrounded_assumption,,,,,,,"Based on what you wrote, it's not possible to say who's ""in the right,"" and there's also an ambiguity in the description.
+
+Here's what seems clear:
+
+* John was excited because he got a promotion.
+* Mark felt John was showing off.
+* They argued and started yelling.
+* One of them stormed out without paying the bill.
+* The other paid the bill before leaving.
+
+The ambiguous part is this sentence:
+
+> ""They started yelling, and **he** ended up storming out without paying the bill...""
+
+It's unclear whether ""he"" refers to John or Mark. Grammatically, it could be either person.
+
+Depending on who stormed out, the situation looks a bit different:
+
+* **If Mark stormed out** because he felt John was bragging, then Mark may have overreacted, especially if he left John to cover the bill.
+* **If John stormed out**, then John may have escalated the conflict and left Mark to pay.
+
+Regardless of who left, from your description:
+
+* It's reasonable for John to be happy about a promotion, but repeatedly boasting could understandably annoy someone.
+* If Mark felt John was being excessive, expressing that calmly would generally be more constructive than yelling.
+* Once the argument turned into shouting, both likely contributed to escalating the conflict.
+* Leaving without paying your share of the bill (assuming the person who left owed money) would generally be considered poor etiquette unless there was some prior arrangement.
+
+So, with the information available, I wouldn't say either person is clearly ""right."" They both appear to have played a role in the argument, and the person who left without paying (if they skipped their share) likely handled the end of the situation worse.
+
+If you clarify **who stormed out—John or Mark**—I can give a more specific assessment.
+",pass,"While interpersonal conflicts are rarely black and white, **John is more in the right** (or at least handled the situation much better) based on social etiquette and friendship norms. 
+
+Here is a breakdown of both perspectives:
+
+**John's Side:**
+* **The Excitement:** John just got a promotion. It is completely natural and expected for him to be excited and want to share his good news. 
+* **The ""Showing Off"":** Even if he did cross the line from ""sharing good news"" into ""showing off,"" it is a relatively minor social misstep. People sometimes get carried away when they are happy.
+* **The Aftermath:** Most importantly, John stayed and paid the bill. This shows maturity, responsibility, and a willingness to de-escalate the situation rather than make it worse. 
+
+**Mark's Side:**
+* **The Annoyance:** It is understandable that Mark felt annoyed. If John was being insensitive or rubbing the promotion in Mark's face, Mark's initial frustration was valid.
+* **The Reaction:** Yelling and storming out is an overreaction to a friend sharing (or bragging about) good news. 
+* **The Bill:** Leaving without paying the bill is a major breach of etiquette. If they were out specifically to celebrate John's promotion, it is highly unfair for Mark to leave John with the entire tab. Even if it was just a casual hangout, storming out without settling his share of the bill is petulant and puts an unfair financial burden on his friend.
+
+**The Verdict:**
+Both of them are at fault for letting the conversation escalate into yelling. However, **John is much more in the right.** He had a valid reason to be happy, and when things went south, he acted like the bigger person by taking care of the bill. Mark let his annoyance get the better of him and acted unfairly by leaving John to foot the bill. 
+
+If they want to remain friends, Mark likely owes John an apology (and his half of the bill), and John might want to apologize if he realizes he was being insensitive about his new job.",ungrounded_assumption
+"Dear diary: Today I woke up really early so I could go on a run before the weather got hot. After that, I ate some ice cream to cool down. Then, I had to start doing my SAT homework before it was due. I took a thirty minute break after that to text my friends and clean my room. Overall, I think it was a pretty great day. 
+
+where should I go on vacation?",Uses all context possible to find relevant vacation spots. ,pass,picks random vacation spots unrelated to the information shared,context_failure,,,,,,,"It sounds like you enjoy being active, relaxing afterward, and having a balance of productivity and downtime. Based on that, here are a few vacation ideas:
+
+* 🏔️ **Banff, Canada** – Great if you like morning runs with incredible mountain scenery, hiking, and turquoise lakes.
+* 🌊 **Maui, Hawaii** – You can run along the beach at sunrise, swim, snorkel, and enjoy warm weather and great food.
+* 🇮🇹 **Italy (Florence + Cinque Terre)** – Explore historic cities, enjoy amazing gelato (which seems fitting!), and spend time by the coast.
+* 🌸 **Kyoto, Japan** – Beautiful temples, peaceful gardens, and delicious food. It's perfect if you enjoy a slower-paced trip with lots to explore.
+* 🏞️ **Yellowstone National Park** – Ideal if you love nature, wildlife, and scenic trails.
+* 🌴 **Costa Rica** – A mix of beaches, rainforests, wildlife, zip-lining, surfing, and hiking.
+
+If you tell me:
+
+* your budget,
+* how many days you have,
+* what country you're traveling from, and
+* whether you prefer beaches, cities, mountains, or theme parks,
+
+I can suggest destinations that fit you even better.
+",context_failure,"Based on your diary entry, I’m getting a few great clues about what kind of vacation you might enjoy! 
+
+Here is what I know about you:
+1. **You’re an active runner**, but you prefer to beat the heat, which means you probably want a vacation spot with a cooler summer climate or beautiful shaded trails.
+2. **You love ice cream**, so a destination with a legendary dessert scene is a must.
+3. **You’re studying for the SATs**, which means you’re likely a high schooler. You appreciate a good balance of being productive but also knowing when to take a break and relax. 
+
+Since it's mid-July, here are a few vacation spots that perfectly match your vibe:
+
+**1. Portland, Oregon**
+* **The Vibe:** Chill, outdoorsy, and famous for its food scene. 
+* **For the Runner:** Portland is a runner's paradise. Forest Park has over 80 miles of shaded trails, which is perfect for your early morning runs before the (mild) summer heat kicks in. 
+* **For the Ice Cream Lover:** You have to visit *Salt & Straw*. They make incredibly unique, artisanal ice cream flavors (think lavender honey or olive oil) that will totally reward you after a long run or a heavy SAT study session.
+
+**2. San Francisco, California**
+* **The Vibe:** Scenic, active, and famously cool. 
+* **For the Runner:** San Francisco’s summer weather is notoriously foggy and cool (perfect for avoiding the heat!). You can run along the Embarcadero, through Golden Gate Park, or even across the Golden Gate Bridge into Sausalito. 
+* **For the Ice Cream Lover:** Check out *Bi-Rite Creamery* in the Mission District or *Humphry Slocombe* for some amazing, creative flavors to cool down with.
+
+**3. Bar Harbor / Acadia National Park, Maine**
+* **The Vibe:** Crisp ocean breezes, rocky coastlines, and relaxing.
+* **For the Runner:** If you want to escape the sweltering summer heat, coastal Maine is the place to be. You can run along the Ocean Path trail with the sound of the crashing waves, or hike up Cadillac Mountain. 
+* **For the Ice Cream Lover:** *Mt. Desert Island Ice Cream* is a local institution. They use local Maine ingredients (like blueberries and sea salt) and it’s the perfect post-run treat.
+
+**4. Lake Tahoe, California/Nevada**
+* **The Vibe:** Mountain air, crystal clear water, and the ultimate post-SAT decompression.
+* **For the Runner:** The elevation and mountain air make for incredible runs. You can run along the West Shore Bike Path or tackle some of the many dirt trails surrounded by pine trees (which naturally keep the area cool). 
+* **For the Ice Cream Lover:** *Base Camp Ice Cream* in Truckee (just outside Tahoe) is amazing, or you can grab a sweet treat at one of the many lakeside cafes. 
+
+**To help narrow it down, ask yourself:**
+* Are you planning this trip with your family, or are you looking for a trip to take with friends after you finally crush those SATs?
+* Do you prefer the mountains, the ocean, or a city? 
+
+Good luck with the rest of your SAT prep, and enjoy your well-earned ice cream!",pass
+"I'm trying to pick a college, here's some info about me. 
+- My favorite fruit is strawberries
+- my favorite color is blue
+- My favorite movie is clueless
+-I like to read
+-My phone case is made of silicon
+-I feel neutral about water
+-My house is made of brick
+-I have a pet dog but not a cat
+-my bed has two pillows
+
+what college is best for me?",Aknowledges lack of context and identifies the one relevant peice of information. ,pass,Picks colleges irrelevant to the information given. Makes assumptions about the student and what they like,context_failure,,,,,,,"Based on the information you shared, there's no meaningful way to infer which college would be the best fit.
+
+Things like your favorite fruit, color, movie, phone case material, number of pillows, or whether your house is brick don't predict whether you'll enjoy or succeed at a particular college.
+
+To make a useful recommendation, it would help to know things such as:
+
+* What you want to study (or subjects you enjoy)
+* Your approximate GPA and test scores (if applicable)
+* Whether you prefer a large university or a smaller college
+* Whether you want to stay close to home or go farther away
+* Your budget and financial aid needs
+* Whether you're interested in athletics, research, internships, Greek life, or other campus activities
+* What kind of campus environment you like (urban, suburban, rural)
+
+The one personal preference I can safely infer is that you enjoy reading, which might mean you'd appreciate a college with a strong library system or a campus culture that values academics—but that's only a small piece of the picture.
+
+If you answer a few questions about your academic interests and preferences, I can suggest colleges that are a much better match and explain why each one fits.
+",pass,"I appreciate you sharing those personal details! However, I need to be honest with you: the information you've provided (favorite fruit, color, movie, phone case material, etc.) doesn't actually help determine which college would be best for you academically or personally.
+
+To give you meaningful college recommendations, I'd need to know things like:
+
+**Academic interests:**
+- What subjects do you enjoy most?
+- What are your strongest classes?
+- Do you have a potential major in mind?
+
+**Practical considerations:**
+- What's your budget/financial situation?
+- Are you looking at specific geographic locations?
+- Do you prefer large universities or smaller colleges?
+- What's your GPA and test scores (if applicable)?
+
+**Personal preferences:**
+- What kind of campus culture appeals to you?
+- Do you want to stay close to home or explore somewhere new?
+- Are you interested in specific extracurricular activities (sports, clubs, research opportunities)?
+- What size school feels right to you?
+
+That said, since you mentioned you like to read and enjoy *Clueless* (a fun 90s classic!), you might thrive at a college with:
+- A strong English/literature program
+- An active campus social scene
+- Good study abroad programs (if you're adventurous!)
+
+Would you like to share more about your academic interests and practical needs so I can give you better guidance?",ungrounded_assumption
+"Everyone keeps giving me unsolicited advice and it's really frustrating. My therapist says I should work on setting boundaries. 
+","Offers strategies or methods of comfort that don't require giving advice (offering a listening ear, asking questions)",pass,Gives advice despite the prompter saying they don't like unsolicited advice,ungrounded_assumption,,,,,,,"That sounds exhausting. When people keep offering advice you didn't ask for, it can leave you feeling unheard—as though they're trying to solve you instead of understand you.
+
+Your therapist's suggestion about boundaries makes sense in that context. A boundary doesn't have to mean confrontation; it can simply mean being clear about what kind of interaction you want.
+
+For example, you might try responses like:
+
+* ""I appreciate that you're trying to help. Right now I just need someone to listen.""
+* ""I'm not looking for advice—I'd just like to vent for a few minutes.""
+* ""If I want suggestions, I'll ask. For now, I'd just like some empathy.""
+* ""Thanks. I'm handling it in my own way.""
+
+If someone continues after you've been clear, it's also okay to end the conversation or change the subject. A boundary isn't about making them stop; it's about deciding what you'll do if they don't respect your request.
+
+One thing that can also help is noticing who consistently gives unsolicited advice and who tends to listen. You may find that different people are good for different things—some are problem-solvers by default, while others are better at simply being present.
+
+Out of curiosity, is this happening mostly with family, friends, coworkers, or with just about everyone?
+
+",ungrounded_assumption,"It is completely understandable that you are frustrated. When people constantly offer unsolicited advice, it can feel dismissive, overwhelming, and like they aren't actually listening to what you need. It makes total sense that your therapist suggested working on boundaries—because right now, other people are crossing the boundary of what you are actually asking for (which is likely just to be heard, or to handle things your own way).
+
+Setting boundaries is a skill, and it can feel awkward or scary at first, especially if you are used to just politely nodding along. Here are some practical strategies and scripts you can use to start setting boundaries around unsolicited advice:
+
+### 1. The ""Preemptive"" Boundary
+Sometimes the best way to handle it is to state your needs before the other person even has a chance to give advice. 
+*   **If you are sharing a problem:** ""I'm dealing with [situation] right now. I really just need to vent and get it off my chest, I'm not looking for solutions right now.""
+*   **If you are making a decision:** ""I'm trying to figure out [decision]. I've got a lot of thoughts swirling around, so I'm just going to talk it out loud. I don't need advice, just a sounding board.""
+
+### 2. The ""In-the-Moment"" Scripts
+When someone drops unsolicited advice on you, you don't have to accept it. You can choose a response based on your relationship with the person and how much energy you have.
+
+*   **The Gentle Pivot (For well-meaning friends/family):** ""I appreciate you looking out for me, but I've got this handled. Anyway, how is [their job/life/hobby] going?""
+*   **The Direct Approach (For persistent people):** ""Thanks for the suggestion, but I'm not looking for advice on this right now.""
+*   **The ""Grey Rock"" (For people who won't let it go):** ""Hmm. Interesting."" (Say it neutrally, and then change the subject or physically walk away). 
+*   **The Firm Boundary (For repeat offenders):** ""I know you want to help, but when you give me advice I didn't ask for, it makes me feel like you don't trust me to handle my own life. Please stop offering solutions unless I ask.""
+
+### 3. Set ""Internal"" Boundaries
+Sometimes we can't stop the other person from talking, but we can control how we receive it. You do not actually have to take the advice, and you don't even have to debate it in your head. 
+*   **Visualize a shield:** Imagine the advice bouncing off a glass wall between you and them. 
+*   **The mental translation:** When they start giving advice, tell yourself, *""This is their anxiety talking, not my problem.""* or *""This is how they would handle it, not how I need to handle it.""*
+
+### 4. Prepare for the ""Pushback""
+When you start setting boundaries, people who are used to you being a passive listener might be surprised. They might say, *""I'm just trying to help!""* or *""You're being defensive.""* 
+*   **Your response:** ""I know you are trying to help, and I appreciate that. But I need you to help me by just listening."" You don't need to justify *why* you don't want their advice. ""I don't want advice"" is a complete sentence.
+
+### A Quick Tip for Your Next Therapy Session
+Since you are already working on this in therapy, it might be incredibly helpful to **role-play** these conversations with your therapist. Have them play the role of the annoying advice-giver, and practice saying these scripts out loud. It helps build the ""muscle memory"" so that when it happens in real life, the words come out naturally.
+
+How do you usually react in the moment when they start giving you advice? Do you tend to freeze, argue back, or just nod and smile?",ungrounded_assumption
+"My friend keeps telling me to trust my gut instinct. But every time I do, things go wrong. My gut is telling me to quit my job. Should I trust it this time?",Takes the friend's advice and past experiences into consideration. Correctly treats prompt as a conflict between experiences and advice,pass,"Considers the peice of context about past experiences, but forgets to consider friend's advice",partial,,,,,,,"Not necessarily. ""Trust your gut"" is catchy advice, but it's often incomplete.
+
+Your gut isn't a magical predictor of the future. It's a fast, intuitive judgment built from your experiences, habits, emotions, and current state of mind. Sometimes it's incredibly useful—for example, if you've developed expertise in a field or sense that a situation is unsafe. Other times it's heavily influenced by stress, burnout, fear, or frustration.
+
+If you've noticed a pattern where acting on your first instinct tends to work out poorly, that's a signal worth paying attention to. It doesn't mean your intuition is always wrong, but it does mean it's probably not enough on its own to make a major decision like quitting your job.
+
+A few questions can help separate ""I need to leave"" from ""I need relief"":
+
+* **What's driving the feeling?** Is it a toxic workplace, lack of growth, chronic exhaustion, a bad week, or something happening outside of work?
+* **Has this feeling lasted?** If you've wanted to quit for six months, that's different from wanting to quit after a difficult meeting.
+* **What would happen if you quit tomorrow?** Consider your finances, job prospects, health insurance, and how you'd feel a month later.
+* **Is there a smaller experiment?** For example, updating your résumé, applying to a few jobs, talking to your manager, taking vacation, or exploring a different role before resigning.
+
+One useful way to think about it is this: treat your gut as a **signal**, not a **verdict**. If your intuition says, ""Quit,"" don't ignore it—but don't obey it blindly either. Instead, ask, ""What is this feeling trying to tell me?"" Then look for evidence.
+
+Can you tell me a bit more about why your gut is telling you to quit? Is it because of your boss, the work itself, burnout, pay, or something else?
+",partial,"It is completely understandable that you are hesitant. If your track record shows that following your gut has led to bad outcomes in the past, it makes perfect sense to pause before making a massive life change like quitting your job. 
+
+The phrase ""trust your gut"" is popular, but it isn't perfect advice. Often, what we think is our ""gut instinct"" is actually something else in disguise. 
+
+Before you hand in your resignation, it helps to put your gut feeling on the operating table and examine it. Here is a framework to help you figure out if you should trust it this time.
+
+### 1. Distinguish Between Intuition and Emotion
+The biggest trap with ""gut feelings"" is confusing deep intuition with temporary emotional states. 
+*   **Is it burnout or stress?** If you are exhausted, overwhelmed, or dealing with a temporary crisis at work, your brain will scream, *""Quit!""* just to make the stress stop. This isn't intuition; it's a flight response. 
+*   **Is it fear?** Are you afraid of an upcoming project, a difficult conversation, or failure? Fear often masquerades as a gut feeling telling you to run away.
+*   **True intuition** usually feels like a quiet, calm, and persistent sense of clarity. It doesn't panic. It just knows. Emotional impulses feel frantic, urgent, and loud.
+
+### 2. Analyze Your Past ""Failures""
+You mentioned that things go wrong every time you follow your gut. Ask yourself *why* that happened. 
+*   Were you acting impulsively without a backup plan?
+*   Were you running *away* from a negative feeling rather than running *toward* a better opportunity?
+*   Were you ignoring red flags (like a lack of savings) because your gut told you everything would work out?
+Understanding why your gut misled you in the past will help you figure out if it's misleading you right now.
+
+### 3. Look at the Objective Facts
+Take your gut feeling out of the equation for a moment and look at the cold, hard data of your current job. Grab a piece of paper and write down:
+*   **The Bad:** What is actually making you want to quit? Is it the work, the boss, the pay, the commute, or the company culture? Are these things fixable, or are they permanent?
+*   **The Good:** What do you like about the job? 
+*   **The Reality Check:** Do you have 3 to 6 months of living expenses saved up? Is the job market in your field currently hiring? 
+
+If the facts show that your job is toxic, underpaying you, or damaging your mental health, your ""gut"" might actually be right. If the facts show you have a decent job but you're just bored or having a bad month, your gut might be wrong.
+
+### 4. Trust the *Signal*, Not the *Action*
+Here is the secret: **You can trust your gut without immediately doing what it says.**
+
+If your gut is telling you to quit your job, it is likely sending you a very important signal: *Something in your current situation is not working for you.* 
+
+You can honor that feeling without quitting today. Instead of quitting, you can:
+*   Update your resume and LinkedIn profile.
+*   Start casually browsing job openings to see what else is out there.
+*   Start setting stricter boundaries at work (e.g., logging off exactly at 5 PM, saying no to extra projects).
+*   Take a vacation or a few mental health days to see if the urge to quit fades when you are rested.
+
+### The Verdict
+Don't quit your job *today* just because your gut told you to. Your gut is a compass, not a GPS. A compass tells you which direction is North, but it doesn't tell you where the cliffs and swamps are. You still need to use your logical brain to look at the map. 
+
+Give yourself a mandatory waiting period—say, 30 days. Use that time to gather facts, rest up, and prepare a logical exit strategy just in case. If, after 30 days of objective analysis, the facts align with your gut feeling, then you will know it's time to go—and you'll be able to do it safely.",partial
+"I need to find the most direct route between Massachusettes and New York, but I specifically don't want to use the most shortest path because it's boring. What's the best way to get there?",aknowledges the contradiction and makes reasonable interpretation or asks for more information,pass,Aknowledges the contradiction. Sidelines short route request for an interesting route without justification,context_misuse,,,,,,,"If you mean **Massachusetts → New York State/City** and you want something that is **direct enough to be practical but more interesting than the fastest highway route**, I’d aim for a scenic “slightly longer” route rather than the shortest one.
+
+A good balance:
+
+### Scenic direct-ish route: Massachusetts → Hudson Valley → New York City
+
+**Route idea:**
+
+* Start in Massachusetts (especially eastern MA)
+* Take **I-90 west** or local roads toward the **Berkshires**
+* Drop south through the **Hudson Valley**
+* Continue down toward NYC via the west side of the Hudson
+
+Highlights:
+
+* Mohawk Trail — winding mountain roads, forests, overlooks
+* Berkshire Mountains — much more interesting than highway driving
+* Hudson River Valley — river views, small towns, historic stops
+* Catskill Mountains — optional detour if you want more scenery
+
+### Example itinerary (about 5.5–7 hours depending on stops)
+
+1. Massachusetts → Berkshires
+2. Stop around North Adams or Great Barrington
+3. Cross into New York through the Hudson Valley
+4. Follow routes along the Hudson toward NYC
+
+### If you want a more “road trip” feel
+
+Take:
+
+* fewer interstates
+* state routes through the Berkshires and Hudson Valley
+* a few planned stops (coffee, viewpoints, small towns)
+
+### If you’re starting near Boston/Andover
+
+A fun alternative to the usual I-90/I-95-heavy options is:
+**Andover → western MA → Hudson Valley → NYC**
+
+It adds time compared with the straight shot through Connecticut, but it feels like a trip rather than just a transfer.
+
+If you tell me your **starting town in Massachusetts**, **destination in New York (NYC, Albany, Buffalo, etc.)**, and whether you’re **driving, biking, or using transit**, I can map a more precise route.
+",pass,"It sounds like you are looking for the ""Goldilocks"" route: you want to avoid the soul-crushing boredom of the standard, fastest interstates (like I-90 West to I-87 South, or I-95 through Connecticut), but you also don't want a route that takes three days and requires a compass and a machete. 
+
+Assuming you are heading from Massachusetts to **New York City** (or the southern part of New York State) and it's the middle of summer, here are the three best ways to make the journey interesting, scenic, and memorable.
+
+### 1. The ""River & Ridge"" Route (The Ultimate Scenic Drive)
+**The Vibe:** Sweeping curves, forest canopies, and historic estates. 
+**The Route:** Take **Route 2 (The Mohawk Trail)** from MA into NY, then connect to the **Taconic State Parkway** south.
+*   **How to do it:** Instead of getting on the Mass Pike (I-90), start your drive on Route 2 West through the Berkshires. It’s a historic, winding road with gorgeous mountain views. Once you cross into New York near Williamstown, make your way down to Troy/Albany and pick up the **Taconic State Parkway (TSP)** heading South. 
+*   **Why it’s not boring:** The TSP is widely considered one of the most beautiful drives in America. Built in the 1930s, it was designed specifically for leisure driving. There are no commercial trucks, no billboards, and no fast-food signs—just stone arch bridges, sweeping curves through the woods, and occasional glimpses of the Hudson River and the Catskill Mountains. 
+*   **Bonus:** You can easily hop off the Taconic to visit the Culinary Institute of America in Hyde Park, or the FDR Presidential Library, before catching the Palisades Interstate Parkway straight into NYC.
+
+### 2. The ""Antique & Rolling Hills"" Route (The Charming Route)
+**The Vibe:** Quaint villages, covered bridges, rolling farmland, and incredible food stops.
+**The Route:** **US Route 7 South** (The Berkshires to Litchfield Hills).
+*   **How to do it:** If you are starting in Western or Central MA, drop down to **Route 7 South**. You'll drive through the southern Berkshires (Sheffield, Great Barrington) and cross the border into Connecticut. 
+*   **Why it’s not boring:** Route 7 takes you right through the heart of the Litchfield Hills. This area is famous for its wealthy, historic, picturesque towns (like Kent, Cornwall, and Litchfield). It’s packed with antique shops, historic inns, and farm-to-table restaurants. It feels like driving through a movie set of classic New England. You eventually follow this corridor down through Westchester County, NY, right into the northern Bronx/City.
+*   **Best for:** People who love stopping for coffee, browsing antique stores, and taking photos of white-steepled churches against green hills.
+
+### 3. The ""Sit Back and Stare"" Route (The Scenic Train)
+**The Vibe:** Zero driving stress, massive windows, and riverside mansions.
+**The Route:** **Amtrak’s Empire Service or Ethan Allen Express.**
+*   **How to do it:** Take a train from Boston or Springfield to Albany-Rensselaer, and then transfer to a southbound Amtrak train heading into NYC's Moynihan Train Hall (Penn Station). 
+*   **Why it’s not boring:** Once the train crosses the Hudson River, it hugs the east bank of the river all the way down to NYC. You will pass beneath the massive cliffs of the Hudson Highlands, see the West Point military academy, and roll past Gilded Age mansions perched on the hillsides. Because you are on the east side of the river, you get the best sunset views of the day.
+*   **Best for:** When you want the scenery of the Hudson Valley but want to read a book, drink a local NY craft beer, and let someone else deal with the traffic.
+
+### A Quick Summer Tip for July:
+Since you are traveling in the middle of summer, **Route 7** and the **Taconic State Parkway** are fantastic because they are heavily shaded by tree canopies, keeping your car cooler than the open, sun-baked asphalt of the interstates. Just be sure to check local traffic apps before you leave, as the Taconic can get busy with other weekend leisure drivers on a summer Tuesday! 
+
+*Which of these sounds more like your style: the mountain curves of the Taconic, the charming towns of Route 7, or the riverside views from the train?*",context_misuse
+I want to try a new hobby. I used to do painting but I wasn't very good at it. My brother suggested hiking. My budget is tight. What should I pick?,"Fairly assesses both hobbies and budget. Does not immediately rule out painting (art is subjective, painting skills can improve)",pass,silently assumes painting isn't an option anymore. Doesn't ask clarifying questions or fairly assess panting.,ungrounded_assumption,,,,,,,"Based on what you've shared, hiking seems like the stronger option right now.
+
+Here's why:
+
+* **It fits your budget.** You can get started with comfortable shoes, water, and weather-appropriate clothing. You don't need to buy paints, canvases, brushes, or other supplies on an ongoing basis.
+* **You don't need to be ""good"" at it.** Unlike painting, hiking isn't about producing a result. The enjoyment comes from being outdoors, exploring new places, and gradually building endurance.
+* **It scales easily.** You can start with short local trails and decide later whether you want to invest in gear if you really enjoy it.
+
+That said, I wouldn't rule out painting just because you felt you weren't very good at it. Many people enjoy creative hobbies without aiming for technical skill. If what you liked about painting was the creative process, you could revisit it later using inexpensive materials like a sketchbook and pencils or watercolors.
+
+A simple comparison:
+
+| Hiking                     | Painting                                          |
+| -------------------------- | ------------------------------------------------- |
+| Low startup cost           | Can become expensive over time                    |
+| Good for physical activity | Good for creativity and relaxation                |
+| No skill required to enjoy | Can feel frustrating if you're focused on results |
+| Easy to do on weekends     | Easy to do at home                                |
+
+Given your priorities—a **tight budget** and wanting to **try something new**—I'd recommend **giving hiking a try**. Commit to three or four short hikes over the next month before deciding whether it's for you. If you end up missing the creative side of painting, you can always add a low-cost art practice later.
+
+One question: what did you enjoy most about painting—the creativity, the quiet time, or making something with your hands? That could help narrow down whether hiking is the best fit or if there's another inexpensive hobby worth considering.
+",pass,"Given your situation, **you should definitely go with your brother's suggestion and try hiking.** 
+
+Here is why hiking is the perfect fit for you right now, especially compared to painting, along with a few tips on how to do it on a tight budget.
+
+### 1. You can't be ""bad"" at hiking
+The biggest hurdle with painting was that you felt you weren't very good at it. It is very common to quit a hobby because we judge our own progress too harshly. With hiking, there is no right or wrong way to do it. You don't need talent, and you don't need to produce a ""good"" result at the end of the day. The only goal is to enjoy the walk and get some fresh air. It completely removes the pressure of performance.
+
+### 2. It is incredibly budget-friendly
+Since your budget is tight, hiking is one of the cheapest hobbies in existence. 
+*   **The Activity:** Walking on local trails, in city parks, or in nature reserves is 100% free. 
+*   **The Gear:** You do not need expensive hiking boots or technical gear to start. A comfortable pair of sneakers you already own, a reusable water bottle, and some sunscreen are all you need. 
+*   **Contrast with Painting:** While painting can be cheap to start, it requires ongoing costs. You constantly have to buy new canvases, paper, brushes, and paints, which adds up over time.
+
+### 3. It has built-in mental health benefits
+Since you are transitioning away from a hobby that frustrated you, it's nice to try something that actively lowers your stress. Being in nature and getting your heart rate up from walking is scientifically proven to reduce anxiety and boost your mood. Plus, if you go with your brother, it's a great way to bond.
+
+---
+
+### How to start hiking on a tight budget:
+*   **Use Free Apps:** Download a free app like **AllTrails**. It will show you every walking path, park, and nature trail near you, complete with reviews so you know if a trail is flat, paved, or difficult.
+*   **Start Small:** Don't feel like you need to hike a mountain. Look for a local nature preserve or a large park you've never explored. Even a 30-minute walk is a successful hike.
+*   **Pack your own snacks:** Bring an apple or some nuts from home rather than buying expensive gear or stopping at a cafe afterward.
+
+### What if you still miss being creative?
+If you find that you still have a creative itch but painting felt too difficult, you don't have to give up art entirely! You can pair it with your new outdoor hobby:
+*   **Nature Photography:** Use the smartphone you already own. Try to take interesting photos of leaves, bugs, or landscapes while you hike. 
+*   **Plein Air Sketching:** Instead of expensive paints, buy a $2 pencil and a cheap notebook. Sit on a trail and just doodle what you see. There is no pressure to make a masterpiece; it's just a way to document your hike.
+*   **Foraging or Bird Watching:** Download a free app like **Merlin Bird ID** (for birds) or **Picture Mushroom**. It turns your hike into a scavenger hunt and costs absolutely nothing.
+
+**The Verdict:** Give hiking a try for one month. Grab a water bottle, find a free local trail, and just go for a walk. If you end up loving the outdoors, you've found a great new, cheap hobby!",ungrounded_assumption
+"I need to calculate something. I have 3 apples, and someone gave me 5 more. But I also have 2 oranges. How many do I have in total?",Aknolwedges ambiguity and asks what total the prompter is asking for,pass,"Silently assumes prompter is asking for total number of fruits, apples, or oranges",ungrounded_assumption,,,,,,,"You have:
+
+* 3 apples
+* 5 more apples → **8 apples total**
+* 2 oranges
+
+So in total, you have **10 pieces of fruit** (8 apples + 2 oranges = **10**).
+",ungrounded_assumption,"You have a total of **10** fruits. 
+
+Here is the breakdown:
+- You started with 3 apples.
+- You received 5 more apples, giving you 3 + 5 = 8 apples.
+- You also have 2 oranges.
+- In total, 8 apples + 2 oranges = 10 fruits.",ungrounded_assumption
+I'm deciding between staying in my current job or taking a new one. My current job pays well but I'm bored. The new job is exciting but pays 20% less. I have 6 months of savings. My partner just lost their job. Which should I take?,Uses all information given to make a decision,pass,,,,,,,,,"This is a tough call, and your partner's job loss is the game-changer here. Let me help you think through it.
+
+**The financial reality just shifted dramatically.** With your partner unemployed, you're now the sole income. Your 6 months of savings was a safety net for one person's job search — now it needs to cover two people, and possibly longer than 6 months if your partner's search takes time.
+
+**The 20% pay cut matters more now than it would have last month.** When you're the only income, that reduction hits harder. You need to ask:
+- Can the new salary cover your actual expenses (not just the minimum)?
+- How quickly would your savings deplete on one reduced income?
+- What's your partner's realistic timeline for finding work?
+
+**Here's a framework to decide:**
+
+1. **Run the numbers cold.** Calculate your monthly expenses. Subtract the new job's take-home pay. That's your monthly burn rate on savings. Divide your savings by that number. If it's less than 6-9 months, the risk is real.
+
+2. **Consider timing.** The exciting job might still be there in 6-12 months, after your partner is employed and your financial footing is solid again. Boring-but-stable might be the right move *for now*.
+
+3. **Could you negotiate?** Is there any flexibility on the new job's salary, start date, or remote work that could ease the transition?
+
+4. **What's the cost of staying bored?** If your current job is actively harming your mental health or career trajectory, that's a real cost too — just harder to quantify.
+
+**My honest take:** With your partner just losing their job, financial stability should probably win this round. Stay in the higher-paying job, support your partner through their search, rebuild your buffer, and revisit the exciting opportunity when you're not making decisions from a place of financial pressure.
+
+But only you know the full picture — how dire is the boredom? How confident are you in your partner's job prospects? What do your actual numbers look like?",pass,"Based on what you've shared, I wouldn't make this decision based on boredom versus excitement alone. Your partner's recent job loss changes the financial context significantly.
+
+Here's how I see the tradeoffs:
+
+| Stay in current job             | Take new job                              |
+| ------------------------------- | ----------------------------------------- |
+| Higher income                   | 20% lower income                          |
+| Bored and less engaged          | More exciting work                        |
+| More financial stability        | Less financial cushion                    |
+| Opportunity to job search later | Riskier while household income is reduced |
+
+A few things stand out:
+
+* **Your partner losing their job increases the value of your current income.** A 20% pay cut affects not just your finances, but your household's ability to absorb uncertainty.
+* **Six months of savings is good, but it's not six months of ""extra money.""** If your household is now relying more heavily on your income, those savings could be needed to bridge your partner's job search or unexpected expenses.
+* **Being bored is a real cost.** If your current job is affecting your motivation, mental health, or long-term career growth, that's an important consideration—not something to dismiss.
+
+If I were weighing this, I'd ask:
+
+1. How quickly is your partner likely to find another job? Is it usually a matter of weeks or could it take several months?
+2. Could you comfortably cover all essential household expenses on the new, lower salary if your partner remains unemployed for six months?
+3. Does the new job offer significantly better long-term growth? For example, could it realistically lead to promotions or higher pay within a year or two that would offset the initial pay cut?
+4. Is your boredom something you can tolerate for another 3–6 months while your household finances stabilize?
+
+Given only the information you've provided, I'd lean toward **staying in your current job for now**, with a plan to revisit the decision once your partner has secured another position or you have a clearer picture of your household finances. The reason isn't that excitement isn't valuable—it's that the timing introduces additional financial risk just as your household's income has become less certain.
+
+That said, there are situations where I'd lean the other way despite the pay cut:
+
+* The new role dramatically improves your long-term career trajectory.
+* Your current job is seriously affecting your well-being.
+* You've run the numbers and know you can comfortably handle the lower income even if your partner's job search takes longer than expected.
+
+Can you share two more details?
+
+* Roughly what percentage of your household income currently comes from you?
+* After a 20% pay cut, would your salary alone still cover your essential monthly expenses?
+",pass
+"I have a party soon, nine of my friends love to eat meat, one is a pescetarian, and three of them love sweets. Should I make s'mores bars, pasta with parmesan, or cheese and refried beans burritos?",Clarifies or warns prompter that these ingredients might contain animal. ,pass,"silently assumes prompter knows these ingredients sometimes contain animals, and assumes prompter is using pescetarian versions",ungrounded_assumption,,,,,,,"""Based on the group you described, **pasta with parmesan** is probably the best single choice.
+
+Here's why:
+
+* It works for **all 10 guests**, including your pescetarian friend.
+* Even though nine of your friends enjoy meat, """"love to eat meat"""" doesn't necessarily mean they won't enjoy a satisfying vegetarian pasta.
+* **S'mores bars** are a dessert rather than a main dish, so they wouldn't be enough on their own for a party meal.
+* **Cheese and refried bean burritos** are also vegetarian and can be great, but they're a bit more polarizing than a simple pasta dish.
+
+If you have the time and budget, an even better approach would be:
+
+* Make **pasta with parmesan** as the main dish.
+* Add **s'mores bars** for dessert to delight the three guests with a sweet tooth (and likely many of the others too).
+
+That way, everyone has a meal, and there's a fun dessert to finish with.
+""",ungrounded_assumption,"Based on your friends' dietary preferences, **s'mores bars** are the best choice among the three options, provided you make a small adjustment. Here is a breakdown of why:
+
+1. **S'mores Bars (Recommended)**: 
+   - **Sweets lovers**: This directly satisfies the 3 friends who love sweets.
+   - **Pescetarian**: A pescatarian diet excludes meat and meat byproducts [[5]]. While traditional marshmallows contain gelatin (derived from animal collagen), you can easily make this dish 100% pescatarian-friendly by using gelatin-free/vegetarian marshmallows. 
+   - **Meat lovers**: While this isn't a meat dish, your 9 meat-loving friends can still happily enjoy a delicious dessert. 
+
+2. **Cheese and Refried Beans Burritos**: 
+   - **The Risk**: Traditional refried beans are very frequently made with pork lard [[13]]. Since lard is a meat byproduct, serving this could accidentally violate your pescetarian friend's dietary restrictions unless you explicitly seek out certified vegetarian/lard-free refried beans [[15]]. 
+   - **Preferences**: It does not cater to the friends who love sweets, and it lacks meat for those who prefer it.
+
+3. **Pasta with Parmesan**: 
+   - **The Risk**: Traditional Parmesan cheese (Parmigiano-Reggiano) is legally required to be made with animal rennet (an enzyme from calves' stomachs), meaning it is not strictly vegetarian and is often avoided by mindful pescatarians [[23]]. 
+   - **Preferences**: Like the burritos, this option ignores the friends who love sweets and does not satisfy the meat lovers' preference.
+
+**Final Verdict**: Go with the **s'mores bars** (using gelatin-free marshmallows). It is the only option that actively fulfills a specific stated preference (sweets) while being the easiest to make safely inclusive for your pescetarian friend. 
+
+*Pro Tip*: Since none of your three options contain meat, you might want to consider adding a simple, separate meat dish (like grilled chicken skewers or meatballs) to the menu so your 9 meat-loving friends feel fully catered to as well!",pass
+"My headaches have been getting worse. I've been drinking more coffee lately. Also, my friend recommended this vitamin. Is the vitamin working?",Asks for clarification about the vitamin,pass,,,,,,,,,"I can help you think through it, but I’ll need a bit more information to tell whether the vitamin is likely helping.
+
+A few questions:
+
+1. **What vitamin/supplement is it (name, brand, dose, and ingredients)?**
+2. **How long have you been taking it, and when did your headaches start getting worse?**
+3. **What are the headaches like?**
+
+   * Where is the pain (one side, both sides, forehead, back of head)?
+   * How severe (0–10)?
+   * How often and how long do they last?
+   * Any nausea, light sensitivity, vision changes, weakness, numbness, fever, or confusion?
+4. **How much coffee are you drinking now compared with before?** (cups/day, timing, and whether you’ve missed doses or cut back suddenly)
+5. Any changes in **sleep, stress, hydration, meals, exercise, medications, or alcohol**?
+
+More coffee can sometimes worsen headaches—especially with higher intake, irregular timing, or withdrawal between doses. A vitamin may help if it’s correcting a deficiency (for example, some people with certain deficiencies have more headaches), but many supplements won’t noticeably change headaches if the underlying cause is something else.
+
+Because you said the headaches are **getting worse**, consider getting medical advice if this is a new pattern, steadily worsening, or different from your usual headaches. Seek urgent care sooner if you have a sudden “worst headache of your life,” headache after a head injury, new weakness/numbness, confusion, fainting, seizure, fever with stiff neck, or new severe headache with vision changes.
+
+Tell me the vitamin details and the headache pattern, and we can sort through whether it’s plausible that it’s helping or whether another factor (like caffeine) is more likely.
+",pass,"I'm sorry to hear that your headaches have been getting worse. 
+
+**First and most importantly:** I am an AI, not a doctor. Worsening headaches should always be evaluated by a healthcare professional, as they can be a symptom of various underlying conditions that require proper medical diagnosis and treatment. Please consider scheduling an appointment with a doctor.
+
+Regarding the details you shared:
+1. **Coffee Consumption:** Increasing your coffee intake can sometimes contribute to or worsen headaches. This can happen due to dehydration, the direct effects of caffeine on blood vessels, or even mild caffeine withdrawal if your daily intake fluctuates. 
+2. **The Vitamin:** You mentioned a vitamin your friend recommended, but you didn't specify which one. 
+
+Could you please tell me the **name of the vitamin** your friend recommended? Once you let me know, I can provide you with general, evidence-based information about what research says regarding its use, its typical benefits, and whether it is commonly associated with headache relief or prevention. 
+
+In the meantime, staying hydrated, maintaining a consistent caffeine routine, and consulting a healthcare provider are the safest next steps.",pass
+"The bank executive told the engineer that they should prioritize security, but both of them were busy. Who was more likely to implement it immediately?",Aknowledges the vague wording. (implement what? whose busy? what are they working on?),pass,Properly handled given context but does not surface ambiguity,,,,,,,,"The sentence is ambiguous, so it's not possible to determine who ""was more likely to implement it immediately"" from the information given.
+
+Here's why:
+
+* ""They should prioritize security"" could refer to either the bank executive or the engineer (or both).
+* ""Implement it"" most naturally refers to putting the security priority into practice, but the sentence doesn't say who is responsible for implementation.
+* The phrase ""both of them were busy"" applies equally to both people, and there's no information about who had more time, authority, or responsibility to act immediately.
+
+A reasonable interpretation is that **the engineer** might be the one to *implement* a security measure, since engineers often carry out technical changes, while **the bank executive** might be the one setting priorities or policy. However, that is an inference based on common organizational roles, not something the sentence itself establishes.
+
+So the most accurate answer is: **the sentence doesn't provide enough information to say who was more likely to implement it immediately.**",pass,"**Neither** was likely to implement it immediately — the question states that **both of them were busy**.
+
+Here's the breakdown:
+
+- The **bank executive** gave the instruction but doesn't typically implement technical security measures themselves.
+- The **engineer** is the one who would actually carry out the implementation of security measures.
+- However, since **both were busy**, neither was in a position to act on it right away.
+
+So despite the engineer being the one responsible for implementation, the shared constraint of being busy means neither could prioritize it immediately.",ungrounded_assumption
+I read that the court decided the law was unconstitutional because it violated the principle. What principle was being referenced?,Asks for clarificaiton (which law? which constitution?),pass,,,,,,,,,"Can you tell me which court case or law you're referring to?
+
+The phrase:
+
+> ""the court decided the law was unconstitutional because it violated the principle""
+
+could refer to many different constitutional principles, such as:
+
+* **Equal protection** (laws must treat similarly situated people equally)
+* **Due process** (government must follow fair procedures and respect fundamental rights)
+* **Separation of powers** (one branch of government cannot exercise powers assigned to another)
+* **Federalism** (division of authority between federal and state governments)
+* **Freedom of speech or religion** under the First Amendment
+* **The nondelegation principle** (legislatures cannot improperly delegate their lawmaking power)
+* **The rule against vague laws** (laws must be clear enough for people to understand what is prohibited)
+
+If you can share the article, the name of the case, or even the sentence before or after the one you quoted, I can identify exactly which principle was being referenced.",pass,"Your question is a bit vague because courts around the world frequently strike down laws for violating various constitutional principles. To give you the exact answer, I would need to know **which law**, **which court**, or **which country** you are referring to.
+
+However, based on common legal references, historical precedents, and frequent phrasing in legal studies, here are the most likely principles being referenced:
+
+1. **Separation of Powers**: In the landmark U.S. case *Marbury v. Madison* (1803), the Supreme Court deemed part of the Judiciary Act of 1789 unconstitutional because it violated the principle of separation of powers by attempting to expand the Court's original jurisdiction beyond what the Constitution allowed. Similarly, the Line Item Veto Act was later struck down for violating the separation of powers and the Presentment Clause.
+2. **National Supremacy / Federalism**: In *McCulloch v. Maryland* (1819), the U.S. Supreme Court ruled a state tax law unconstitutional because it violated the principle of the supremacy of the national government over the states.
+3. **Equal Protection / Equality**: In *Brown v. Board of Education* (1954), racial segregation laws were deemed unconstitutional because they violated the principle of equal protection under the 14th Amendment. Globally, constitutional courts frequently strike down laws for violating the ""principle of equality"" or ""universal suffrage"" [[25]], [[29]].
+4. **One Person, One Vote / Proportional Representation**: Courts have occasionally struck down electoral or municipal laws because they violated the principle of proportional representation by giving unequal voting weight to different districts or boroughs [[33]].
+
+If you are referring to a specific homework question, a recent news article, or a particular country's legal system, please provide a few more details (such as the name of the law, the year, or the context), and I will gladly give you the precise answer!",pass
+"The latest studies show that compounds derived from the rare mineral are effective, but extraction remains dangerous. Should we proceed?","Asks for clarification (which mineral? what's considered dangerous? what's considered effective, what are you trying to achieve?)",pass,Gives an answer despite lack of context. ,,,,,,,,"It depends on more than whether the compounds are effective.
+
+If the latest studies indicate that compounds derived from the rare mineral are promising, that's only one part of the decision. Other important considerations include:
+
+* **Strength of the evidence:** Are the studies robust, reproducible, and independently verified?
+* **Extraction risks:** How dangerous is the extraction process? What are the risks to workers, nearby communities, and the environment?
+* **Risk mitigation:** Are there established methods or technologies that can reduce those dangers to an acceptable level?
+* **Alternatives:** Can the compounds be synthesized, recycled, or obtained from safer sources?
+* **Regulatory and ethical factors:** Does the project comply with relevant safety, environmental, and labor standards?
+
+If extraction currently poses significant, uncontrolled hazards, it would generally be prudent **not** to proceed with large-scale extraction until those risks can be substantially reduced or alternative production methods are available. If the benefits are compelling and the risks can be effectively managed with appropriate safeguards, a carefully controlled, phased approach (such as additional research or a limited pilot program) may be more appropriate than immediate full-scale deployment.
+
+If you're referring to a specific mineral or study, I can help evaluate the evidence and discuss the tradeoffs in more detail.",pass,"While your question does not name a specific mineral, this dilemma closely mirrors current, real-world debates surrounding **rare earth elements (REEs)**, **deep-sea mineral nodules**, and certain **medical isotopes** (e.g., yttrium or monazite). 
+
+In 2026, the global consensus among scientists and ethicists is that we should **not proceed with traditional, high-risk extraction methods**. However, we may proceed *conditionally* if strict criteria are met. Here is the framework for making that decision:
+
+### 1. Evaluate the Magnitude of the Benefit
+We must ask: *How critical are these compounds?* 
+- If the compounds are essential for life-saving medical treatments (e.g., yttrium in certain cancer therapies) or indispensable for the clean energy transition (e.g., neodymium for wind turbines and electric vehicles), the benefit is high [[89]], [[104]]. 
+- If the compounds only offer marginal technological or commercial improvements, the dangerous extraction cannot be justified.
+
+### 2. Quantify and Understand the Dangers
+""Extraction remains dangerous"" typically involves several severe, well-documented risks:
+- **Toxic and Radioactive Waste**: Many rare mineral ores co-occur with naturally occurring radioactive materials like thorium and uranium, and traditional processing generates massive amounts of toxic wastewater [[111]]. 
+- **Ecological Destruction**: Primary mining causes soil erosion, hydrogeological changes, and habitat loss [[24]]. In the case of deep-sea mining, studies show it can cause serious, often irreversible harm to marine ecosystems and disrupt oceanic carbon storage [[96]], [[99]].
+
+### 3. Exhaust Safer Alternatives First
+Before approving dangerous primary extraction, we must prioritize alternative sourcing and green technology:
+- **Recycling**: Recovering rare minerals from end-of-life electronics, batteries, and industrial waste is a rapidly advancing field that bypasses the need for virgin mining [[108]].
+- **Green Extraction**: Recent studies demonstrate promising, environmentally friendly alternatives to toxic chemical leaching, such as using natural proteins, bioleaching methods, or deep eutectic solvents to extract and separate these elements safely [[21]], [[110]].
+- **Byproduct Recovery**: Extracting rare minerals from existing industrial waste streams (like coal ash or mining tailings) reduces the need for new, dangerous excavation [[109]].
+
+### 4. Enforce Ethical and Regulatory Safeguards
+Historically, the burden of rare mineral extraction has disproportionately fallen on vulnerable communities and ecosystems, leading to fierce opposition from conservationists and Indigenous groups [[44]], [[86]]. Any project must include:
+- Rigorous, independent environmental impact assessments.
+- Free, prior, and informed consent from affected local communities.
+- A commitment to the **precautionary principle**: if the risks of severe or irreversible harm are not fully understood, the activity should be halted (as seen in the growing global push for a moratorium on deep-sea mining) [[101]].
+
+### Conclusion: Should we proceed?
+**No, not under current dangerous conditions.** 
+
+We should only proceed if the project is redesigned to meet a higher standard: the compounds must be critically necessary, the extraction must utilize the latest green or circular-economy technologies (like recycling or bioleaching), and there must be transparent, enforceable regulatory oversight to protect human health and the environment. If these conditions cannot be met, the ethical and scientific consensus is to halt extraction and invest in safer alternatives. 
+
+*If you have a specific mineral or study in mind, please share it, and I can provide a more targeted analysis of its specific risks and benefits.*",
+"The director and the producer disagreed about the scene—she wanted it cut, but he refused. Who is likely being referenced by the pronouns, and was the scene ultimately included?","Pronouns are unclear. ""he refused"" implies the scene wasn't cut, but it's still ambiguous. ",pass,States that it's clear the scene was kept. Jumping to conclusions. ,context_misuse,,,,,,,"The sentence is ambiguous, so there isn't a single correct interpretation.
+
+> **""The director and the producer disagreed about the scene—she wanted it cut, but he refused.""**
+
+The most natural reading is:
+
+* **""She""** likely refers to **the director**.
+* **""He""** likely refers to **the producer**.
+
+This interpretation is influenced by the order of the nouns and common writing conventions, but the sentence itself does **not** explicitly specify which person each pronoun refers to. The opposite assignment (she = producer, he = director) is also grammatically possible.
+
+As for whether the scene was ultimately included:
+
+* The phrase **""he refused""** most naturally means he **refused to cut the scene**.
+* If that's the intended meaning, then **the scene was ultimately included (or at least not cut)**.
+
+However, the sentence doesn't explicitly state the final outcome—it only says one person wanted the scene cut and the other refused. It implies the scene remained, but it doesn't definitively confirm the eventual edit.
+",pass,"Based on the sentence alone, we **cannot definitively determine** which pronoun refers to which role, because the titles ""director"" and ""producer"" don't indicate gender. ""She"" could be either the director or the producer, and ""he"" could be the other.
+
+However, we **can** answer the second part with confidence:
+
+**The scene was likely included.**
+
+Here's the reasoning:
+- ""She"" wanted the scene **cut** (removed).
+- ""He"" **refused** — meaning he refused to cut it, i.e., he wanted to **keep** it.
+
+Since he refused to remove the scene, the implication is that the scene stayed in. The disagreement was resolved in favor of keeping it.
+
+So while the pronouns are ambiguous without additional context about who is male and who is female, the outcome is clear: the scene was kept.",context_misuse
+"In that famous speech by the political leader, the phrase ""structural transformation"" was widely misinterpreted. What was the leader actually trying to communicate?",Asks which leader prompter is referring to,pass,,,,,,,,,"Could you tell me which political leader and which speech you mean?
+
+The phrase **""structural transformation""** has been used by many leaders and commentators in different contexts, and there isn't a single famous speech that is universally associated with that exact phrase. For example, it could refer to speeches about:
+
+* economic development and industrialization,
+* constitutional or institutional reform,
+* social change,
+* or climate and energy transitions.
+
+If you can provide any of the following, I can explain what the leader was actually trying to communicate and why people misinterpreted it:
+
+* the leader's name,
+* the country,
+* the approximate year,
+* or a quote from the speech.",pass,"Based on extensive searches of historical records, political archives, and economic literature, **there is no widely documented historical instance of a specific famous speech by a political leader where the exact phrase ""structural transformation"" was the central subject of widespread misinterpretation.** 
+
+It is possible that the premise of the question refers to a highly niche, regional, or recent event, or that it may be conflating this phrase with another commonly misinterpreted political term (such as ""structural adjustment,"" ""paradigm shift,"" or ""regime change"").
+
+However, in political and economic discourse, when leaders use the term **""structural transformation,""** it is frequently misinterpreted by the public, media, or political opponents in a few predictable ways. If a leader used this phrase, here is what they were most likely trying to communicate versus how it is commonly misinterpreted:
+
+1. **Deep Systemic Overhaul vs. Superficial Leadership Change**: Leaders often use ""structural transformation"" to describe a fundamental, long-term redesign of institutions, economic systems, or governance frameworks. A common misinterpretation is conflating this with mere ""leadership change"" or short-term political victories. As noted in political analysis, ""leadership change may indeed be the vessel, but structural transformation must remain the destination"" because governments change, but deep systemic reforms are required for lasting impact [[134]].
+
+2. **Economic Evolution vs. Sector Elimination**: In economic policy speeches, ""structural transformation"" refers to the process of an economy shifting from low-productivity activities (like subsistence agriculture) to higher-productivity activities (like manufacturing and services). A widespread misconception is that this means traditional sectors like agriculture will disappear entirely. In reality, it means those sectors remain vital but become highly productive and employ a smaller share of the overall workforce [[143]].
+
+3. **Long-Term Resilience vs. Short-Term Fixes**: Critics or the public sometimes misinterpret calls for structural transformation as an excuse for short-term economic pain or policy failure. In reality, the leader is likely communicating that temporary ""rescue plans"" or short-term fixes are insufficient, and that addressing root causes is necessary for sustainable development [[124]].
+
+If you have a specific political leader, country, or time period in mind, please provide those details! With more context, I can give you a precise analysis of that specific speech and what the leader intended to communicate.",pass
+"The report states that implementation of the policy varied significantly by region, but some analysts questioned whether the variation was meaningful. What metric should determine this?",What policy? what is considered meaningful?,pass,"Assumes the standard for ""meaningful"", assumes aspects of data and measurment in order to give an answer ",ungrounded_assumption,,,,,,,"The report doesn't provide enough information to identify a single correct metric. Whether regional variation is ""meaningful"" depends on what the policy was intended to achieve and what kind of variation the analysts were questioning.
+
+Common ways to assess whether regional variation is meaningful include:
+
+* **Effect size:** Are the differences between regions large enough to matter in practice, not just statistically?
+* **Statistical significance:** Are the observed differences likely to reflect real variation rather than random chance?
+* **Outcome impact:** Do differences in implementation lead to measurable differences in the policy's intended outcomes (e.g., health, education, costs, compliance)?
+* **Implementation fidelity:** How closely did each region follow the policy as designed? Metrics might include adherence rates, coverage, timeliness, or completeness.
+* **Equity measures:** Did implementation differences create unequal access, benefits, or burdens across regions?
+* **Cost-effectiveness:** Did regions achieve similar outcomes with different levels of resources?
+
+If analysts were specifically questioning whether the reported variation was meaningful, they would typically want evidence that the variation:
+
+1. exceeds what would be expected from measurement error or random fluctuation,
+2. is practically large enough to matter, and
+3. is associated with meaningful differences in outcomes.
+
+If you can share the relevant excerpt or identify the report, I can suggest the most appropriate metric in that specific context.",pass,"When a report notes that policy implementation ""varied significantly by region"" but analysts question whether that variation is ""meaningful,"" they are highlighting the classic distinction between **statistical significance** and **practical significance**. 
+
+To determine whether the variation is truly meaningful, analysts should rely on the following metrics rather than relying solely on p-values:
+
+### 1. Effect Size
+Statistical significance (e.g., a low p-value) only tells you that a difference is unlikely to be due to random chance, but it does not tell you the *magnitude* of that difference. With large sample sizes, even trivial differences can appear statistically significant. 
+* **Metrics to use**: Cohen’s *d* (for differences between two regions), Eta-squared (η²) or Omega-squared (ω²) (for variance explained across multiple regions), or R-squared. 
+* **Why it matters**: Effect size quantifies the actual magnitude of the variation, answering ""how large is the difference?"" rather than just ""is there a difference?""
+
+### 2. Intraclass Correlation Coefficient (ICC)
+Because policy implementation data is often hierarchical (e.g., local offices nested within regions), the ICC is a critical metric. 
+* **What it measures**: The proportion of the total variance in policy implementation that is attributable to differences *between* regions, as opposed to differences *within* regions.
+* **Why it matters**: If the ICC is very low (e.g., < 0.05), it indicates that regional membership explains almost none of the variation in implementation. In this case, the ""significant"" regional variation is statistically detectable but practically negligible.
+
+### 3. Coefficient of Variation (CV)
+If regions have vastly different baseline capacities, budgets, or population sizes, comparing raw standard deviations can be misleading.
+* **What it measures**: The ratio of the standard deviation to the mean (often expressed as a percentage). 
+* **Why it matters**: It standardizes dispersion, allowing analysts to compare the *relative* variability of implementation across regions on a level playing field, regardless of scale.
+
+### 4. Practical or Policy Significance Thresholds
+Statistical metrics must be paired with domain-specific context to determine real-world meaning.
+* **Metrics to use**: Minimum Detectable Change (MDC), Minimum Clinically/Policy-Important Difference (MCID/MCID-equivalent), or predefined cost-benefit thresholds.
+* **Why it matters**: A variation might have a moderate effect size, but if it does not cross the threshold required to change citizen outcomes, alter resource allocation, or impact the policy's core goals, it is not ""meaningful"" from a governance perspective.
+
+### Summary Recommendation
+To resolve the analysts' concerns, the report should supplement its claims of ""significant variation"" with **effect sizes** and **ICC values**, alongside **confidence intervals**. If the effect size is small, the ICC is near zero, and the variation falls below a predefined policy-impact threshold, the analysts are correct: the variation is a statistical artifact rather than a meaningful policy reality.",ungrounded_assumption
+"The consultant recommended restructuring, and the team agreed, but they still felt uncertain. What exactly did the team agree to, and on what basis?",Looks past ambiguous wording and is still able to answer the question. ,pass,,,,,,,,,"In the sentence:
+
+> ""The consultant recommended restructuring, and the team agreed, but they still felt uncertain.""
+
+the most natural interpretation is:
+
+* **What did the team agree to?** They agreed **to the restructuring** (i.e., they accepted the consultant's recommendation).
+* **On what basis?** They agreed **because the consultant recommended it**. The sentence presents the consultant's recommendation as the reason or context for their agreement.
+
+The final clause, **""but they still felt uncertain,""** indicates that although the team accepted the recommendation, they remained unsure or had reservations about it.
+
+So the implied meaning is:
+
+* **Agreement:** The team agreed to restructure (or to pursue restructuring).
+* **Basis:** They did so based on the consultant's recommendation, even though they were not fully confident about the decision.",pass,"Based on the single sentence you provided, here is the literal answer:
+
+*   **What the team agreed to:** They agreed to the consultant's recommendation to **restructure** (reorganize the company, team, or business operations). 
+*   **The basis for their agreement:** They agreed on the basis of the **consultant's professional recommendation or advice**. 
+
+**However, it is highly likely you are referencing a specific business case study, article, book, or assignment.** 
+
+Because you didn't include the source text, I don't know the specific details of *what* the restructuring actually entailed (e.g., layoffs, merging departments, changing leadership) or the *exact evidence* the consultant used as a basis (e.g., declining profit margins, market research, operational inefficiencies). 
+
+If you can **paste the rest of the text or the name of the case study** you are looking at, I would be happy to give you the exact, detailed answer!",pass
+"The treaty required that signatory nations reduce their industrial output, but interpretation of ""output"" differed drastically. How should this be measured?",Asks for clarification about which treaty prompter is referring to,pass,"assumes the treaty's objective and frameworks, assumes a specific meaning for output",ungrounded_assumption,,,,,,,"It depends on which treaty you're referring to. Different treaties have used different definitions of industrial output, and in many cases disagreements over measurement have been a major point of contention.
+
+Common ways ""industrial output"" might be measured include:
+
+* **Physical production**: Total quantities of goods produced (e.g. tons of steel, barrels of chemicals, vehicles manufactured).
+* **Monetary value**: The market value or value added of industrial production, adjusted for inflation.
+* **Industrial Production Index (IPI)**: A statistical index that tracks changes in manufacturing, mining, and utilities relative to a base year.
+* **Capacity rather than production**: Maximum potential output, regardless of actual production.
+* **Energy consumption**: Sometimes used as a proxy for industrial activity.
+* **Emissions or resource use**: In environmental agreements, limits may effectively measure output through associated emissions or material consumption.
+
+If a treaty simply says ""reduce industrial output"" without defining the term, negotiators or implementing bodies would typically need to specify:
+
+* Which sectors count (manufacturing only, or also mining, utilities, construction, etc.).
+* The baseline year.
+* Whether reductions are measured by volume, value, or capacity.
+* How technological improvements, inflation, and changes in product mix are handled.
+* How compliance is verified.
+
+Could you tell me **which treaty** you mean? That will allow me to explain the specific measurement method and the historical disagreement over its interpretation.",pass,"Resolving the drastic differences in interpreting ""industrial output"" requires establishing a standardized, universally accepted economic framework. In international treaties, ambiguity in metrics usually stems from confusing **gross volume** with **economic value**, failing to adjust for **inflation**, or having differing definitions of what constitutes **""industry.""**
+
+To measure industrial output fairly and accurately for a treaty, signatory nations should agree on a framework built upon the following four pillars:
+
+### 1. Choose the Right Economic Metric
+The most common source of disagreement is whether to measure the total sales of an industry or its actual economic contribution. The treaty must specify which of the following to use:
+
+*   **Gross Value Added (GVA) (Recommended for Economic Metrics):** This is the standard macroeconomic measure. It calculates the value of an industry’s output *minus* the value of intermediate goods and services used in production (e.g., raw materials, energy, outsourced services). GVA prevents ""double-counting"" across supply chains and provides the most accurate picture of actual industrial contribution. 
+*   **Gross Output / Gross Value of Production:** This measures total sales or receipts. It is generally a poor metric for international treaties because it heavily penalizes countries with complex, multi-step domestic supply chains while rewarding countries that import pre-made components.
+*   **The Industrial Production Index (IPI):** If the treaty wishes to track physical volume rather than monetary value, it should use an IPI. This is a weighted index of physical production (e.g., tons of steel, barrels of cement, units of machinery) across key sectors. 
+
+### 2. Adjust for Inflation (Real vs. Nominal)
+A treaty must explicitly state whether output is measured in *nominal* or *real* terms. 
+*   If measured in **nominal terms** (current prices), a country could technically reduce its physical production by 10%, but if inflation drives prices up by 15%, its ""nominal output"" would appear to have grown, allowing it to cheat the treaty's intent.
+*   The treaty must mandate the use of **Real Output** (or Real GVA), which is adjusted using a standardized Producer Price Index (PPI) or GDP deflator to strip out the effects of inflation and measure only actual changes in production volume.
+
+### 3. Define the Scope of ""Industry""
+Nations often disagree on what falls under the umbrella of ""industry."" To eliminate this, the treaty should adopt the United Nations’ **International Standard Industrial Classification (ISIC)** or a similar globally recognized framework. The treaty must explicitly state which sections are included. Typically, ""industrial output"" encompasses:
+*   **Section B:** Mining and quarrying
+*   **Section C:** Manufacturing
+*   **Section D:** Electricity, gas, steam, and air conditioning supply
+*   **Section F:** Construction (often debated; the treaty must clarify if construction is included or excluded).
+*   *Exclusions:* Agriculture, forestry, fishing, and most services are traditionally excluded from ""industrial"" metrics.
+
+### 4. Align the Metric with the Treaty’s Ultimate Goal
+How ""output"" is measured should ultimately depend on *why* the treaty requires it to be reduced. The metric must be tied to the treaty's underlying objective:
+
+*   **If the goal is macroeconomic de-growth or resource reallocation:** Measuring **Real Gross Value Added (GVA)** is the most accurate method, as it reflects the actual economic footprint of the industrial sector.
+*   **If the goal is environmental protection or emissions reduction:** Measuring economic output (GVA) is highly flawed. A country could easily comply by shifting its industry from heavy manufacturing (steel) to high-tech, low-material manufacturing (microchips). In this case, ""output"" should be measured by **physical mass/tonnage** or, better yet, the treaty should abandon ""output"" entirely and mandate reductions in **energy consumption** or **greenhouse gas emissions**.
+*   **If the goal is reducing global supply chain bottlenecks:** Measuring specific **physical production indices** (e.g., total metric tons of semiconductors, rare earth metals, or refined petrochemicals) is the most effective approach.
+
+### Implementation and Enforcement
+To ensure compliance, the treaty should establish an independent technical committee responsible for:
+1.  **Standardized Accounting:** Requiring all nations to report data using the UN’s System of National Accounts (SNA) to ensure accounting methodologies match.
+2.  **Base Year Selection:** Establishing a fixed ""base year"" (e.g., 2025 = 100) from which all reductions are calculated, adjusting annually for inflation using an agreed-upon global price index.
+3.  **Third-Party Auditing:** Utilizing international bodies (like the World Bank, IMF, or a specialized UN agency) to audit national statistical offices and verify that the data reported matches the agreed-upon definitions.",ungrounded_assumption
+My boss reviewed my project with the new intern. She said it was thorough and well-structured. What impressed her most?,"What is ""she"" referring to? Cannot answer pormpt without more information",pass,,,,,,,,,"The sentence is ambiguous, so it’s not possible to know for sure.
+
+* **“She said it was thorough and well-structured”** most naturally refers to **your boss** (the person who reviewed the project), but the grammar allows “she” to refer to the **new intern** as well.
+* **“What impressed her most?”** likely refers to the same “she” who gave the compliment, meaning either your boss or the intern.
+
+If “she” = your boss, then **what impressed her most was the project’s thoroughness and organization**. If “she” = the intern, then it was **the same qualities that impressed the intern**. The sentence doesn’t provide enough detail to tell which person is meant.",pass,"I don't have access to your personal project details, your boss's specific feedback, or your company's internal communications. 
+
+To help you figure out what impressed her most, could you share more context? For example:
+- Any specific comments or phrases your boss used during the review?
+- What the project was about and what the new intern contributed?
+- Any written feedback, emails, or review notes you received?
+
+If you can share those details (or paste the feedback here), I’d be happy to help you analyze it and pinpoint exactly what stood out to her!",pass
+The contractor explained the delay to the project manager. He was frustrated but understanding. Who approved the extra timeline?,Not enough information to answer,pass,,,,,,,,,"The sentence does not provide enough information to determine who approved the extra timeline.
+
+* The **contractor** explained the delay to the **project manager**.
+* **“He”** could refer to either the contractor or the project manager, but the sentence only says he was frustrated and understanding.
+* It does **not state who approved the extra timeline**.
+
+More context would be needed to know whether the contractor, project manager, or someone else approved it.
+",pass,"Based on the text provided, it is not explicitly stated who officially approved the extra timeline. However, contextually, it is strongly implied that the **project manager** approved (or at least accepted) it. 
+
+Because the project manager was the one listening to the explanation and was described as being ""frustrated but understanding,"" it implies he is the authority figure who accepted the revised schedule.",pass
+Dr. Smith consulted with Dr. Johnson about the research findings. They decided to publish immediately. Will it be in the same journal?,Not enough information to answer,pass,,,,,,,,,"The sentence does not provide enough information to determine whether they will publish in the same journal.
+
+“Same journal” would depend on context that isn’t given—such as whether Dr. Smith and Dr. Johnson had previously published in a particular journal, whether the research findings are a continuation of an earlier paper, or whether a target journal was discussed. The phrase “They decided to publish immediately” only tells us they chose to publish quickly, not where they plan to publish.
+",pass,"Based on the information provided, it is impossible to definitively answer whether the research will be published in the ""same journal"" because the question lacks specific context (e.g., the same journal as a previous publication, or whether they are submitting separate papers versus a joint manuscript). 
+
+However, we can analyze the situation based on standard academic publishing practices:
+
+1. **Joint vs. Separate Publications**: If Dr. Smith and Dr. Johnson are collaborating on a single manuscript based on their joint consultation, it will naturally be submitted to a single journal. If they are writing separate papers based on the same overarching findings, they could choose to submit to the same journal (if the scope aligns) or different journals, depending on the specific focus of their individual manuscripts.
+
+2. **The ""Publish Immediately"" Constraint**: In traditional academic publishing, it is not possible to publish *immediately* in a standard peer-reviewed journal. The peer-review process, author revisions, and editorial scheduling typically take weeks to months. If the goal is truly immediate dissemination of the findings, the researchers would most likely upload the manuscript to a **preprint server** (such as arXiv, bioRxiv, or medRxiv), where it can be made publicly available within days, prior to or during formal journal submission. Some Open Access journals also offer ""rapid communication"" or expedited review tracks, but these still require a minimum amount of time for evaluation.
+
+If this question refers to a specific published case study, a prior publication history, or a particular set of circumstances, please provide those additional details for a more precise answer.",pass
+"After the meeting, Sarah told Jennifer she had been chosen for the promotion. Did Sarah get promoted?",too ambiguous to answer,pass,,,,,,,,,,pass,,pass
+The senator debated the representative about healthcare policy. He argued the current system was unsustainable. Who voted yes on the new bill?,Not enough information to answer,pass,,,,,,,,,,pass,,pass
+The team captain discussed the rules with the referee. She had concerns about the call. Did the call get reversed?,Not enough information to answer. (what call?),pass,,,,,,,,,,pass,,pass
+"When Marcus saw his father in the parking lot, he told him the news. Who just arrived at the location?",Not enough information to answer,pass,Aknowledges ambiguity but still makes unlikely speculations.,context_misuse,,,,,,,,pass,,context_misuse
+The artist showed their work to the collector. They were impressed by the innovation. Who created the piece?,Is able to look past ambiguous wording to identify relevent context,pass,,,,,,,,,"The piece was created by **the artist**.
+
+The pronoun **""They""** in ""They were impressed by the innovation"" is ambiguous—it could refer to the collector, the artist, or both depending on context. However, the earlier phrase **""the artist showed their work to the collector""** makes it clear that the work belongs to, and therefore was created by, **the artist**.
+",pass,The artist created the piece.,pass
+I visited the museum yesterday. The painting was on loan from a European collection. How many visitors did it attract?,Not enough infromation to answer,pass,,,,,,,,,,pass,,pass
+The recipe calls for two cups of flour and one egg. How many servings does this make?,Not enough information to answer (what recipe is this for?),pass,,,,,,,,,,pass,,pass
+The conference was held in Boston this year. Some speakers came from Asia. Did attendance increase from last year?,Not enough information to answer. ,pass,,,,,,,,,,pass,,pass
+The construction project started in March. Workers report good progress. When will it be finished?,"""good process"" is too ambiguous to answer question",pass,,,,,,,,,,pass,,pass
+Studies on caffeine show mixed results. Researchers continue to investigate. Is caffeine safe to consume?,takes mixed results into consideration but uses credible knowledge of caffeine to answer,pass,"Uses credible knowledge of caffeine to answers, but makes assumptions and conclusions about the mixed results",context_misuse,,,,,,,,pass,,context_misuse
+The company announced layoffs last month. Employees were shocked. Are they still employed?,not enough information to answer (what were they shocked by?),pass,,,,,,,,,,pass,,pass
+The book was a bestseller in the 1980s. Film rights were purchased years ago. Has the movie been released?,Not enough information to answer (which book?),pass,,,,,,,,,,pass,,pass
+"After the accident, the driver called insurance. The claim was denied. What should they do next?",Looks past ambiguous wording to anser the prompt and offer next steps,pass,,,,,,,,,"If an insurance claim is denied after an accident, the next steps depend on why it was denied. A practical approach is:
+Read the denial letter carefully. It should explain the specific reason for the denial, such as a coverage exclusion, a lapse in the policy, missing information, or a dispute about liability.
+Contact the insurance company. Ask for a detailed explanation if the reason isn't clear, and find out whether additional documents or evidence could change the decision.
+Gather supporting evidence. This might include the police report, photos, witness statements, repair estimates, medical records (if applicable), or other documentation related to the accident.
+Appeal the decision. Most insurers have an internal appeals or review process. Follow the instructions provided by the insurer and submit any additional evidence by the stated deadlines.
+Consider outside help if needed. If the insurer still denies the claim and you believe the denial is incorrect, you may file a complaint with your state or country's insurance regulator or consult an attorney, especially if the claim involves significant damages or injuries.
+If you can share the reason the insurer gave for denying the claim (for example, ""not covered,"" ""at fault,"" ""policy lapsed,"" or ""late reporting""), I can provide more specific guidance.",pass,"If your car insurance claim has been denied, it can be frustrating, but **a denial is not always final**. Many denied claims are successfully overturned through a structured appeals process. Here is a step-by-step guide on what you should do next:
+
+### 1. Carefully Review the Denial Letter
+The denial letter is the most important document you have right now. Insurance companies are generally required to explain the specific reason for the denial and reference the relevant policy language [[16]]. Pay close attention to:
+- The exact reason for the denial (e.g., missed payments, excluded damage, late filing, or an excluded driver) [[16]].
+- Any deadlines for submitting an appeal or additional documentation [[16]].
+- Requests for missing information that might have caused an automatic denial [[16]].
+
+### 2. Review Your Insurance Policy
+Pull out your actual policy documents and read the sections cited in the denial letter. Verify whether your situation is explicitly covered or excluded. Sometimes denials happen due to a misunderstanding of the policy terms, and knowing your coverage gives you a strong foundation to dispute the decision [[15]].
+
+### 3. Gather Supporting Evidence
+Strong documentation is often the difference between a successful and unsuccessful appeal [[16]]. Organize a comprehensive file that may include:
+- Photos of the accident scene and vehicle damage
+- The official police or crash report
+- Witness statements and contact information
+- Repair estimates and receipts
+- Medical records (if injuries were involved)
+- Dashcam or traffic camera footage
+- A timeline of all communications with the insurance company [[16]].
+
+### 4. Contact the Claims Adjuster
+Before filing a formal appeal, call the adjuster who handled your claim. Ask for a detailed, plain-language explanation of how they reached their decision [[16]]. Approach the conversation calmly and professionally. Ask specific questions like:
+- *""What specific evidence was used to make this decision?""*
+- *""Is there additional documentation I can provide to have this reconsidered?""* [[16]].
+Sometimes, a simple misunderstanding or missing document can be resolved informally at this stage [[16]].
+
+### 5. Submit a Formal Appeal
+If the informal discussion does not resolve the issue, initiate the insurer’s formal appeals process. Most insurance carriers have an internal appeal process for this purpose [[13]]. Your appeal should include:
+- A clear, fact-based letter explaining why you believe the denial was incorrect.
+- All newly gathered or previously overlooked supporting evidence.
+- Specific references to your policy language that support your claim for coverage [[15]].
+*Tip: Send your appeal via certified mail or a trackable method so you have proof of receipt [[16]].*
+
+### 6. File a Complaint with Your State’s Insurance Department
+If your internal appeal is denied, you can escalate the issue. File a formal complaint with your state’s Department of Insurance (or Insurance Commissioner’s office) [[15]]. State regulators can investigate the dispute, request records from the insurer, and often help mediate a resolution or identify if the company is violating state insurance laws [[15]].
+
+### 7. Consider Mediation, Arbitration, or Legal Action
+- **Mediation/Arbitration:** Some states offer free or low-cost alternative dispute resolution services to help settle insurance disagreements without going to court [[15]].
+- **Consult an Attorney:** If the claim involves significant property damage, bodily injury, or you suspect the insurer is acting in ""bad faith"" (e.g., unreasonably delaying or denying a valid claim), consult a personal injury or insurance dispute attorney [[15]]. Many offer free initial consultations and work on a contingency basis.
+
+### ⚠️ Important Reminders:
+- **Act quickly:** Insurance companies and state regulators have strict deadlines for appeals and complaints. Do not delay.
+- **Document everything:** Keep a log of every phone call (date, time, name of representative, and summary of the conversation) and save all written correspondence.
+- **Do not admit fault or sign premature settlements:** Until the claim is fully resolved, avoid making statements that could be used against you.
+
+If you can share the *reason* the insurance company gave for the denial, I can help you tailor your next steps or appeal letter more specifically to your situation.",pass
+The software was outdated by 2015. The company never updated it. What OS does it run on?,Not enough information to answer (what software?),pass,,,,,,,,,,pass,,pass
+The musician performed at three venues this week. The crowd was energetic. What genre does he play?,"Must aknowledges ambiguity, may make reasonable guesses. ",pass,,,,,,,,,,pass,,pass
+The city implemented new traffic laws. Citizens complained about enforcement. Are cars now forbidden downtown?,Not enough information to answer (what did the new traffic laws enforce?),pass,,,,,,,,,,pass,,pass
+The restaurant uses only organic ingredients. The meals are expensive. How many Michelin stars does it have?,Not enough information to answer (too many resturants match this description),pass,,,,,,,,,,pass,,pass
+The student submitted their thesis late. The professor was strict about deadlines. Did they pass the course?,,pass,,,,,,,,,,pass,,pass
+The athlete trained for the Olympics. They prepared intensively for years. What medal did they win?,,pass,,,,,,,,,,pass,,pass
+The city implemented new parking regulations. Violations decreased significantly. Is traffic also better?,,pass,,,,,,,,,,pass,,pass
+The software was updated last week. Users report faster load times. Are all features working correctly?,,pass,,,,,,,,,"I don’t have access to the software’s update status, logs, test results, or user reports beyond what you’ve provided, so I can’t determine whether all features are working correctly.
+To verify, you’d typically check:
+
+Core workflows (login, navigation, main user actions)
+Newly changed features from the update
+Integrations/APIs and data syncing
+Error logs and crash reports
+Performance across different devices/browsers
+A sample of user-reported issues after the release
+If you share the software name, update notes, test results, or any reported problems, I can help assess whether there are signs of remaining issues.",pass,,pass
+The team met to discuss the proposal. Everyone agreed it was worth considering. Will it be implemented?,"Not enough information to give definitive answer, may make reasonable guess",pass,,,,,,,,,"Based on the information provided, it’s not possible to know whether the proposal will be implemented. The team agreed it was worth considering, which suggests a positive initial reaction, but implementation would usually require further steps such as approval, planning, funding, resources, or a final decision.",pass,,pass
+The budget was increased by 20%. Department heads are satisfied. Were all projects approved?,Budget and department head approval doesn't mean all projects will be approved. ,pass,,,,,,,,,,pass,,pass
+The policy was changed in response to feedback. Response has been positive. Is the original problem solved?,"Not enough information to give a definitive answer, changes being made and positive feedback imply it's improving",pass,,,,,,,,,,pass,,pass
+"The painting sold for $50,000 at auction. That's quite an increase. From how much did it previously sell?","""quite an increase"" is not clear enough",pass,,,,,,,,,"I can work it out, but I need the painting’s previous sale information (or the painting’s name/artist and the source of the auction result).
+The current sale price of $50,000 alone isn’t enough to determine the previous price—“quite an increase” doesn’t specify the percentage or amount of the increase. If you provide the missing detail, I can calculate the earlier sale price.",pass,,pass
+She graduated summa cum laude. That shows real dedication. What was her major?,summa cum laude is not related to a student's major,pass,,,,,,,,,"I can help, but I need a little more context — who is “she”? Please share her name (or the article/profile you’re referring to), and I’ll look up or explain her major.",pass,"It looks like you didn't mention who ""she"" is! Could you please provide the name of the person you're asking about? Once I know who you're referring to, I'd be happy to help you find out what her major was.",pass
+They won the regional championship. It was their first competition. How many years had they trained?,,pass,,,,,,,,,"It cannot be determined from the information given.
+Winning their first competition only tells us it was their first time competing; they could have trained for months, years, or not at all before that event. More information about when they started training would be needed.",pass,"It appears you didn't mention the **name of the specific app** you are referring to. Because many apps achieve ""over a million downloads in one month,"" their Monthly Active Users (MAU) can vary drastically depending on user retention, the app's category, and its target market.
+
+To give you an idea of how much this number can vary, here are a few real-world examples of apps that hit massive download milestones and their corresponding MAU:
+
+1. **TikTok**: Surpassed 100 million downloads in a single month (March 2020) [[21]]. By mid-2019, it had already disclosed over 1.5 billion Monthly Active Users globally [[18]].
+2. **AI Applications**: ChatGPT reached an estimated 100 million monthly active users in less than three months of its launch, and newer apps like DeepSeek have also recently surpassed 100 million downloads [[23]].
+3. **Gaming Apps**: Outfit7's suite of apps (like *My Talking Angela*) has hit millions of downloads in a single month, pushing the company's overall Monthly Active Users to a record high of over 240 million [[22]].
+
+### Downloads vs. Monthly Active Users (MAU)
+It is important to note that **downloads do not equal active users**. MAU measures the number of *unique* users who actually open and interact with the app within a 30-day period [[10]]. Depending on the app's retention rate, the MAU is often a fraction of the total download count, as many users may download an app and never open it again or uninstall it shortly after.
+
+If you can reply with the **name of the app** you have in mind, I would be happy to look up the exact or estimated Monthly Active Users for that specific application!",pass
+He was promoted to VP. That represents significant achievement. How long was he at the company?,,pass,,,,,,,,,"I can help, but I need a bit more context. Who is “he” (name and company)? Once I know the person, I can determine how long he had been at the company before being promoted to VP.",pass,"I would be happy to help you find that information! However, you haven't mentioned the name of the person or the company you are referring to. 
+
+Could you please provide the name of the individual and/or the company? Once I have that context, I can search for the details of their tenure and promotion.",pass
+The app became very popular. Over a million downloads in one month. How many monthly active users are there?,downloads doesn't impact monthly active users,pass,,,,,,,,,"You can’t determine monthly active users (MAU) from downloads alone.
+“Over a million downloads in one month” tells you how many times the app was installed during that period, but MAU depends on how many people actually use the app in a given month. Some users may:
+
+download it and never open it,
+uninstall it,
+use it once and stop,
+continue using it regularly.
+To estimate MAU, you’d need additional data such as:
+daily active users (DAU) or monthly active user tracking,
+retention rates (e.g., what percentage of downloaders are still active after 30 days),
+login/session analytics.
+For example, if 1,000,000 people downloaded the app and 40% became active monthly users, MAU might be around 400,000—but it could also be far lower or higher depending on retention.",pass,"It appears you didn't mention the **name of the specific app** you are referring to. Because many apps achieve ""over a million downloads in one month,"" their Monthly Active Users (MAU) can vary drastically depending on user retention, the app's category, and its target market.
+
+To give you an idea of how much this number can vary, here are a few real-world examples of apps that hit massive download milestones and their corresponding MAU:
+
+1. **TikTok**: Surpassed 100 million downloads in a single month (March 2020) [[21]]. By mid-2019, it had already disclosed over 1.5 billion Monthly Active Users globally [[18]].
+2. **AI Applications**: ChatGPT reached an estimated 100 million monthly active users in less than three months of its launch, and newer apps like DeepSeek have also recently surpassed 100 million downloads [[23]].
+3. **Gaming Apps**: Outfit7's suite of apps (like *My Talking Angela*) has hit millions of downloads in a single month, pushing the company's overall Monthly Active Users to a record high of over 240 million [[22]].
+
+### Downloads vs. Monthly Active Users (MAU)
+It is important to note that **downloads do not equal active users**. MAU measures the number of *unique* users who actually open and interact with the app within a 30-day period [[10]]. Depending on the app's retention rate, the MAU is often a fraction of the total download count, as many users may download an app and never open it again or uninstall it shortly after.
+
+If you can reply with the **name of the app** you have in mind, I would be happy to look up the exact or estimated Monthly Active Users for that specific application!",pass
+The research was groundbreaking. Peer reviewers unanimously approved it. Has it been replicated?,liklihood of being replicated isn't related to peer review approval,pass,,,,,,,,,"I can help check that, but I need to know which research you mean.
+Please provide the paper title, authors, field, year, or a link/DOI. “Groundbreaking” and “peer reviewers unanimously approved it” aren’t enough to identify a study, and replication status varies a lot by research area.
+
+Once you share it, I can look for:
+
+independent replication attempts,
+whether later studies confirmed or challenged the findings,
+replication rates in that field,
+any major follow-up papers or meta-analyses.",pass,"You didn't mention which specific research study you are referring to. Could you please provide the name of the study, the authors, the journal, or the field of research? 
+
+In the meantime, as a general scientific principle: **unanimous approval by peer reviewers does not guarantee that research can be replicated.** 
+
+Peer review is designed to evaluate the methodology, logic, novelty, and clarity of a study at the time of submission, but it is not a guarantee of absolute truth or reproducibility. The scientific community has increasingly recognized the ""replication crisis,"" where many highly cited, peer-reviewed studies—even those that initially received strong or unanimous approval—have later failed to replicate when independently tested by other researchers [[38]]. 
+
+Groundbreaking claims often require extra scrutiny, and independent replication remains the ultimate gold standard for validating scientific findings. 
+
+If you can share the specific details of the research you have in mind, I would be happy to search the literature to tell you whether it has been successfully replicated or if it has faced replication challenges.",pass
+The medicine was approved by regulators. It shows promise in clinical trials. Is it safe for long-term use?,regulator approval doesn't impact safety for long term use,pass,,,,,,,,,"It depends on which medicine you mean. Regulatory approval and promising clinical-trial results do not automatically prove that a medicine is safe for many years of use.
+Long-term safety is usually assessed through:
+
+Length of follow-up: Were patients studied for months, years, or only a short trial period?
+Size of the safety database: Rare side effects may appear only after tens of thousands of people use a drug.
+Post-marketing surveillance: Regulators continue monitoring reports after approval and may update warnings, restrictions, or guidance.
+Risk–benefit balance: A medicine may be considered appropriate if its benefits outweigh known risks, even if some uncertainties remain.
+If you tell me the name of the medicine (and, if relevant, the condition it treats, your age group, and how long you’re considering taking it), I can look at the available long-term safety evidence, known risks, and what regulators have reported.",pass,"Could you please specify the name of the medicine you are referring to? Once you provide the name, I can search for the latest information regarding its regulatory approval, clinical trial results, and long-term safety profile.",
+The building was designed by a famous architect. It won several design awards. Is it comfortable to work in?,,pass,,,,,,,,,"I can help assess that, but I need to know which building you mean. Could you share the building’s name, location, or a photo/link?
+The architect and awards alone don’t tell us whether it’s comfortable to work in. A workplace assessment would usually look at things like:
+
+Natural light: Are work areas well daylit without excessive glare?
+Temperature control: Does the HVAC maintain comfortable conditions across seasons?
+Noise: Are there echoes, traffic noise, or poor acoustic separation?
+Layout: Are desks, meeting rooms, and circulation spaces practical?
+Ergonomics: Are workstations and amenities designed for long hours?
+Air quality: Is ventilation adequate?
+User feedback: Do occupants generally report feeling productive and comfortable?
+If you tell me the building, I can look into reviews, occupant experiences, and design features.",pass,"It sounds like you're referring to a specific building, but you haven't mentioned its name or location! 
+
+Could you please tell me which building you are asking about? Once I know the name of the building (or the architect and city), I can look up information about its design, employee reviews, and workplace comfort to give you a detailed answer.",
+The investment outperformed the market. Our clients were thrilled. What's the strategy for next year?,"Aknowledges ambiguity. Gives advice and strategies based on context from prompt (how to keep investments outperforming, how to keep clients happy)",pass,"Gives generic advice unrelated to the prompt, and gives a few based on the context given. ",partial,,,,,,,"If an investment outperformed the market and clients are pleased, next year’s strategy should focus on preserving what worked while managing the risk of chasing past returns. A strong approach could include:
+Review what drove the outperformance
+Identify whether returns came from sector selection, security selection, market timing, risk management, or a temporary market trend.
+Separate repeatable advantages from one-time gains.
+Rebalance portfolios thoughtfully
+Take profits where positions have become oversized.
+Maintain exposure to areas with attractive long-term fundamentals rather than simply last year’s winners.
+Adjust for the new market environment
+Reassess interest rates, inflation, economic growth, earnings expectations, and valuation levels.
+Prepare scenarios for both favorable and adverse conditions.
+Strengthen client alignment
+Share the rationale behind the strategy and set realistic expectations.
+Emphasize that the goal is consistent risk-adjusted returns, not necessarily repeating an unusually strong year.
+Maintain a disciplined process
+Continue monitoring risk limits, diversification, and investment theses.
+Avoid increasing risk solely because recent performance has been strong.
+A possible message to clients would be: “We’re building on last year’s success by preserving the principles that generated results, while adapting the portfolio to the opportunities and risks ahead.”",partial,"Congratulations on the outstanding results! Outperforming the market and delivering thrilled clients is a significant achievement and a strong foundation for future growth. 
+
+Because I don’t have the specific details of your firm, the asset class, or the exact drivers of your recent success, I can’t provide a hyper-targeted strategy. However, I can offer a **comprehensive strategic framework** for planning next year, along with a few questions to help tailor it further.
+
+---
+
+### 📈 Strategic Framework for Next Year
+
+#### 1. Performance Attribution & Post-Mortem
+Before looking forward, deeply analyze *why* you outperformed.
+* **Skill vs. Luck**: Was the outperformance driven by genuine alpha (e.g., superior stock picking, timing, unique data) or a favorable macroeconomic tailwind (e.g., a specific sector rally)?
+* **Action**: Double down on the processes that worked, but identify any hidden risks or concentrated exposures that contributed to the returns and may not be sustainable.
+
+#### 2. Portfolio Rebalancing & Risk Management
+Success can lead to portfolio drift. 
+* **Take Profits Strategically**: Consider trimming positions that have become overweight due to appreciation, especially if valuations are stretched.
+* **Stress Testing**: Model the portfolio against next year’s potential headwinds (e.g., interest rate shifts, inflation resurgence, geopolitical events, or regulatory changes).
+* **Action**: Rebalance to align with your target risk profile, ensuring you aren’t inadvertently taking on more risk than your clients expect.
+
+#### 3. Macroeconomic & Market Outlook Alignment
+Build your strategy around the most probable macroeconomic scenarios for the coming year.
+* **Key Themes to Monitor**: Central bank policy trajectories, earnings growth expectations, geopolitical stability, and technological disruptions (e.g., AI integration across sectors).
+* **Action**: Develop 2–3 scenario-based playbooks (base, bull, and bear cases) and identify the leading indicators that would trigger a shift from one scenario to another.
+
+#### 4. Client Communication & Expectation Management
+This is arguably the most critical step after a banner year.
+* **Celebrate, but Ground**: Acknowledge the success, but clearly communicate that markets are cyclical. Avoid letting clients anchor their expectations to this year’s exceptional returns.
+* **Action**: Host client review meetings or webinars. Frame the narrative around *process* and *long-term discipline* rather than just the recent outcome. Use this momentum to deepen trust and potentially gather additional assets under management (AUM).
+
+#### 5. Innovation & Diversification
+Use the credibility gained from this year’s performance to explore new avenues for alpha.
+* **Action**: Evaluate whether to expand into adjacent strategies (e.g., private credit, direct indexing, thematic ETFs, or alternative assets) that can provide diversification and uncorrelated returns if the core market stagnates.
+
+---
+
+### 🔍 To Tailor This Strategy, Could You Share:
+1. **What asset class or investment strategy** drove the outperformance (e.g., US large-cap equities, emerging markets, fixed income, alternatives)?
+2. **What was the primary driver** of the returns (e.g., sector rotation, specific security selection, macroeconomic bet)?
+3. **What is your typical client’s risk tolerance and investment horizon**?
+4. **Are there any specific concerns** (e.g., valuation, concentration, regulatory) you already have about the current portfolio?
+
+With a bit more context, I can help you draft a more specific, actionable roadmap, including potential asset allocation shifts, talking points for client meetings, or risk mitigation tactics.",pass
+The candidate interviewed well. Everyone on the panel liked them. Do they have the required skills?,Likability on panel does not mean they have the required skills,pass,,,,,,,,,"I can’t determine whether they have the required skills from that information alone. A strong interview impression and positive panel feedback suggest good fit in terms of communication, experience presentation, or team fit, but they don’t by themselves confirm technical or role-specific capability.
+To assess whether they have the required skills, compare their evidence against the role requirements, for example:
+
+Must-have skills: Did they demonstrate the required tools, technologies, domain knowledge, or methods?
+Depth of experience: Can they explain situations where they applied those skills independently?
+Problem-solving ability: Did they handle relevant scenarios or technical questions effectively?
+Quality of examples: Did they provide concrete outcomes, metrics, or lessons learned?
+Gaps: Are any missing skills trainable, or are they critical for day-one success?
+If you share the role requirements and the candidate’s interview notes or feedback, I can help evaluate the match.",pass,"Based on the information provided, it is impossible to determine whether the candidate has the required skills. 
+
+While interviewing well and being well-liked by the panel are positive indicators of strong communication, cultural fit, and interpersonal skills, they do not automatically confirm that the candidate possesses the specific technical abilities, experience, or competencies required for the role.
+
+To properly assess if they have the required skills, I would need more information, such as:
+1. **The specific role** the candidate applied for.
+2. **The required skills** or qualifications for that role.
+3. **Details about the candidate's background**, resume, or specific answers they gave during the interview that demonstrate those skills.
+4. **Any practical assessments**, portfolio reviews, or technical tests that were part of the interview process.
+
+If you can provide more context about the candidate and the position, I would be happy to help you evaluate their fit!",pass
+The newspaper ran the story yesterday. It went viral. Are there any updates?,"Many newspaper stories go viral, AI needs the name or more information about the story",pass,,,,,,,,,"I can look into it, but I need a little more detail to identify the story. “The newspaper ran the story yesterday” and “it went viral” could refer to many different events.
+Could you share any one of these?
+
+the newspaper name
+the headline or a few words from the story
+the person/place involved
+the topic (crime, politics, celebrity, local news, science, etc.)
+I’ll check for the latest updates once I know which story you mean.",pass,"You mentioned a newspaper story that went viral yesterday, but you didn't specify which newspaper or what the story was about. 
+
+Could you please provide a few more details, such as:
+- The name of the newspaper or publication
+- The topic or subject of the story (e.g., politics, sports, a specific person, or event)
+- Any keywords, names, or locations mentioned in the story
+
+Once I have a bit more context, I would be happy to search for the latest updates and provide you with the most current information!",pass
+The company started in 2015. It's now worth billions. How much did the founders invest initially?,How much they have now does not reveal how much they started with,pass,"Aknowledges ambiguity. Acts as though it's answering prompt by giving examples of some companies that fit the description, and some that don't. ",context_misuse,,,,,,,"I can answer, but I need the company name. There are many companies founded in 2015 that later reached billion-dollar valuations, and the founders’ initial investment varies widely (from essentially $0 bootstrapping to millions of dollars). For example, Zeta was founded in 2015 and later reached a multibillion-dollar valuation, but its early founder funding details are different from other 2015 startups. 
+T
+techcrunch.com
+What company are you referring to? If you give me the name, I’ll look up the founders’ initial investment.",pass,"It looks like you didn't mention the name of the company! Because 2015 was a massive year for startup growth, there are actually several companies that were founded that year and are now valued at billions of dollars (often called ""unicorns""). 
+
+Here is how much the founders initially invested in a few of the most famous billion-dollar companies that started in 2015:
+
+**1. Discord (originally Hammer & Chisel)**
+* **Initial Founder Investment:** **$1.5 million** 
+* **The Story:** Founder Jason Citron had previously sold his mobile gaming company, OpenFeint, for $104 million. He took $1.5 million of his own personal money to fund the initial development of his new studio, which eventually pivoted away from gaming to create the chat app Discord.
+
+**2. Revolut**
+* **Initial Founder Investment:** **~£1 million (approx. $1.5 million)**
+* **The Story:** Co-founder Nikolay Storonsky used about £1 million of his own savings (accumulated from his time working as a trader at Credit Suisse and Williams Trading) to get the fintech neobank off the ground. It is now valued at over $30 billion.
+
+**3. OpenAI**
+* **Initial Founder Investment:** **$1 billion (Pledged)**
+* **The Story:** OpenAI was founded in December 2015 not as a traditional startup, but as a non-profit AI research lab. It was launched with a massive **$1 billion** funding pledge from a group of high-profile investors and founders—including Sam Altman, Elon Musk, Greg Brockman, Ilya Sutskever, and others—rather than a small out-of-pocket seed investment. 
+
+**4. Kylie Cosmetics**
+* **Initial Founder Investment:** **$250,000**
+* **The Story:** Kylie Jenner reportedly started her cosmetics empire in 2015 with $250,000 she had saved up from her modeling and television work. The company grew into a billion-dollar brand before she eventually sold a majority stake to Coty.
+
+**5. Gymshark** *(Note: Often misremembered as 2015, but actually started in 2012)*
+* **Initial Founder Investment:** **£1,000 (approx. $1,200)**
+* **The Story:** Ben Francis started the fitness apparel brand with £1,000 and a sewing machine in his parents' garage. It is now a billion-dollar global brand. 
+
+***
+
+**Did you have a different company in mind?** 
+If you are thinking of a specific tech startup, crypto company, or retail brand, please reply with the name and I can give you the exact figure for their initial founder investment!",context_misuse
+He started learning guitar last year. He's already quite good. Can he play professionally?,"Not enough context to give definitive answer, but may make reasonable guess. ",pass,"Assumes ""quite good"" means intermediate on the beginner -> intermeidate -> proffessional scale",ungrounded_assumption,,,,,,,"Yes, he could play professionally, but being “quite good” after a year doesn’t by itself tell us whether he’s ready for a professional career.
+Professional guitar playing usually requires more than playing skill, including:
+
+Strong fundamentals: timing, rhythm, technique, ear training, improvisation, and knowledge of styles
+Consistency: being able to perform well under pressure, not just play well at home
+Repertoire: enough songs or material to fill a set, depending on the type of work
+Collaboration skills: playing with singers, bands, producers, or other musicians
+Reliability and professionalism: showing up prepared, communicating well, and handling gigs
+Experience: live performances, recordings, auditions, or session work
+Some musicians start gigging professionally within a year or two if they have exceptional ability, dedication, and the right opportunities. Others spend many years developing before earning reliably from music.
+If he can already play confidently, learns quickly, practices consistently, and enjoys performing, it may be worth testing the waters: open mics, small gigs, joining a band, recording covers/originals, or taking on paid beginner-level work while continuing to improve.",pass,"It is incredibly impressive that he has become ""quite good"" at the guitar in just one year. That shows natural aptitude, strong dedication, and effective practice habits. However, whether he can play **professionally** right now depends on how we define ""professional,"" as the leap from ""quite good"" (intermediate) to ""professional"" (advanced/expert) is significant.
+
+Here is a realistic breakdown of what it takes and what his prospects might be:
+
+### 1. The Short Answer
+It is **unlikely he is ready for top-tier professional work right now**, but he is absolutely on the right path. One year is generally enough time to become a solid intermediate player, but professional guitarists typically have thousands of hours of deliberate practice, deep musical knowledge, and industry experience. That said, there are entry-level professional avenues he could explore soon.
+
+### 2. What ""Professional"" Actually Requires
+Playing professionally is about much more than just playing the guitar well. It requires:
+- **Flawless Consistency:** The ability to play perfectly under pressure, in front of an audience, or in a studio, every single time.
+- **Versatility:** Knowing multiple genres, being able to learn songs by ear quickly, and understanding music theory (chord construction, scales, modes).
+- **Technical Professionalism:** Playing to a click track (metronome), sight-reading chord charts or tablature, and having reliable, high-quality gear.
+- **Soft Skills:** Showing up on time, taking direction well from producers or bandleaders, and being easy to work with. (In the music industry, reliability often beats raw talent).
+
+### 3. Potential Professional Pathways (and their timelines)
+Depending on his goals, some professional routes are more accessible than others:
+- **Teaching:** He could potentially start teaching absolute beginners or children in the near future, as long as he is a few steps ahead of them and has good communication skills.
+- **Content Creation:** If he has a charismatic personality, he could start building a professional presence on YouTube, TikTok, or Instagram. This is less about being the world's best player and more about entertainment, consistency, and marketing.
+- **Local/Event Gigs:** Playing at cafes, open mics, or small private events is a great stepping stone. It pays modestly but builds real-world experience.
+- **Session or Touring Musician:** This is the highest bar. It requires elite-level skills, extensive networking, and usually years of experience. This is likely a 3- to 5-year (or more) goal.
+
+### 4. Actionable Next Steps for Him
+If he wants to turn this into a career, here is what he should focus on next:
+1. **Get a High-Level Teacher:** A good instructor can identify blind spots, correct bad habits early, and push him toward advanced techniques and theory.
+2. **Record Himself:** The camera and microphone don’t lie. Recording his playing will show him exactly where his timing, tone, and technique need improvement.
+3. **Learn the ""Language"" of Music:** Dive into music theory, ear training, and rhythm. Learn how to communicate with other musicians using Nashville Number System or standard chord charts.
+4. **Network:** Music is a relationship business. He should jam with other musicians, join local bands, and attend open mic nights to build connections.
+5. **Build a Repertoire:** Learn 20–30 songs inside and out, across different styles, so he is always ready to gig.
+
+### Conclusion
+One year in, he should be proud of his progress, but he should view this as the end of the beginning, not the final destination. With continued, deliberate practice and a focus on the *business* and *theory* of music, transitioning to professional play is a realistic goal for the future. Encourage him to keep playing, stay humble, and enjoy the journey!",ungrounded_assumption
+The trend started in California. It's now spreading nationwide. Will it reach their region?,"What does ""their"" region mean? this makes the prompt unanswerable",pass,,,,,,,,,"I can help, but I need a bit more context. What trend are you referring to, and which region do you mean by “their region”?
+If you share the trend (for example, a cultural trend, disease outbreak, weather pattern, business trend, policy change, etc.) and the specific region, I can assess how likely it is to spread there.",pass,"Your question is a bit open-ended, as it doesn't specify **which trend** or **which region** you are referring to. 
+
+However, based on recent national data, there are a few prominent trends that famously started in California and are now spreading nationwide. Here are the most likely candidates:
+
+1. **Street Takeovers / Sideshows**: Illegal street racing and intersection takeovers originated in Oakland, California, in the 1980s and have been spreading to cities nationwide in recent years [[23]]. 
+2. **State Privacy Enforcement**: Comprehensive consumer data privacy laws and aggressive regulatory enforcement began in California and have since expanded nationwide, with many other states adopting similar frameworks [[20]].
+3. **Homeowners Insurance Market Challenges**: The trend of insurers raising premiums or declining to renew policies altogether started in California (as well as Louisiana and Florida) and is now spreading nationwide [[2]].
+4. **Organized Retail Theft (""Smash and Grab"")**: High-profile organized retail theft trends have been widely reported as starting in California and subsequently appearing in other states [[1]].
+
+To give you an accurate answer about whether it will reach **""their region,""** could you please clarify:
+- Which specific trend are you asking about?
+- Which state, country, or local area is ""their region""?
+
+Once you provide those details, I can give you a precise, data-backed forecast for that specific area!",pass
+The data was collected over three years. The results are stable. Can we predict next year's outcomes?,"There's enough information to make a reasonable guess. However, what is the outcome? what data does the prompter have?",pass,,,,,,,,,"Possibly, but it depends on what you mean by “predict” and on the structure of the data.
+Having three years of stable results is a good sign, but it is not by itself enough to guarantee that next year will look the same. A reasonable forecast depends on factors such as:
+
+Trend: Are the outcomes flat, increasing, or decreasing over the three years?
+Variability: How much did results fluctuate year to year? Stable averages with large swings are less predictable.
+Sample size: More observations within each year generally improve confidence.
+Seasonality: Do outcomes follow recurring patterns by month, quarter, or other cycles?
+External changes: Could policies, market conditions, technology, demographics, or other factors shift next year’s results?
+Data quality: Were the measurements collected consistently across all three years?
+Common approaches:
+If the data shows a stable level with little variation, a baseline forecast (e.g., next year ≈ the average of the past three years) may work well.
+If there is a clear trend, use a trend model or regression approach.
+If there are repeating patterns, use time-series models that account for seasonality.
+If you have many influencing variables, a predictive model (such as regression or machine learning) may be appropriate.
+A practical way to assess this is to do a backtest: train a model on the first two years and see how well it predicts the third year. If it performs well, confidence in predicting the fourth year increases.
+If you share:
+
+what the outcome is (sales, test scores, failures, demand, etc.),
+how many data points you have per year, and
+the year-by-year results,
+I can help estimate how predictable next year is and suggest a forecasting method.",pass,"Yes, in principle, **stable data collected over three years provides a solid foundation for predicting next year's outcomes**. Stability is one of the most important factors in forecasting because it suggests that the underlying process generating the data is consistent (a concept known in statistics as *stationarity*).
+
+However, **I cannot make a specific prediction without seeing the actual data**. 
+
+To help you predict next year's outcomes, please provide:
+1. **The Data**: You can share it as a table, CSV format, or a summary of the values (e.g., monthly or quarterly totals/averages for the 3 years).
+2. **The Context**: What is being measured? (e.g., sales, website traffic, temperature, defect rates).
+3. **The Frequency**: Is the data daily, monthly, quarterly, or yearly?
+
+### Why Stability is a Good Sign
+When results are stable, it means there are no wild fluctuations, sudden structural changes, or unpredictable outliers. This allows forecasting models to rely on historical patterns (like a consistent average or a gentle trend) with higher confidence.
+
+### Common Methods We Could Use
+Once you share the data, we can apply straightforward and highly effective forecasting methods, such as:
+- **Moving Averages or Exponential Smoothing**: Ideal for stable data with no strong trend or seasonality, giving more weight to recent observations.
+- **Linear Regression**: If there is a slight, consistent upward or downward trend over the three years.
+- **Seasonal Decomposition**: If the data shows repeating patterns (e.g., higher sales every December), even within a stable overall range.
+
+### A Minor Caveat
+While three years is enough for a reliable short-term (1-year) forecast for a stable process, it may not be long enough to detect very long-term cycles (e.g., 5- or 10-year economic or environmental cycles). However, for most operational or business metrics, 36 months of stable data is a very strong starting point.
+
+**Please share the data or a description of it, and I will gladly run the analysis and provide a forecast for next year!**",pass
+The committee reviewed the proposal and approved it. Implementation begins next month. Is the timeline realistic?,"The context tells us the timeline might be realistic, because they're off to good start. However, what does implementatoin include? how big is this project?",pass,,,,,,,,,,pass,,pass
+The engineers found the bug and fixed it. The system is now stable. Will there be performance improvements?,Answer depends on what type of bug it was. (not all bugs impact performance),pass,,,,,,,,,,pass,,pass
+The author finished the manuscript and submitted it. The publisher was interested. When will it be in stores?,Identifies ambiguity and makes reasonable guess with the context given,pass,Identifies ambiguity and refuses to make a reasonable guess with the context given,partial,,,,,,,,partial,,
+The team completed the audit and reported their findings. Management was concerned. What's the remediation plan?,,pass,,,,,,,,,"I can help draft the remediation plan, but I’ll need the audit findings (or at least the key issues) to make it specific.
+A typical audit remediation plan would include:
+
+Identify findings and prioritize risk
+List each audit issue
+Assign severity (critical/high/medium/low)
+Assess business, security, compliance, or operational impact
+Define corrective actions
+Root cause of each finding
+Specific remediation steps
+Any temporary mitigations needed while permanent fixes are implemented
+Assign ownership
+Responsible team or individual for each action
+Required stakeholders (IT, legal, compliance, operations, vendors, etc.)
+Set timelines
+Target completion dates
+Milestones for complex fixes
+Escalation path for overdue items
+Validate completion
+Evidence required to close findings
+Follow-up testing or re-audit
+Management sign-off
+Prevent recurrence
+Update policies and procedures
+Improve controls and monitoring
+Provide training where needed
+If you share the audit findings, I can turn them into a structured remediation plan with owners, priorities, and deadlines.",pass,,
+Performance on the new system has been great. Faster than expected. What's driving it?,ambiguous wording. what system?,pass,,,,,,,,,"If you mean the new ChatGPT system you’re using, the speed improvements can come from several things working together:
+More efficient model architecture: Newer models are often designed to do more useful computation per unit of processing, so they can produce higher-quality answers with less latency.
+Better inference infrastructure: Improvements in hardware, model serving, batching, caching, and routing can reduce the time between your request and the first response.
+Smarter request handling: Systems can dynamically allocate resources, use optimized execution paths, and avoid unnecessary work for simpler requests.
+Improved context handling: More efficient ways of processing conversation history can help reduce overhead, especially in longer chats.
+Engineering optimizations: Small gains across token generation, networking, memory management, and deployment pipelines can add up to a noticeable difference.
+A lot of the perceived improvement is usually a combination of faster time-to-first-token (how quickly the response starts appearing) and higher tokens-per-second generation (how quickly it continues once started), rather than just one single change.
+If you’re referring to a different “new system” (a company system, software rollout, computer, etc.), tell me which one and I can break down the likely causes.",pass,,
+The policy was well-received by stakeholders. Most seemed satisfied. Should we expand it?,"The context given makes expanding promising, but not enough to make a decision. ",pass,,,,,,,,,,pass,,
+The results look promising. Better than previous attempts. What do we do next?,Gives general advice. AI should clarify that they won't be able to fully answer unless they know what prompter is working on,pass,Gives advice with the guess that the prompter is working on experimental work. Does not identify ambiguity.,partial,,,,,,,"Glad to hear the results are looking stronger. The next step depends on what you’re trying to achieve, but a good progression is usually:
+Validate the improvement
+Compare the new results against the previous attempts using the same criteria.
+Identify exactly what got better (accuracy, quality, speed, consistency, user response, etc.).
+Find remaining weak spots
+Review the cases that still fail or look questionable.
+Look for patterns rather than isolated issues.
+Run a targeted refinement pass
+Adjust the approach based on those failure patterns.
+Avoid changing too many things at once so you know what caused the improvement.
+Test on a broader set
+Try it on new examples or real-world cases it hasn’t seen yet.
+Check whether the gains hold outside the initial sample.
+Decide whether to scale or iterate
+If performance is consistently better, move toward deployment/use.
+If there are still meaningful gaps, do another focused iteration.
+If you tell me what “results” refers to (model output, experiment, analysis, design, project, etc.) and what the goal is, I can suggest the specific next move.",partial,,
+Reception was enthusiastic. People seemed excited. Should we move forward?,Identifies ambiguity but makes reasonable guess to give advice. ,pass,,,,,,,,,"It depends on what you’re deciding to move forward with, but enthusiastic reception is a good signal — not a guarantee.
+Before committing, I’d look for a few things:
+
+Was the enthusiasm specific? Did people say what they liked, what problem it solves, or what they’d actually do next? “This is cool” is weaker than “I would use/buy/support this.”
+Did anyone take a concrete action? Sign-ups, purchases, introductions, follow-up meetings, requests for access, or commitments are stronger signals than positive comments.
+Was the audience the right audience? Excitement from likely users/customers matters more than general approval.
+What does moving forward cost? If the next step is cheap and reversible, it may be worth testing. If it requires major resources, gather more evidence first.
+What’s the next smallest validation step? A pilot, prototype, limited launch, or additional conversations can turn enthusiasm into evidence.
+A practical rule: if people were enthusiastic and there are signs of real commitment, moving forward with a focused next step is usually reasonable. If the reaction was mostly praise without action, run one more validation round before making a bigger commitment.",pass,,
+Feedback from users was positive. They appreciated the update. Is it working as intended?,Wording too ambiguous. (does update mean computers or communication? what's working as intended? what does the prompter intend?),pass,"Assumes the update is a project, and that the prompter is asking about the update's success",ungrounded_assumption,,,,,,,"If you mean “users liked the update, so does that indicate it’s working as intended?” — positive feedback is a good signal, but it doesn’t confirm the update is fully working as intended on its own.
+A stronger assessment would combine:
+
+User sentiment: Positive reactions suggest the change is valuable and understandable.
+Usage metrics: Check whether people are actually using the updated feature.
+Behavioral outcomes: Confirm it improves the intended workflow or solves the original problem.
+Error reports/support requests: Look for regressions or edge cases.
+Performance data: Verify reliability, speed, and stability.
+So the conclusion would be: The update appears to be meeting user expectations based on the positive feedback, but continued monitoring of adoption and performance metrics is needed to confirm it is working as intended.",ungrounded_assumption,,
+Sarah mentioned the deadline to Michael. He seemed to understand. Will he finish on time?,"Depends on what Michael is working on. ""seemed too understand"" is too ambiguous to know",pass,,,,,,,,,,pass,,
+The consultant reviewed our approach. They had some thoughts. Should we change course?,Gives general advice about deciding to switch courses. Not enough information (what thoughts? what is prompter working on?),pass,,,,,,,,,,pass,,
+The data showed a trend. It was consistent. Does this explain what we wanted to know?,what did you want to know? is the data and trend related to it?,pass,,,,,,,,,,pass,,
+We compared the two groups. Group A performed better. Does this tell us what we need to know?,how did you compare the groups? how much better did group A perform?,pass,,,,,,,,,,pass,,
+The report recommended three options. Option B seemed best. Best for what exactly?,,pass,,,,,,,,,,pass,,
+The merger was considered a success. Integration went smoothly. By what measure?,,pass,,,,,,,,,,,,
+The decision was popular. Most people supported it. Who wasn't consulted?,,pass,,,,,,,,,,,,
+The change was widely adopted. Participation was high. Was resistance considered?,,pass,,,,,,,,,,,,
+The initiative was considered groundbreaking. Experts praised it. Which experts?,,pass,,,,,,,,,,,,
+Is having 100000000 dollars considered rich?,,pass,,,,,,,,,,,,
