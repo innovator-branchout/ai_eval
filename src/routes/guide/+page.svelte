@@ -371,14 +371,14 @@
 		display: inline-block;
 		padding: 0.8rem 1.3rem;
 		border-radius: 0.5rem;
-		background: var(--fern);
+		background:` var(--fern);
 		color: white;
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.primary-button:hover {
-		background: #591716;
+		background: #50723C;
 	}
 	.header-container {
         display: flex;
