@@ -6,7 +6,7 @@
 	/>
 </svelte:head>
 <script>
-    const examples = [`
+    const examples = [
         {
             id: 1,
             title: "Example 1: Ethics",
