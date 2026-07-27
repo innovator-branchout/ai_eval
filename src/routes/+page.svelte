@@ -13,7 +13,7 @@
 		We're building a system to evaluate AI responses.
 	</p>
 
-	<a class="primary-button" href="#about">Learn more</a>
+	<a class="primary-button" href="about">Learn more</a>
 
 	<section id="about">
 		<h2>About the project</h2>
