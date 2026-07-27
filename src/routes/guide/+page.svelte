@@ -256,7 +256,7 @@
 		</p>
 		<img src="/src/routes/guide/demoimage1.png" alt="Demo Image1" class="demo-image1" />
 		<p>
-			then click the evalulate button.
+			then click the evalulate button:
 		</p>
         <img src="/src/routes/guide/demoimage2.png" alt="Demo Image2" class="demo-image2" />
 		<p>
@@ -378,14 +378,14 @@
 		display: inline-block;
 		padding: 0.8rem 1.3rem;
 		border-radius: 0.5rem;
-		background:` var(--fern);
+		background: var(--fern);
 		color: white;
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.primary-button:hover {
-		background: #50723C;
+		background: #3F5A2F;
 	}
 	.header-container {
         display: flex;
