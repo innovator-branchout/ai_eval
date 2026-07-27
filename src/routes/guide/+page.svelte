@@ -378,7 +378,7 @@
 	}
 
 	.primary-button:hover {
-		background: #3d5530;
+		background: #3d5530;`
 	}
 	.header-container {
         display: flex;
@@ -437,6 +437,7 @@
         background: #f0f0f0;
         padding: 1rem;
         border-radius: 0.5rem;
+        margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
