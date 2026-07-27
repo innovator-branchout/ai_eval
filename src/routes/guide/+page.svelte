@@ -245,7 +245,7 @@
 </script>
 <main>
     <div class="header-container">
-        <img src="/src/routes/guide/icon_test.png" alt="Header Icon" class="header-icon" />
+        <img src="/icon_test.png" alt="Header Icon" class="header-icon" />
 	    <h1>Use Guide</h1>
 	</div>
 
@@ -261,7 +261,7 @@
 		<p>
 			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
-		<img src="src/routes/guide/demoimage(placeholder).png" alt="Demo Image" class="demo-image" />
+		<img src="/demoimage(placeholder).png" alt="Demo Image" class="demo-image" />
 
 	</section>
 
