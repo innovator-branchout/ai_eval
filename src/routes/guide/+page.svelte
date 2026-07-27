@@ -238,7 +238,7 @@
 </script>
 <main>
     <div class="header-container">
-        <img src="/icon_test.png" alt="Header Icon" class="header-icon" />
+        <img src="/src/routes/guide/icon_test.png" alt="Header Icon" class="header-icon" />
 	    <h1>Use Guide</h1>
 	</div>
 
@@ -252,9 +252,16 @@
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, input the prompt and responses of a LLM into their respective textboxes, then click the evalulate button. Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
+			To use our model, input the prompt and responses of a LLM into their respective textboxes like so:
 		</p>
-		<img src="/demoimage(placeholder).png" alt="Demo Image" class="demo-image" />
+		<img src="/src/routes/guide/demoimage1.png" alt="Demo Image1" class="demo-image1" />
+		<p>
+			then click the evalulate button:
+		</p>
+        <img src="/src/routes/guide/demoimage2.png" alt="Demo Image2" class="demo-image2" />
+		<p>
+		     Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
+		</p>
 
 	</section>
 
@@ -378,7 +385,7 @@
 	}
 
 	.primary-button:hover {
-		background: #3d5530;`
+		background: #3F5A2F;
 	}
 	.header-container {
         display: flex;
