@@ -296,7 +296,7 @@
     <p>{examples.find(example => example.id === Number(selectedId)).outputScore}</p>
 </div>
 
-		<a class="primary-button" href="/model">Try it yourself</a>
+		<a class="`primary`-button" href="/model">Try it yourself</a>
 	</section>
 	<section id="rubric">
 	    <h2>Grading Rubric</h2>
@@ -371,14 +371,14 @@
 		display: inline-block;
 		padding: 0.8rem 1.3rem;
 		border-radius: 0.5rem;
-		background:` var(--fern);
+		background: var(--fern);
 		color: white;
 		font-weight: bold;
 		text-decoration: none;
 	}
 
 	.primary-button:hover {
-		background: #50723C;
+		background: #3d5530;
 	}
 	.header-container {
         display: flex;
