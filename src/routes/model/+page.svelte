@@ -1,6 +1,10 @@
 <script>
     let prompt = $state('');
     let response = $state('');
+
+    function getScore(){
+        alert('You got your score! (jk you did not this is placeholder)');
+    }
 </script>
 
 <svelte:head>
@@ -20,7 +24,7 @@
 
 	<section>
         <p>
-            If you haven't already, we highly recommend reading the <a href="/guide">"Guide"</a> page to learn more about using our model!
+            <strong>Note:</strong> If you haven't already, we highly recommend reading the <a href="/guide">"Guide"</a> page to learn more about using our model!
         </p>
 	</section>
 
@@ -28,19 +32,21 @@
         <h2> Test It Out! </h2>
         <p>Enter the prompt and response to the model, then click the "Evalulate" button to get its score.</p>
 
-        <br>
+
 
         <h3>Enter your prompt: </h3>
-        <input type="prompt" bind:value={prompt} placeholder="What did you ask?"/>
+        <textarea type="prompt" bind:value={prompt} placeholder="What did you ask?"/>
         <br>
         <h3>Enter the response: </h3>
-        <input type="response" bind:value={response} placeholder="What did the model say?"/>
+        <textarea type="response" bind:value={response} placeholder="What did the model say?"/>
 
-        <br>
-        <br>
-        <br>
+        <h3> Score: N/A</h3>
 
-        <a class="primary-button" href="/model">Evalulate</a>
+        <button onclick={getScore}>
+            Evalulate
+        </button>
+
+
 
 	</section>
 
@@ -91,10 +97,12 @@
 	}
 
 	section:first-of-type {
-		margin-top: 4rem;
+		border-left: 5px solid var(--muted);
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
-	.primary-button {
+	button {
 		display: inline-block;
 		padding: 0.8rem 1.3rem;
 		border-radius: 0.5rem;
@@ -104,16 +112,23 @@
 		text-decoration: none;
 	}
 
-	.primary-button:hover {
+	button:hover {
 		background: #591716;
 	}
 
-	input {
+	textarea {
         max-width: 650px;
 		margin-bottom: 2rem;
 		color: var(--charcoal);
 		font-size: 1.1rem;
 		line-height: 1.7;
 		border-radius: 8px;
+		width: 100%;
+		height: 400px;
+		white-space: pre-wrap;
+        resize: vertical;
+	}
+	textarea:first-of-type {
+		height: 150px;
 	}
 </style>
