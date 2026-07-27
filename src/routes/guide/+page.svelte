@@ -6,7 +6,7 @@
 	/>
 </svelte:head>
 <script>
-    const examples = [
+    const examples = [`
         {
             id: 1,
             title: "Example 1: Ethics",
@@ -371,7 +371,7 @@
 		display: inline-block;
 		padding: 0.8rem 1.3rem;
 		border-radius: 0.5rem;
-		background: var(--wine);
+		background: var(--fern);
 		color: white;
 		font-weight: bold;
 		text-decoration: none;
