@@ -305,7 +305,7 @@
 </div>
 
 		<a class="primary-button" href="/model">Try it yourself</a>
-	</section>
+	</section>`
 	<section id="rubric">
 	    <h2>Grading Rubric</h2>
 		<p>Our project used a set grading rubric in order to evalulate the score of the AI. Based on prompts/responses graded by students(using the same rubric), the AI predicts its label for each category, determining its score for such category.</p>
@@ -463,7 +463,7 @@
         padding: 1rem;
         border-radius: 0.5rem;
         margin-top: 1.5rem;
-        margin-bottom: 1.5rem;`
+        margin-bottom: 1.5rem;
 
     }
 
