@@ -57,6 +57,7 @@
     ]
 
     let selectedId = $state(1);
+    let selectedCategory = $state("False Premise/Factual Hallucination");
 
     const rubricData = [
         {
@@ -311,29 +312,38 @@
 	    <h2>Grading Rubric</h2>
 		<p>Our project used a set grading rubric in order to evalulate the score of the AI. Based on prompts/responses graded by students(using the same rubric), the AI predicts its label for each category, determining its score for such category.</p>
 		<p>Here is the grading rubric used: </p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Label</th>
-                    <th>Status</th>
-                    <th>Severity</th>
-                    <th>Meaning</th>
-                </tr>
-            </thead>
+        <select bind:value={selectedCategory}>
+        <option value="False Premise/Factual Hallucination">False Premise/Factual Hallucination</option>
+        <option value="Citation Reliability">Citation Reliability</option>
+        <option value="Ambiguity/Context">Ambiguity/Context</option>
+        <option value="Bias">Bias</option>
+        <option value="Explanation (Math/Science/Coding)">Explanation (Math/Science/Coding)</option>
+        <option value="Responsible Response (Ethics/Safety)">Responsible Response (Ethics/Safety)</option>
+    </select>
 
-            <tbody>
-                {#each rubricData as row}
-                    <tr>
-                        <td><strong>{row.category}</strong></td>
-                        <td>{row.label}</td>
-                        <td>{row.status}</td>
-                        <td>{row.severity}</td>
-                        <td>{row.meaning}</td>
-                    </tr>
-                {/each}
-            </tbody>
-        </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Label</th>
+                <th>Status</th>
+                <th>Severity</th>
+                <th>Meaning</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory)) as row}
+                <tr>
+                    <td><strong>{row.category}</strong></td>
+                    <td>{row.label}</td>
+                    <td>{row.status}</td>
+                    <td>{row.severity}</td>
+                    <td>{row.meaning}</td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
 	</section>
 </main>
 
@@ -455,6 +465,8 @@
         padding: 1rem;
         border-radius: 0.5rem;
         margin-top: 1.5rem;
+        margin-bottom: 1.5rem;`
+
     }
 
 
