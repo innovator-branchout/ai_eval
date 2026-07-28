@@ -304,7 +304,7 @@
     <p>{examples.find(example => example.id === Number(selectedId)).outputScore}</p>
 </div>
 
-		<a class="primary-button" href="/model">Try it yourself</a>
+		<a class="`primary-button" href="/model">Try it yourself</a>
 	</section>
 	<section id="rubric">
 	    <h2>Grading Rubric</h2>
@@ -463,6 +463,8 @@
         padding: 1rem;
         border-radius: 0.5rem;
         margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
     }
 
 
