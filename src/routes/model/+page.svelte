@@ -5,6 +5,14 @@
     function getScore(){
         alert('You got your score! (jk you did not this is placeholder)');
     }
+
+    const models = [
+        {model_type: "Auto", index: 1},
+        {model_type: "Response", index: 2},
+        {model_type: "Prompt", index: 3}
+    ]
+
+    let selectedId = $state(1);
 </script>
 
 <svelte:head>
@@ -30,17 +38,22 @@
 
 	<section>
         <h2> Test It Out! </h2>
-        <p>Enter the prompt and response to the model, then click the "Evalulate" button to get its score.</p>
+        <p>Enter the prompt and/or response to the model, then click the "Evalulate" button to get its score. Change the dropdown if you want to select a specific model</p>
 
-
+        <select bind:value={selectedId}>
+            {#each models as model}
+                <option value={model.index}>{model.model_type}</option>
+            {/each}
+        </select>
 
         <h3>Enter your prompt: </h3>
         <textarea type="prompt" bind:value={prompt} placeholder="What did you ask?"/>
         <br>
-        <h3>Enter the response: </h3>
+        <h3>Enter the response(optional): </h3>
         <textarea type="response" bind:value={response} placeholder="What did the model say?"/>
 
-        <h3> Score: N/A</h3>
+
+        <h3> Reliability Index: N/A</h3>
 
         <button onclick={getScore}>
             Evalulate
@@ -131,4 +144,20 @@
 	textarea:first-of-type {
 		height: 150px;
 	}
+	select {
+        width: 40%;
+        padding: 1rem;
+        border-radius:6px;
+
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        color: var(--charcoal);
+        font-size: 1rem;
+    }
+    option {
+        font-family: Arial, sans-serif;
+        color: var(--charcoal);
+        font-size: 1rem;
+        font-weight: 600;
+    }
 </style>
