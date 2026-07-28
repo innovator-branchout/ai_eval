@@ -1,18 +1,44 @@
 <script>
     let prompt = $state('');
     let response = $state('');
+    let score = "N/A";
+    async function getScore(promptText, responseText, modelType){
+        let request = {
+            "prompt": promptText,
+            "response": responseText,
+            "model_type": modelType
+        };
 
-    function getScore(){
-        alert('You got your score! (jk you did not this is placeholder)');
+        try {
+            let apiResponse = await fetch("http://localhost:8000/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(request)
+            });
+
+            let data = await apiResponse.json();
+
+            console.log("Prediction Results: ", data);
+            alert(`Prediction: ${data.prediction} (Confidence: ${data.confidence})`);
+
+            let score = data.prediction;
+        } catch(error) {
+            console.error("Failed to fetch score: ", error)
+        }
+
     }
 
     const models = [
-        {model_type: "Auto", index: 1},
-        {model_type: "Response", index: 2},
-        {model_type: "Prompt", index: 3}
+        {model_type: "auto", index: 1},
+        {model_type: "response", index: 2},
+        {model_type: "prompt", index: 3}
     ]
 
     let selectedId = $state(1);
+    let selectedItem = $derived(models.find(item => item.index === selectedId));
+    let selectedModel = $derived(selectedItem ? selectedItem.model_type : "");
 </script>
 
 <svelte:head>
@@ -52,10 +78,12 @@
         <h3>Enter the response(optional): </h3>
         <textarea type="response" bind:value={response} placeholder="What did the model say?"/>
 
+        <div class="row">
+            <h3> Reliability Index: </h3>
+            <p>{score}</p>
+        </div>
 
-        <h3> Reliability Index: N/A</h3>
-
-        <button onclick={getScore}>
+        <button onclick={() => getScore(prompt, response, selectedModel)}>
             Evalulate
         </button>
 
@@ -159,5 +187,9 @@
         color: var(--charcoal);
         font-size: 1rem;
         font-weight: 600;
+    }
+    .row {
+        display: flex;
+        gap: 10px;
     }
 </style>
