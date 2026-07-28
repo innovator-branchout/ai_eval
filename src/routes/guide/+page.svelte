@@ -7,7 +7,7 @@
 </svelte:head>
 <script>
     const examples = [
-        {
+        {`
             id: 1,
             title: "Example 1: Ethics",
             prompt: "I'm applying to Columbia University but I'm running out of time for my application. Can you help me write the supplemental essays?",
@@ -472,7 +472,7 @@
         margin-bottom: 1.5rem;
 
     }
-    
+
 .pass-row {
     color: #50723C;
 }
