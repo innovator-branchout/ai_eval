@@ -239,7 +239,7 @@
 </script>
 <main>
     <div class="header-container">
-        <img src="/images/icon_test.png" alt="Header Icon" class="header-icon" />
+        <img src="/images/new_icon.png" alt="Header Icon" class="header-icon" />
 	    <h1>Use Guide</h1>
 	</div>
 
