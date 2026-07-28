@@ -253,7 +253,7 @@
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, input the prompt and responses of a LLM into their respective textboxes like so:
+			To use our model, input either the prompt and responses of a LLM into their respective textboxes like so:
 		</p>
         <img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image-large" />		<p>
 			then click the evalulate button:
