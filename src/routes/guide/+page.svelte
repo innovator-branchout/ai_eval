@@ -332,13 +332,13 @@
 
         <tbody>
             {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory)) as row}
-                <tr>
-                    <td><strong>{row.category}</strong></td>
-                    <td>{row.label}</td>
-                    <td>{row.status}</td>
+                <tr class={row.status === "PASS" ? "pass-row" : "fail-row"}>
+                     <td><strong>{row.category}</strong></td>
+                     <td>{row.label}</td>
+                     <td>{row.status}</td>
                     <td>{row.severity}</td>
                     <td>{row.meaning}</td>
-                </tr>
+                 </tr>
             {/each}
         </tbody>
     </table>
@@ -472,6 +472,13 @@
         margin-bottom: 1.5rem;
 
     }
+    
+.pass-row {
+    color: #50723C;
+}
 
+.fail-row {
+    color: #6F1D1B;
+}
 
 </style>
