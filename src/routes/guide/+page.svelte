@@ -239,7 +239,7 @@
 </script>
 <main>
     <div class="header-container">
-        <img src="/src/routes/guide/icon_test.png" alt="Header Icon" class="header-icon" />
+        <img src="/images/icon_test.png" alt="Header Icon" class="header-icon" />
 	    <h1>Use Guide</h1>
 	</div>
 
@@ -255,11 +255,11 @@
 		<p>
 			To use our model, input the prompt and responses of a LLM into their respective textboxes like so:
 		</p>
-		<img src="/src/routes/guide/demoimage1.png" alt="Demo Image1" class="demo-image1" />
+		<img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image" />
 		<p>
 			then click the evalulate button:
 		</p>
-        <img src="/src/routes/guide/demoimage2.png" alt="Demo Image2" class="demo-image2" />
+        <img src="/images/demoimage2.png" alt="Demo Image2" class="demo-image" />
 		<p>
 		     Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
@@ -290,18 +290,20 @@
 
         <div class="prompt-card">
             <strong>PROMPT</strong>
-            <p>{@html examples.find(example => example.id === Number(selectedId)).prompt}</p>
+            <p>
+	            {@html examples.find(example => example.id === Number(selectedId))?.prompt ?? ''}
+            </p>
         </div>
 
 <p>
-    <strong>RESPONSE</strong>
-    <br>
-    {@html examples.find(example => example.id === Number(selectedId)).response}
+	<strong>RESPONSE</strong>
+	<br />
+	{@html examples.find(example => example.id === Number(selectedId))?.response ?? ''}
 </p>
 
 <div class="output-score-card">
     <strong>OUTPUT SCORE</strong>
-    <p>{examples.find(example => example.id === Number(selectedId)).outputScore}</p>
+    <p>{examples.find(example => example.id === Number(selectedId))?.outputScore}</p>
 </div>
 
 		<a class="primary-button" href="/model">Try it yourself</a>
