@@ -304,7 +304,7 @@
     <p>{examples.find(example => example.id === Number(selectedId))?.outputScore}</p>
 </div>
 
-		<a class="primary-button" href="/model">Try it yourself</a>
+		<a class="primary-butt`on" href="/model">Try it yourself</a>
 	</section>
 	<section id="rubric">
 	    <h2>Grading Rubric</h2>
@@ -407,12 +407,12 @@
         width: auto;
     }
     .demo-image-large {
-    height: 400px;
+    height: 500px;
     width: auto;
     }
 
     .demo-image-small {
-    height: 200px;
+    height: 150px;
     width: auto;
     }
     
