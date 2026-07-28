@@ -1,10 +1,44 @@
 <script>
     let prompt = $state('');
     let response = $state('');
+    let score = "N/A";
+    async function getScore(promptText, responseText, modelType){
+        let request = {
+            "prompt": promptText,
+            "response": responseText,
+            "model_type": modelType
+        };
 
-    function getScore(){
-        alert('You got your score! (jk you did not this is placeholder)');
+        try {
+            let apiResponse = await fetch("http://localhost:8000/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(request)
+            });
+
+            let data = await apiResponse.json();
+
+            console.log("Prediction Results: ", data);
+            alert(`Prediction: ${data.prediction} (Confidence: ${data.confidence})`);
+
+            let score = data.prediction;
+        } catch(error) {
+            console.error("Failed to fetch score: ", error)
+        }
+
     }
+
+    const models = [
+        {model_type: "auto", index: 1},
+        {model_type: "response", index: 2},
+        {model_type: "prompt", index: 3}
+    ]
+
+    let selectedId = $state(1);
+    let selectedItem = $derived(models.find(item => item.index === selectedId));
+    let selectedModel = $derived(selectedItem ? selectedItem.model_type : "");
 </script>
 
 <svelte:head>
@@ -30,19 +64,26 @@
 
 	<section>
         <h2> Test It Out! </h2>
-        <p>Enter the prompt and response to the model, then click the "Evalulate" button to get its score.</p>
+        <p>Enter the prompt and/or response to the model, then click the "Evalulate" button to get its score. Change the dropdown if you want to select a specific model</p>
 
-
+        <select bind:value={selectedId}>
+            {#each models as model}
+                <option value={model.index}>{model.model_type}</option>
+            {/each}
+        </select>
 
         <h3>Enter your prompt: </h3>
         <textarea type="prompt" bind:value={prompt} placeholder="What did you ask?"/>
         <br>
-        <h3>Enter the response: </h3>
+        <h3>Enter the response(optional): </h3>
         <textarea type="response" bind:value={response} placeholder="What did the model say?"/>
 
-        <h3> Score: N/A</h3>
+        <div class="row">
+            <h3> Reliability Index: </h3>
+            <p>{score}</p>
+        </div>
 
-        <button onclick={getScore}>
+        <button onclick={() => getScore(prompt, response, selectedModel)}>
             Evalulate
         </button>
 
@@ -131,4 +172,24 @@
 	textarea:first-of-type {
 		height: 150px;
 	}
+	select {
+        width: 40%;
+        padding: 1rem;
+        border-radius:6px;
+
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        color: var(--charcoal);
+        font-size: 1rem;
+    }
+    option {
+        font-family: Arial, sans-serif;
+        color: var(--charcoal);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .row {
+        display: flex;
+        gap: 10px;
+    }
 </style>
