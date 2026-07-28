@@ -255,12 +255,10 @@
 		<p>
 			To use our model, input the prompt and responses of a LLM into their respective textboxes like so:
 		</p>
-		<img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image" />
-		<p>
+        <img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image-large" />		<p>
 			then click the evalulate button:
 		</p>
-        <img src="/images/demoimage2.png" alt="Demo Image2" class="demo-image" />
-		<p>
+        <img src="/images/demoimage2.png" alt="Demo Image2" class="demo-image-small" />		<p>
 		     Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
 
@@ -307,7 +305,7 @@
 </div>
 
 		<a class="primary-button" href="/model">Try it yourself</a>
-	</section>`
+	</section>
 	<section id="rubric">
 	    <h2>Grading Rubric</h2>
 		<p>Our project used a set grading rubric in order to evalulate the score of the AI. Based on prompts/responses graded by students(using the same rubric), the AI predicts its label for each category, determining its score for such category.</p>
@@ -408,10 +406,16 @@
         height: 100px;
         width: auto;
     }
-    .demo-image {
-        height: 300px;
-        width: auto;
+    .demo-image-large {
+    height: 400px;
+    width: auto;
     }
+
+    .demo-image-small {
+    height: 200px;
+    width: auto;
+    }
+    
     select {
         width: 40%;
         padding: 1.2rem;
