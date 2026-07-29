@@ -253,13 +253,19 @@
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, either input the prompt and responses of a LLM into their respective textboxes like so:
+			Our project contains 2 models, the prompt model and the response model. The prompt model only grades the prompt of an LLM, whereas the response model grades the response of an LLM(this model also requires the prompt).
+        </p>
+
+
+        <p>
+		    First, select the model to use, then input the prompt, and optionally the response of a LLM into their respective textboxes like so:
 		</p>
+
         <img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image-large" />		<p>
 			then click the evalulate button:
 		</p>
         <img src="/images/demoimage2.png" alt="Demo Image2" class="demo-image-small" />		<p>
-		     Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
+		     Our model will then predict the reliability index of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
 
 	</section>
@@ -331,7 +337,7 @@
         </thead>
 
         <tbody>
-            {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory)) as row}
+            {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory) || (row.category === "" && rubricData[rubricData.indexOf(row) - 2]?.category === selectedCategory) || (row.category === "" && rubricData[rubricData.indexOf(row) - 3]?.category === selectedCategory)) as row}
                 <tr class={row.status === "PASS" ? "pass-row" : "fail-row"}>
                      <td><strong>{row.category}</strong></td>
                      <td>{row.label}</td>
