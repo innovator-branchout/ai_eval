@@ -157,7 +157,9 @@ async def root():
 async def predict_endpoint(request: PredictionRequest):
     """Make a prediction for a prompt and/or response"""
     try:
+        print("1")
         load_models()
+        print("2")
 
         if request.model_type == "auto":
             model_to_use = "response" if request.response else "prompt"

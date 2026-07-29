@@ -1,5 +1,5 @@
 <script>
-    const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-eval-backend-qdd3.onrender.com/';
+    const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-eval-backend-qdd3.onrender.com';
 
     let prompt = $state('');
     let response = $state('');
@@ -14,7 +14,7 @@
         };
 
         try {
-            let apiResponse = await fetch(`${API_BASE}/predict`, {
+            let apiResponse = await fetch(`${API_BASE}/api/predict`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
