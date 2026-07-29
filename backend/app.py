@@ -46,7 +46,7 @@ prompt_model = None
 response_model = None
 
 # API router
-api = APIRouter(prefix="/api")
+api = APIRouter()
 app.include_router(api)
 
 def load_models():
