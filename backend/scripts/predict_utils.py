@@ -1,10 +1,13 @@
 import torch
-from backend.scripts.embeddings import Embedder
+from functools import lru_cache
 from pathlib import Path
+from backend.scripts.embeddings import Embedder
 import numpy as np
 
-# Initialize the embedder once for efficiency
-_EMBEDDER = Embedder()
+# Initialize the embedder lazily for efficiency
+@lru_cache(maxsize=1)
+def get_embedder():
+    return Embedder()
 
 def get_label_mapping():
     """Get mapping from label_id to label_name"""
@@ -30,7 +33,7 @@ def predict_prompt(model, raw_prompt: str):
     """Predict using prompt embeddings"""
     model.eval()
 
-    prompt_embedding = _EMBEDDER.encode([raw_prompt])
+    prompt_embedding = get_embedder().encode([raw_prompt])
     prompt_tensor = torch.tensor(prompt_embedding[0], dtype=torch.float32).unsqueeze(0)
 
     with torch.no_grad():
@@ -62,7 +65,7 @@ Prompt:
 Response:
 {raw_response}
 """
-    embedded_input = _EMBEDDER.encode([formatted_input])
+    embedded_input = get_embedder().encode([formatted_input])
     input_tensor = torch.tensor(embedded_input[0], dtype=torch.float32).unsqueeze(0)
 
     with torch.no_grad():

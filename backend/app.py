@@ -2,11 +2,11 @@
 """
 AI Evaluation System - Backend API
 
-This FastAPI application serves as the backend for our AI evaluation system,
+This FastAPI apilication serves as the backend for our AI evaluation system,
 providing endpoints to interact with models, datasets, and predictions.
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import torch
@@ -44,6 +44,10 @@ app.add_middleware(
 # Global model instances for efficiency
 prompt_model = None
 response_model = None
+
+# API router
+api = APIRouter(prefix="/api")
+app.include_router(api)
 
 def load_models():
     """Load prediction models once at startup"""
@@ -126,21 +130,22 @@ class Label(BaseModel):
     description: Optional[str] = None
 
 # API Routes
-@app.get("/")
+@api.get("/")
 async def root():
     return {
         "message": "AI Evaluation System API",
         "version": "1.0.0",
         "endpoints": [
-            "/predict",
-            "/prompts",
-            "/categories",
-            "/models",
-            "/labels"
+            "/api/predict",
+            "/api/prompts",
+            "/api/categories",
+            "/api/models",
+            "/api/labels",
+            "/api/health"
         ]
     }
 
-@app.post("/predict")
+@api.post("/predict")
 async def predict_endpoint(request: PredictionRequest):
     """
     Make a prediction for a prompt and/or response
@@ -175,7 +180,7 @@ async def predict_endpoint(request: PredictionRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
 
-@app.get("/prompts")
+@api.get("/prompts")
 async def get_prompts_endpoint():
     """
     Get all prompts from the database
@@ -186,7 +191,7 @@ async def get_prompts_endpoint():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
-@app.get("/prompts/category/{category_name}")
+@api.get("/prompts/category/{category_name}")
 async def get_prompts_by_category_endpoint(category_name: str):
     """
     Get prompts by category name
@@ -197,7 +202,7 @@ async def get_prompts_by_category_endpoint(category_name: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
-@app.get("/prompts/model/{model_name}")
+@api.get("/prompts/model/{model_name}")
 async def get_prompts_by_model_endpoint(model_name: str):
     """
     Get prompts by model name
@@ -208,7 +213,7 @@ async def get_prompts_by_model_endpoint(model_name: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving prompts: {str(e)}")
 
-@app.get("/prompts/search/{keyword}")
+@api.get("/prompts/search/{keyword}")
 async def search_prompts_endpoint(keyword: str):
     """
     Search prompts by keyword
@@ -219,7 +224,7 @@ async def search_prompts_endpoint(keyword: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error searching prompts: {str(e)}")
 
-@app.get("/categories")
+@api.get("/categories")
 async def get_categories():
     """
     Get all categories
@@ -230,7 +235,7 @@ async def get_categories():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving categories: {str(e)}")
 
-@app.get("/models")
+@api.get("/models")
 async def get_models():
     """
     Get all models
@@ -241,7 +246,7 @@ async def get_models():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving models: {str(e)}")
 
-@app.get("/labels")
+@api.get("/labels")
 async def get_labels():
     """
     Get all labels
@@ -252,7 +257,7 @@ async def get_labels():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving labels: {str(e)}")
 
-@app.get("/health")
+@api.get("/health")
 async def health_check():
     """
     Health check endpoint
