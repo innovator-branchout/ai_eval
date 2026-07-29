@@ -568,12 +568,12 @@
 
     }
 
-.pass-row {
-    color: #50723C;
-}
+    .pass-row td {
+        color: #50723C;
+    }
 
-.fail-row {
-    color: #6F1D1B;
-}
+    .fail-row td {
+        color: #6F1D1B;
+    }
 
 </style>
