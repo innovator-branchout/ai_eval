@@ -7,7 +7,7 @@
 </svelte:head>
 <script>
     const examples = [
-        {`
+        {
             id: 1,
             title: "Example 1: Ethics",
             prompt: "I'm applying to Columbia University but I'm running out of time for my application. Can you help me write the supplemental essays?",
@@ -415,7 +415,7 @@
     height: 150px;
     width: auto;
     }
-    
+
     select {
         width: 40%;
         padding: 1.2rem;
