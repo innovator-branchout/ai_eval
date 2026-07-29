@@ -415,7 +415,7 @@
     height: 150px;
     width: auto;
     }
-    
+
     select {
         width: 40%;
         padding: 1.2rem;

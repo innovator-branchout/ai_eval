@@ -10,7 +10,7 @@
 	<h1>About</h1>
 
 	<p>
-		Our project compares responses from multiple AI models and measures how accurate, reliable, and verifiable their answers are. 
+		Our project compares responses from multiple AI models and measures how accurate, reliable, and verifiable their answers are.
 	</p>
 
 	<section>
@@ -19,6 +19,9 @@
 		<p>
 			BranchOut! Innovator
 		</p>
+		<a href="https://www.velbranchout.org/innovator" target="_blank" rel="noopener roreferrer">
+		    Visit our website!
+		</a>
 	</section>
 
 	<section id="contact">
