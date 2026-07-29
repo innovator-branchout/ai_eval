@@ -1,7 +1,7 @@
 import torch
 from functools import lru_cache
 
-from backend.scripts.embeddings import Embedder
+from scripts.embeddings import Embedder
 
 
 @lru_cache(maxsize=1)

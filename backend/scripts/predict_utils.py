@@ -1,7 +1,7 @@
 import torch
 from functools import lru_cache
 from pathlib import Path
-from backend.scripts.embeddings import Embedder
+from scripts.embeddings import Embedder
 import numpy as np
 
 # Initialize the embedder lazily for efficiency
@@ -11,7 +11,7 @@ def get_embedder():
 
 def get_label_mapping():
     """Get mapping from label_id to label_name"""
-    from backend.scripts.database import connect
+    from scripts.database import connect
 
     with connect() as conn:
         rows = conn.execute(
@@ -88,7 +88,7 @@ Response:
 
 def get_all_labels():
     """Return list of all labels ordered by severity"""
-    from backend.scripts.database import connect
+    from scripts.database import connect
 
     with connect() as conn:
         rows = conn.execute(
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     print("Label mapping test:")
 
     try:
-        from backend.scripts.nn.layers import EmbeddingClassifier
+        from scripts.nn.layers import EmbeddingClassifier
 
         model = EmbeddingClassifier(
             input_size=1024,

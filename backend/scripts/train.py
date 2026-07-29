@@ -3,10 +3,10 @@ import argparse
 import torch
 from torch.optim import Adam
 
-from backend.scripts.dataset import build_dataloaders
-from backend.scripts.nn.layers import EmbeddingClassifier
-from backend.scripts.nn.trainer import Trainer
-from backend.scripts.nn.losses import get_loss
+from scripts.dataset import build_dataloaders
+from scripts.nn.layers import EmbeddingClassifier
+from scripts.nn.trainer import Trainer
+from scripts.nn.losses import get_loss
 
 from pathlib import Path
 

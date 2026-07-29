@@ -14,9 +14,9 @@ from typing import Optional
 from dataclasses import asdict
 
 # Import backend modules
-from backend.scripts.predict_utils import predict_prompt, predict_prompt_with_response
-from backend.scripts.nn.layers import EmbeddingClassifier
-from backend.scripts.database import (
+from scripts.predict_utils import predict_prompt, predict_prompt_with_response
+from scripts.nn.layers import EmbeddingClassifier
+from scripts.database import (
     connect,
     list_categories,
     list_models,
@@ -136,12 +136,12 @@ async def root():
         "message": "AI Evaluation System API",
         "version": "1.0.0",
         "endpoints": [
-            "/api/predict",
-            "/api/prompts",
-            "/api/categories",
-            "/api/models",
-            "/api/labels",
-            "/api/health"
+            "/predict",
+            "/prompts",
+            "/categories",
+            "/models",
+            "/labels",
+            "/health"
         ]
     }
 
