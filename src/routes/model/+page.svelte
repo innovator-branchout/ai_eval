@@ -1,7 +1,11 @@
 <script>
+    const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-eval-backend-qdd3.onrender.com/';
+
     let prompt = $state('');
     let response = $state('');
-    let score = "N/A";
+
+    let score = $state("N/A");
+
     async function getScore(promptText, responseText, modelType){
         let request = {
             "prompt": promptText,
@@ -10,7 +14,7 @@
         };
 
         try {
-            let apiResponse = await fetch("http://localhost:8000/predict", {
+            let apiResponse = await fetch("${API_BASE}/predict", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -23,7 +27,7 @@
             console.log("Prediction Results: ", data);
             alert(`Prediction: ${data.prediction} (Confidence: ${data.confidence})`);
 
-            let score = data.prediction;
+            score = data.prediction;
         } catch(error) {
             console.error("Failed to fetch score: ", error)
         }
