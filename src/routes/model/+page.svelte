@@ -14,7 +14,7 @@
         };
 
         try {
-            let apiResponse = await fetch("${API_BASE}/predict", {
+            let apiResponse = await fetch(`${API_BASE}/predict`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

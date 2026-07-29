@@ -6,6 +6,7 @@ This FastAPI application serves as the backend for our AI evaluation system,
 providing endpoints to interact with models, datasets, and predictions.
 """
 
+import os
 from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -26,6 +27,7 @@ from scripts.database import (
     prompts_by_model,
     search_prompts,
 )
+
 app = FastAPI(
     title="AI Evaluation System API",
     description="API for the AI evaluation system with prediction capabilities",
@@ -35,8 +37,8 @@ app = FastAPI(
 # Add CORS middleware to allow frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, restrict this to specific origins
-    allow_credentials=False,
+    allow_origins=["*"],  
+    allow_credentials=True,  
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -45,9 +47,15 @@ app.add_middleware(
 prompt_model = None
 response_model = None
 
-# API router
-api = APIRouter()
-app.include_router(api)
+# API router - FIXED: Added the required /api prefix back
+api = APIRouter(prefix="/api")
+
+def resolve_path(relative_path: str) -> str:
+    """Helper to handle pathing variations between local machines and Render's root directory"""
+    # If already running inside backend directory, strip the leading 'backend/' component
+    if os.path.basename(os.getcwd()) == "backend" and relative_path.startswith("backend/"):
+        return relative_path.replace("backend/", "", 1)
+    return relative_path
 
 def load_models():
     """Load prediction models once at startup"""
@@ -55,14 +63,14 @@ def load_models():
 
     if prompt_model is None:
         try:
-            # Load prompt prediction model
             prompt_model = EmbeddingClassifier(
                 input_size=1024,
                 num_rubric_classes=19,
                 dropout=0.2
             )
-
-            checkpoint = torch.load('backend/models/prompt_predictor/best.pt', weights_only=True)
+            # FIXED: Dynamically resolved path
+            model_path = resolve_path('backend/models/prompt_predictor/best.pt')
+            checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=True)
             prompt_model.load_state_dict(checkpoint['model_state'])
             prompt_model.eval()
             print("Prompt model loaded successfully")
@@ -72,14 +80,14 @@ def load_models():
 
     if response_model is None:
         try:
-            # Load response prediction model
             response_model = EmbeddingClassifier(
                 input_size=1024,
                 num_rubric_classes=19,
                 dropout=0.2
             )
-
-            checkpoint = torch.load('backend/models/response_grader/best.pt', weights_only=True)
+            # FIXED: Dynamically resolved path
+            model_path = resolve_path('backend/models/response_grader/best.pt')
+            checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=True)
             response_model.load_state_dict(checkpoint['model_state'])
             response_model.eval()
             print("Response model loaded successfully")
@@ -91,7 +99,7 @@ def load_models():
 class PredictionRequest(BaseModel):
     prompt: str
     response: Optional[str] = None
-    model_type: str = "auto"  # "prompt", "response", or "auto"
+    model_type: str = "auto"
 
 class PredictionResponse(BaseModel):
     prediction: str
@@ -136,32 +144,26 @@ async def root():
         "message": "AI Evaluation System API",
         "version": "1.0.0",
         "endpoints": [
-            "/predict",
-            "/prompts",
-            "/categories",
-            "/models",
-            "/labels",
-            "/health"
+            "/api/predict",
+            "/api/prompts",
+            "/api/categories",
+            "/api/models",
+            "/api/labels",
+            "/api/health"
         ]
     }
 
 @api.post("/predict")
 async def predict_endpoint(request: PredictionRequest):
-    """
-    Make a prediction for a prompt and/or response
-    """
+    """Make a prediction for a prompt and/or response"""
     try:
-        # Load models if not already loaded
         load_models()
 
-        # Determine which model to use
         if request.model_type == "auto":
-            # Auto-determine based on whether response is provided
             model_to_use = "response" if request.response else "prompt"
         else:
             model_to_use = request.model_type
 
-        # Get prediction
         if model_to_use == "prompt":
             result = predict_prompt(prompt_model, request.prompt)
         elif model_to_use == "response":
@@ -172,8 +174,8 @@ async def predict_endpoint(request: PredictionRequest):
             raise HTTPException(status_code=400, detail="Invalid model type. Use 'prompt', 'response', or 'auto'")
 
         return PredictionResponse(
-            prediction=result['prediction'],
-            confidence=result['confidence'],
+            prediction=str(result['prediction']),
+            confidence=float(result['confidence']),
             model_used=model_to_use
         )
 
@@ -182,9 +184,6 @@ async def predict_endpoint(request: PredictionRequest):
 
 @api.get("/prompts")
 async def get_prompts_endpoint():
-    """
-    Get all prompts from the database
-    """
     try:
         prompts = get_prompts()
         return [PromptData(**asdict(prompt)) for prompt in prompts]
@@ -193,9 +192,6 @@ async def get_prompts_endpoint():
 
 @api.get("/prompts/category/{category_name}")
 async def get_prompts_by_category_endpoint(category_name: str):
-    """
-    Get prompts by category name
-    """
     try:
         prompts = prompts_by_category(category_name)
         return [PromptData(**asdict(prompt)) for prompt in prompts]
@@ -204,9 +200,6 @@ async def get_prompts_by_category_endpoint(category_name: str):
 
 @api.get("/prompts/model/{model_name}")
 async def get_prompts_by_model_endpoint(model_name: str):
-    """
-    Get prompts by model name
-    """
     try:
         prompts = prompts_by_model(model_name)
         return [PromptData(**asdict(prompt)) for prompt in prompts]
@@ -215,9 +208,6 @@ async def get_prompts_by_model_endpoint(model_name: str):
 
 @api.get("/prompts/search/{keyword}")
 async def search_prompts_endpoint(keyword: str):
-    """
-    Search prompts by keyword
-    """
     try:
         prompts = search_prompts(keyword)
         return [PromptData(**asdict(prompt)) for prompt in prompts]
@@ -226,9 +216,6 @@ async def search_prompts_endpoint(keyword: str):
 
 @api.get("/categories")
 async def get_categories():
-    """
-    Get all categories
-    """
     try:
         categories = list_categories()
         return [Category(**asdict(cat)) for cat in categories]
@@ -237,9 +224,6 @@ async def get_categories():
 
 @api.get("/models")
 async def get_models():
-    """
-    Get all models
-    """
     try:
         models = list_models()
         return [Model(**asdict(model)) for model in models]
@@ -248,9 +232,6 @@ async def get_models():
 
 @api.get("/labels")
 async def get_labels():
-    """
-    Get all labels
-    """
     try:
         labels = list_labels()
         return [Label(**asdict(label)) for label in labels]
@@ -259,17 +240,11 @@ async def get_labels():
 
 @api.get("/health")
 async def health_check():
-    """
-    Health check endpoint
-    """
+    """Health check endpoint"""
     try:
-        # Test database connection
         with connect() as conn:
             conn.execute("SELECT 1")
-
-        # Test model loading
         load_models()
-
         return {
             "status": "healthy",
             "models_loaded": True,
@@ -281,10 +256,10 @@ async def health_check():
             "error": str(e)
         }
 
+# Include router AFTER all endpoints are registered to it
+app.include_router(api)
+
 if __name__ == "__main__":
     import uvicorn
-    print("Starting AI Evaluation System API...")
-    print("Loading models...")
-    load_models()
-    print("Models loaded successfully!")
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
