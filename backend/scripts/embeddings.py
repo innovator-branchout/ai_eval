@@ -55,7 +55,7 @@ def save_embeddings(filename, ids, embeddings):
     )
 
 if __name__ == "__main__":
-    from backend.scripts.database import get_prompts
+    from scripts.database import get_prompts
 
     prompts = get_prompts()
 

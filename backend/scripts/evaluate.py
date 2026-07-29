@@ -1,8 +1,8 @@
 import argparse
 import torch
-from backend.scripts.dataset import build_dataloaders
-from backend.scripts.nn.losses import get_loss
-from backend.scripts.nn.layers import EmbeddingClassifier
+from scripts.dataset import build_dataloaders
+from scripts.nn.losses import get_loss
+from scripts.nn.layers import EmbeddingClassifier
 from tqdm.auto import tqdm
 
 def get_test_loader(embedding_path, batch_size):
