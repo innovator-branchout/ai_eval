@@ -106,7 +106,7 @@ if __name__ == "__main__":
     print("Label mapping test:")
 
     try:
-        from scripts.nn.layers import EmbeddingClassifier
+from backend.scripts.nn.layers import EmbeddingClassifier
 
         model = EmbeddingClassifier(
             input_size=1024,

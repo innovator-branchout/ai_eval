@@ -2,7 +2,7 @@
 """
 AI Evaluation System - Backend API
 
-This FastAPI apilication serves as the backend for our AI evaluation system,
+This FastAPI application serves as the backend for our AI evaluation system,
 providing endpoints to interact with models, datasets, and predictions.
 """
 
