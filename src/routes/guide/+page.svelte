@@ -239,7 +239,7 @@
 </script>
 <main>
     <div class="header-container">
-        <img src="/images/icon_test.png" alt="Header Icon" class="header-icon" />
+        <img src="/images/new_icon.png" alt="Header Icon" class="header-icon" />
 	    <h1>Use Guide</h1>
 	</div>
 
@@ -253,7 +253,7 @@
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, input the prompt and responses of a LLM into their respective textboxes like so:
+			To use our model, either input the prompt and responses of a LLM into their respective textboxes like so:
 		</p>
         <img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image-large" />		<p>
 			then click the evalulate button:
