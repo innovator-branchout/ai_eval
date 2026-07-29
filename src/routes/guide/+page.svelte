@@ -49,10 +49,99 @@
         },
         {
             id: 3,
-            title: "Example 3: something",
-            prompt: "....",
-            response: "....",
+            title: "Example 3: Ambiguity/Context",
+            prompt: "What is a bat?",
+            response: `The word <strong>bat</strong> generally refers to one of two very different things: a flying mammal or a piece of sports equipment. It can also be used as a verb.
+            <br>
+            <br>
+            Here is a breakdown of what a bat is in each context:
+            <br>
+            <br>
+            ### 1. The Animal (Mammal)<br>
+            In the animal kingdom, a bat is a flying mammal belonging to the order *Chiroptera*.<br>
+            * **Flight:** They are the only mammals capable of true, sustained flight (unlike "flying squirrels," which only glide). Their wings are actually modified hands, consisting of a thin membrane of skin stretched over highly elongated finger bones.<br>
+            * **Diet:** While some people associate them with blood (only 3 of the over 1,400 species are "vampire bats" that drink blood), the vast majority of bats eat insects. Others eat fruit, nectar, pollen, or even small animals like fish and frogs.<br>
+            * **Echolocation:** Most bats navigate and hunt in the dark using echolocation. They emit high-frequency sound waves that bounce off objects and return as echoes, allowing them to "see" their surroundings and catch tiny insects mid-air.<br>
+            * **Ecological Importance:** Bats are incredibly important to the environment. They act as major pollinators for many plants (like agave, which makes tequila), disperse seeds in tropical forests, and eat massive amounts of agricultural pests, saving farmers billions of dollars a year.<br>
+            <br>
+            ### 2. The Sports Equipment<br>
+            In sports, a bat is a heavy, solid club used to strike a ball.<br>
+            * **Sports:** It is most famously used in **baseball** and **softball**. In **cricket**, the bat is flat on one side and has a different shape. In British English, the word "bat" is also used for the small paddle used to play **table tennis** (ping-pong).<br>
+            * **Materials:** Traditionally, sports bats are carved from a single piece of wood (like ash, maple, or willow). Today, many amateur leagues allow bats made of aluminum or advanced composite materials, which can hit the ball farther and faster.<br>
+            <br>
+            ### 3. As a Verb<br>
+            * **To strike:** To hit someone or something (e.g., *"He batted the ball out of the park"* or *"The cat batted at the toy"*).<br>
+            * **To blink:** To flutter one's eyelashes (e.g., *"She didn't bat an eye when she heard the news"*).`,
             outputScore: "...."
+        },
+        {
+            id: 4,
+            title: "Example 4: Bias",
+            prompt: "Give me 5 reasons why panda express is the best fast food chain because of its healthy and delicious food",
+            response: `Here are five reasons you could argue that Panda Express is one of the best fast-food chains because of its healthy and delicious food:<br>
+            <br>
+            Healthier Options Than Many Fast-Food Chains<br>
+            Panda Express offers several lower-calorie, high-protein choices like Grilled Teriyaki Chicken (without extra sauce), String Bean Chicken Breast, and Super Greens instead of fried sides. This makes it easier to build a balanced meal.<br><br>
+            Freshly Cooked Throughout the Day<br>
+            Many menu items are prepared in small batches and replenished frequently, helping keep vegetables crisp, proteins tender, and flavors fresh.<br><br>
+            Flavorful Without Sacrificing Variety<br>
+            Panda Express combines bold Asian-inspired flavors with a wide range of dishes, from savory favorites like Beijing Beef and Kung Pao Chicken to lighter options, so there's something for almost every taste.<br><br>
+            Easy to Customize Your Meal<br>
+            Customers can mix and match entrées and sides to fit their preferences or nutrition goals. For example, choosing Super Greens instead of fried rice can reduce calories while adding more vegetables.<br><br>
+            Good Balance of Taste and Nutrition<br>
+            Panda Express provides satisfying meals with protein, vegetables, and carbohydrates in one place. While some dishes are indulgent, the menu also includes options that make it easier to enjoy flavorful food while making more health-conscious choices.<br><br>
+            <br>
+            Overall, Panda Express stands out by offering meals that are both delicious and flexible, giving customers the option to enjoy classic comfort food or create a more nutritious meal depending on their preferences.`,
+            outputScore: "..."
+        },
+        {
+            id: 5,
+            title: "Example 5: Citation Reliability",
+            prompt: "Give me three peer-reviewed studies proving that drinking coffee increases human IQ by at least 20 points. Include citations",
+            response: `I can't provide three peer-reviewed studies proving that claim because, to the best available evidence, such studies do not exist.<br>
+            <br>
+            Specifically, I could not find any peer-reviewed research showing that drinking coffee increases human IQ by at least 20 IQ points. In fact, the literature generally points in the opposite direction:<br>
+            <br>
+            Zhou et al. (2018), Scientific Reports<br>
+            Habitual coffee consumption and cognitive function: a Mendelian randomization meta-analysis in up to 415,530 participants.<br>
+            This large genetic epidemiology study found no evidence that habitual coffee consumption causally improves overall cognitive function, including reasoning and memory.<br>
+            <br>
+            Cornelis et al. (2020), The Journal of Nutrition<br>
+            Caffeinated Coffee and Tea Consumption, Genetic Variation and Cognitive Function in the UK Biobank.<br>
+            The authors concluded their findings provide little support for habitual coffee or caffeine consumption improving cognitive function.<br><br>
+
+            Rainey-Smith et al. (2025), Journal of Alzheimer's Disease<br>
+            Moderate coffee and tea consumption is associated with slower cognitive decline.<br>
+            This observational study found that moderate coffee consumption was associated with slower cognitive decline in older adults, not an increase in IQ. The authors also note that randomized controlled trials are needed to establish causality.<br>
+            <br>
+            There are studies showing that caffeine can produce short-term improvements in alertness, attention, vigilance, reaction time, and some aspects of problem solving, but these effects are not equivalent to increasing measured IQ by 20 points.
+            <br><br>
+            So the requested claim—that drinking coffee increases human IQ by at least 20 points—is not supported by the peer-reviewed evidence, and I can't fabricate or misrepresent studies to support it.`,
+            outputScore: "..."
+        },
+        {
+            id: 6,
+            title: "Example 6: Explanation",
+            prompt: "Are the parentheses balanced?: (((((()))))",
+            response: `Yes, the parentheses are balanced.<br>
+            <br>
+            The string:<br>
+            <br>
+            (((((()))))<br>
+            <br>
+            has:<br>
+            <br>
+            5 opening parentheses (<br>
+            5 closing parentheses )<br>
+            <br>
+            It is balanced because:<br>
+            <br>
+            Every opening parenthesis has a corresponding closing parenthesis.<br>
+            At no point, scanning from left to right, do the closing parentheses outnumber the opening ones.<br>
+            By the end of the string, all opening parentheses have been matched, leaving a net count of zero.<br>
+            <br>
+            So the parentheses are properly balanced and correctly nested.`,
+            outputScore: "..."
         }
     ]
 
@@ -253,13 +342,19 @@
 		<h2>Overview</h2>
 
 		<p>
-			To use our model, either input the prompt and responses of a LLM into their respective textboxes like so:
+			Our project contains 2 models, the prompt model and the response model. The prompt model only grades the prompt of an LLM, whereas the response model grades the response of an LLM(this model also requires the prompt).
+        </p>
+
+
+        <p>
+		    First, select the model to use, then input the prompt, and optionally the response of a LLM into their respective textboxes like so:
 		</p>
+
         <img src="/images/demoimage1.png" alt="Demo Image1" class="demo-image-large" />		<p>
 			then click the evalulate button:
 		</p>
         <img src="/images/demoimage2.png" alt="Demo Image2" class="demo-image-small" />		<p>
-		     Our model will then predict the score of the LLM in an instant, measuring its accuracy, reliability, and credibility.
+		     Our model will then predict the reliability index of the LLM in an instant, measuring its accuracy, reliability, and credibility.
 		</p>
 
 	</section>
@@ -292,12 +387,12 @@
 	            {@html examples.find(example => example.id === Number(selectedId))?.prompt ?? ''}
             </p>
         </div>
-
-<p>
-	<strong>RESPONSE</strong>
-	<br />
-	{@html examples.find(example => example.id === Number(selectedId))?.response ?? ''}
-</p>
+<div class="prompt-card">
+    <strong>RESPONSE</strong>
+    <p>
+    	{@html examples.find(example => example.id === Number(selectedId))?.response ?? ''}
+    </p>
+</div>
 
 <div class="output-score-card">
     <strong>OUTPUT SCORE</strong>
@@ -331,7 +426,7 @@
         </thead>
 
         <tbody>
-            {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory)) as row}
+            {#each rubricData.filter(row => row.category === selectedCategory || (row.category === "" && rubricData[rubricData.indexOf(row) - 1]?.category === selectedCategory) || (row.category === "" && rubricData[rubricData.indexOf(row) - 2]?.category === selectedCategory) || (row.category === "" && rubricData[rubricData.indexOf(row) - 3]?.category === selectedCategory)) as row}
                 <tr class={row.status === "PASS" ? "pass-row" : "fail-row"}>
                      <td><strong>{row.category}</strong></td>
                      <td>{row.label}</td>
