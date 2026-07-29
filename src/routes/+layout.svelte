@@ -11,10 +11,10 @@
 
 <nav>
 	<a href="/">Home</a>
-	<a href="/guide">How it works</a>
+	<a href="/guide">Guide</a>
 	<a href="/model">Model</a>
 	<a href="/about">About</a>
-	<a href="/contact">Contact</a>
+
 </nav>
 
 {@render children()}
