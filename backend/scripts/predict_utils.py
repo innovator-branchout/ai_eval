@@ -109,7 +109,7 @@ if __name__ == "__main__":
         from scripts.nn.layers import EmbeddingClassifier
 
         model = EmbeddingClassifier(
-            input_size=1024,
+            input_size=384,
             num_rubric_classes=19,
             dropout=0.2
         )
