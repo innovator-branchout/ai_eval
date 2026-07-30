@@ -162,6 +162,7 @@ class Trainer:
 
     def save_checkpoint(self, epoch, best_acc, path):
         Path(path).parent.mkdir(parents=True, exist_ok=True)
+        print("SAVING TO", path)
         torch.save(
                 {
                     "model_state": self.model.state_dict(),

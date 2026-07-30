@@ -115,6 +115,12 @@ if __name__ == "__main__":
         )
 
         checkpoint = torch.load('models/prompt_predictor/best.pt', weights_only=True)
+        
+        for key, value in checkpoint['model_state'].items():
+            if torch.is_tensor(value):
+                print(f"{key}: {value.shape}")
+            else:
+                print(f"{key}: Type is {type(value)} (not a tensor)")
         model.load_state_dict(checkpoint['model_state'])
 
         # Test with a simple prompt
