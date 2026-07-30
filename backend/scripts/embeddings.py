@@ -5,7 +5,7 @@ import torch
 
 ROOT = Path(__file__).resolve().parent.parent
 EMBEDDINGS_DIR = ROOT / "embeddings"
-MODEL = "BAAI/bge-large-en-v1.5"
+MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 class Embedder:
     def __init__(self):

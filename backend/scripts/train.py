@@ -22,7 +22,7 @@ if __name__ == "__main__":
     train_loader, val_loader, _ = build_dataloaders(ROOT / "embeddings" / "prompts.npz") if args.model=="prompt" else build_dataloaders(ROOT / "embeddings" / "responses.npz")
 
     model = EmbeddingClassifier(
-            input_size=1024,
+            input_size=384,
             num_rubric_classes=19,
             dropout=0.2
     )

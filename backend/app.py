@@ -64,7 +64,7 @@ def load_models():
     if prompt_model is None:
         try:
             prompt_model = EmbeddingClassifier(
-                input_size=1024,
+                input_size=384,
                 num_rubric_classes=19,
                 dropout=0.2
             )
@@ -81,7 +81,7 @@ def load_models():
     if response_model is None:
         try:
             response_model = EmbeddingClassifier(
-                input_size=1024,
+                input_size=384,
                 num_rubric_classes=19,
                 dropout=0.2
             )
