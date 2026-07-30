@@ -79,7 +79,15 @@
         <h3>Enter your prompt: </h3>
         <textarea type="prompt" bind:value={prompt} placeholder="What did you ask?"/>
         <br>
-        <h3>Enter the response(optional): </h3>
+        {#if selectedModel === "response"}
+            <h3>
+                Enter the response(required):
+            </h3>
+        {:else}
+            <h3>
+                Enter the response(optional):
+            </h3>
+        {/if}
         <textarea type="response" bind:value={response} placeholder="What did the model say?"/>
 
         <div class="row">
