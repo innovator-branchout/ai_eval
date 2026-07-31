@@ -9,6 +9,7 @@ import numpy as np
 def get_embedder():
     return Embedder()
 
+@lru_cache(maxsize=1)
 def get_label_mapping():
     """Get mapping from label_id to label_name"""
     from scripts.database import connect
@@ -29,35 +30,29 @@ def get_label_mapping():
 
     return label_map
 
-def predict_prompt(model, raw_prompt: str):
-    """Predict using prompt embeddings"""
-    model.eval()
+def predict_prompt(session, raw_prompt):
+    embedding = get_embedder().encode([raw_prompt]).astype(np.float32)
 
-    prompt_embedding = get_embedder().encode([raw_prompt])
-    prompt_tensor = torch.tensor(prompt_embedding[0], dtype=torch.float32).unsqueeze(0)
+    logits = session.run(
+        None,
+        {"embedding": embedding},
+    )[0]
 
-    with torch.no_grad():
-        output = model(prompt_tensor)
+    probs = np.exp(logits - logits.max(axis=1, keepdims=True))
+    probs /= probs.sum(axis=1, keepdims=True)
 
-    # Get label mapping
+    prediction = int(np.argmax(probs))
+
     label_mapping = get_label_mapping()
 
-    # Convert logits to human-readable prediction
-    predicted_class = torch.argmax(output).item()
-    actual_label_id = predicted_class + 1  # Adjust for 0-based indexing
-
-    predicted_label = label_mapping.get(actual_label_id, f"Unknown Label {actual_label_id}")
-
     return {
-        'prediction': predicted_label,
-        'logits': output.cpu().numpy()[0],
-        'confidence': torch.softmax(output, dim=1).max().item()
+        "prediction": label_mapping[prediction + 1],
+        "confidence": float(probs[0, prediction]),
+        "logits": logits[0],
     }
 
-def predict_prompt_with_response(model, raw_prompt: str, raw_response: str):
+def predict_prompt_with_response(session, raw_prompt: str, raw_response: str):
     """Predict using prompt + response embeddings"""
-    model.eval()
-
     formatted_input = f"""
 Prompt:
 {raw_prompt}
@@ -65,25 +60,25 @@ Prompt:
 Response:
 {raw_response}
 """
-    embedded_input = get_embedder().encode([formatted_input])
-    input_tensor = torch.tensor(embedded_input[0], dtype=torch.float32).unsqueeze(0)
+    embedding = get_embedder().encode([formatted_input]).astype(np.float32)
 
-    with torch.no_grad():
-        output = model(input_tensor)
+    logits = session.run(
+            None,
+            {"embedding": embedding},
+    )[0]
+
+    probs = np.exp(logits - logits.max(axis=1, keepdims=True))
+    probs /= probs.sum(axis=1, keepdims=True)
+
+    prediction = int(np.argmax(probs))
 
     # Get label mapping
     label_mapping = get_label_mapping()
 
-    # Convert logits to human-readable prediction
-    predicted_class = torch.argmax(output).item()
-    actual_label_id = predicted_class + 1  # Adjust for 0-based indexing
-
-    predicted_label = label_mapping.get(actual_label_id, f"Unknown Label {actual_label_id}")
-
     return {
-        'prediction': predicted_label,
-        'logits': output.cpu().numpy()[0],
-        'confidence': torch.softmax(output, dim=1).max().item()
+        'prediction': label_mapping[prediction + 1],
+        'confidence': float(probs[0, prediction]),
+        'logits': logits[0]
     }
 
 def get_all_labels():
@@ -106,27 +101,17 @@ if __name__ == "__main__":
     print("Label mapping test:")
 
     try:
-        from scripts.nn.layers import EmbeddingClassifier
+        import onnxruntime as ort
 
-        model = EmbeddingClassifier(
-            input_size=384,
-            num_rubric_classes=19,
-            dropout=0.2
+        session = ort.InferenceSession(
+            "models/prompt_predictor/model.onnx",
+            providers=["CPUExecutionProvider"],
         )
 
-        checkpoint = torch.load('models/prompt_predictor/best.pt', weights_only=True)
-        
-        for key, value in checkpoint['model_state'].items():
-            if torch.is_tensor(value):
-                print(f"{key}: {value.shape}")
-            else:
-                print(f"{key}: Type is {type(value)} (not a tensor)")
-        model.load_state_dict(checkpoint['model_state'])
-
-        # Test with a simple prompt
         test_prompt = "What is the capital of France?"
-        result = predict_prompt(model, test_prompt)
-        print(f"Prompt prediction: {result}")
+
+        result = predict_prompt(session, test_prompt)
+        print(result)
 
     except Exception as e:
         print(f"Error testing predictions: {e}")

@@ -11,7 +11,12 @@ class Embedder:
     def __init__(self):
         self.model = SentenceTransformer(
                 MODEL,
-                device="cuda" if torch.cuda.is_available() else "cpu"
+                device="cuda" if torch.cuda.is_available() else "cpu",
+                backend="onnx",
+                model_kwargs={
+                    "provider": "CPUExecutionProvider",
+                    "file_name": "onnx/model.onnx"
+                }
                 )
 
     def encode(self, texts): # encode a list

@@ -10,13 +10,12 @@ import os
 from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import torch
+import onnxruntime as ort
 from typing import Optional
 from dataclasses import asdict
 
 # Import backend modules
 from scripts.predict_utils import predict_prompt, predict_prompt_with_response
-from scripts.nn.layers import EmbeddingClassifier
 from scripts.database import (
     connect,
     list_categories,
@@ -44,8 +43,8 @@ app.add_middleware(
 )
 
 # Global model instances for efficiency
-prompt_model = None
-response_model = None
+prompt_session = None
+response_session = None
 
 # API router - FIXED: Added the required /api prefix back
 api = APIRouter(prefix="/api")
@@ -59,41 +58,22 @@ def resolve_path(relative_path: str) -> str:
 
 def load_models():
     """Load prediction models once at startup"""
-    global prompt_model, response_model
+    global prompt_session, response_session
 
-    if prompt_model is None:
-        try:
-            prompt_model = EmbeddingClassifier(
-                input_size=384,
-                num_rubric_classes=19,
-                dropout=0.2
-            )
-            # FIXED: Dynamically resolved path
-            model_path = resolve_path('backend/models/prompt_predictor/best.pt')
-            checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=True)
-            prompt_model.load_state_dict(checkpoint['model_state'])
-            prompt_model.eval()
-            print("Prompt model loaded successfully")
-        except Exception as e:
-            print(f"Error loading prompt model: {e}")
-            raise
-
-    if response_model is None:
-        try:
-            response_model = EmbeddingClassifier(
-                input_size=384,
-                num_rubric_classes=19,
-                dropout=0.2
-            )
-            # FIXED: Dynamically resolved path
-            model_path = resolve_path('backend/models/response_grader/best.pt')
-            checkpoint = torch.load(model_path, map_location=torch.device('cpu'), weights_only=True)
-            response_model.load_state_dict(checkpoint['model_state'])
-            response_model.eval()
-            print("Response model loaded successfully")
-        except Exception as e:
-            print(f"Error loading response model: {e}")
-            raise
+    if prompt_session is None:
+        prompt_session = ort.InferenceSession(
+                resolve_path(
+                    "backend/models/prompt_predictor/model.onnx"
+                ),
+                providers=["CPUExecutionProvider"],
+        )
+    if response_session is None:
+        response_session = ort.InferenceSession(
+                resolve_path(
+                    "backend/models/response_grader/model.onnx"
+                ),
+                providers=["CPUExecutionProvider"]
+        )
 
 # Data models for API requests and responses
 class PredictionRequest(BaseModel):
@@ -167,11 +147,11 @@ async def predict_endpoint(request: PredictionRequest):
             model_to_use = request.model_type
 
         if model_to_use == "prompt":
-            result = predict_prompt(prompt_model, request.prompt)
+            result = predict_prompt(prompt_session, request.prompt)
         elif model_to_use == "response":
             if not request.response:
                 raise HTTPException(status_code=400, detail="Response is required for response prediction")
-            result = predict_prompt_with_response(response_model, request.prompt, request.response)
+            result = predict_prompt_with_response(response_session, request.prompt, request.response)
         else:
             raise HTTPException(status_code=400, detail="Invalid model type. Use 'prompt', 'response', or 'auto'")
 
