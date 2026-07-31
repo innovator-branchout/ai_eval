@@ -1,13 +1,8 @@
 import torch
 from functools import lru_cache
 from pathlib import Path
-from scripts.embeddings import Embedder
+from scripts.inference_embedder import encode
 import numpy as np
-
-# Initialize the embedder lazily for efficiency
-@lru_cache(maxsize=1)
-def get_embedder():
-    return Embedder()
 
 @lru_cache(maxsize=1)
 def get_label_mapping():
@@ -31,7 +26,7 @@ def get_label_mapping():
     return label_map
 
 def predict_prompt(session, raw_prompt):
-    embedding = get_embedder().encode([raw_prompt]).astype(np.float32)
+    embedding = encode([raw_prompt])
 
     logits = session.run(
         None,
@@ -60,7 +55,7 @@ Prompt:
 Response:
 {raw_response}
 """
-    embedding = get_embedder().encode([formatted_input]).astype(np.float32)
+    embedding = encode([formatted_input])
 
     logits = session.run(
             None,

@@ -9,9 +9,4 @@ This package contains all the necessary scripts for:
 """
 
 __version__ = "1.0.0"
-__author__ = "Sumer Chaudhary"
-
-# Import core components (avoid importing training/prediction modules at package import time)
-from .database import *
-from .dataset import *
-from .embeddings import *
+__author__ = "BranchOut! Innovator"

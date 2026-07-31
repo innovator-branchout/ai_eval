@@ -10,7 +10,6 @@ import os
 from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import onnxruntime as ort
 from typing import Optional
 from dataclasses import asdict
 
@@ -26,6 +25,10 @@ from scripts.database import (
     prompts_by_model,
     search_prompts,
 )
+
+os.environ["ORT_DISABLE_GPU"] = "1"
+import onnxruntime as ort
+
 
 app = FastAPI(
     title="AI Evaluation System API",
